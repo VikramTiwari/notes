@@ -2,7 +2,13 @@
 
 * [Welcome](README.md)
 
-## Cheatsheets
+## Tech
 
-* [Linux](cheatsheets/linux.md)
+* [Blogs](cheatsheets/blogs.md)
+* [Terminal](cheatsheets/terminal.md)
+
+## Community
+
+* [Speaker Tips](community/speaker-tips.md)
+* [Social](community/social.md)
 

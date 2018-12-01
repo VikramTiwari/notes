@@ -1,8 +1,8 @@
 ---
-description: Various linux commands that I don't wanna remember
+description: Various terminal commands that I don't wanna remember
 ---
 
-# Linux
+# Terminal
 
 ## Super Powers
 
@@ -22,8 +22,11 @@ mkdir george
 
 Upgrades.
 
+{% code-tabs %}
+{% code-tabs-item title="upgrades.sh" %}
 ```bash
-# check for updates
+# check 
+for updates
 sudo apt-get update
 
 # upgrade
@@ -32,6 +35,8 @@ sudo apt-get upgrade
 # install new package
 sudo apt-get install new_package
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Destruction superpowers! **Be careful**.
 
