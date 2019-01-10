@@ -4,11 +4,11 @@
 
 ## Tech
 
-* [Blogs](cheatsheets/blogs.md)
-* [TensorFlow](cheatsheets/tensorflow.md)
-* [Terminal](cheatsheets/terminal.md)
-* [gRPC](cheatsheets/grpc.md)
-* [Help me!](cheatsheets/help-me.md)
+* [Blogs](tech/blogs.md)
+* [TensorFlow](tech/tensorflow.md)
+* [Terminal](tech/terminal.md)
+* [gRPC](tech/grpc.md)
+* [Help me!](tech/help-me.md)
 
 ## Community
 
