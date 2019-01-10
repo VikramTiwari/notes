@@ -8,6 +8,7 @@
 * [TensorFlow](cheatsheets/tensorflow.md)
 * [Terminal](cheatsheets/terminal.md)
 * [gRPC](cheatsheets/grpc.md)
+* [Help me!](cheatsheets/help-me.md)
 
 ## Community
 
