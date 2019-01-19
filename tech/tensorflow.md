@@ -31,6 +31,9 @@ description: 'Resources for TensorFlow, Machine Learning and AI'
   * [What-If](https://pair-code.github.io/what-if-tool/)... you could inspect a machine learning model, with no coding required?
   * [Seedbank](https://research.google.com/seedbank/): Interactive Machine Learning examples with linked notebooks
   * [Magenta Demos](https://magenta.tensorflow.org/demos): Music by machines, no, not the clunky kind
+* End-to-End solution
+  * [Presentation](https://docs.google.com/presentation/d/1P8bbVuj_xegG2TaDKLtavZIcvlCAae9VMmDk-C7WpQQ/edit?usp=sharing): End-To-End Machine Learning walkthrough, updated everyday!
+  * [Code](https://github.com/VikramTiwari/end-to-end-machine-learning-with-google-cloud): End-To-End solution that you can use in production right now on Google Cloud
 * Social/Others
   * [Google AI Team](https://ai.google/research/people/)
   * [TensorFlow on Twitter](https://twitter.com/tensorflow)
