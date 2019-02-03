@@ -32,8 +32,18 @@ description: 'Resources for TensorFlow, Machine Learning and AI'
   * [Seedbank](https://research.google.com/seedbank/): Interactive Machine Learning examples with linked notebooks
   * [Magenta Demos](https://magenta.tensorflow.org/demos): Music by machines, no, not the clunky kind
 * End-to-End solution
-  * [Presentation](https://docs.google.com/presentation/d/1P8bbVuj_xegG2TaDKLtavZIcvlCAae9VMmDk-C7WpQQ/edit?usp=sharing): End-To-End Machine Learning walkthrough, updated everyday!
+  * [Presentation](https://docs.google.com/presentation/d/1P8bbVuj_xegG2TaDKLtavZIcvlCAae9VMmDk-C7WpQQ/edit?usp=sharing): End-To-End Machine Learning walkthrough, updated regularly!
   * [Code](https://github.com/VikramTiwari/end-to-end-machine-learning-with-google-cloud): End-To-End solution that you can use in production right now on Google Cloud
+* Hands-on
+  * Structured:
+    * Learn ML basics
+    * TensorFlow 2.0
+    * TF with Google Cloud
+    * TF with Kubeflow
+    * [TF and DeepLearning without a PhD](https://github.com/GoogleCloudPlatform/tensorflow-without-a-phd)
+  * Unstructured:
+    * [Keras basic classification](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb)
+    * [MNIST using TPUs](https://colab.research.google.com/drive/1myF-aXi33KCz8Ff6BY6hWolSxNVagIz5) by [Martin Gorner](https://twitter.com/martin_gorner)
 * Social/Others
   * [Google AI Team](https://ai.google/research/people/)
   * [TensorFlow on Twitter](https://twitter.com/tensorflow)
