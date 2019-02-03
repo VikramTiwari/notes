@@ -13,6 +13,8 @@ description: Tech blogs which most probably are already outdated
   * [Story of a failed pentest](https://threader.app/thread/1063423110513418240)
 * Apps
   * [Where to store per-user program data](https://0x46.net/thoughts/2019/02/01/dotfile-madness/)
+* Machine Learning
+  * [Papers with Code \(state of the art\)](https://paperswithcode.com/sota)
 * Web Dev
   * [web.dev](https://web.dev/)
   * [swoosh.app](https://squoosh.app/)
