@@ -20,21 +20,25 @@ description: 'Resources for TensorFlow, Machine Learning and AI'
   * [Kubeflow](https://github.com/kubeflow/kubeflow): Open Source, end to end machine learning platform built with the power of TensorFlow, [Kubernetes](https://kubernetes.io/), [Dataflow](https://beam.apache.org/), [TFX](https://www.tensorflow.org/tfx/), [Hub](https://www.tensorflow.org/hub/), [Serving](https://www.tensorflow.org/serving/) and other similar best technologies.
   * [AutoML](https://cloud.google.com/automl/): [No code, no problem!](https://twitter.com/defragger?lang=en) Get the best machine learning models for you without need for any code or machine learning experiences.
   * [Facets](https://pair-code.github.io/facets/): Visualization for Machine Learning datasets which works seamlessly regardless of the data size and type
+  * [What-If](https://pair-code.github.io/what-if-tool/)... you could inspect a machine learning model, with no coding required?
   * [ML Kit](https://developers.google.com/ml-kit/): Machine Learning for mobile developers, making mobile Machine learning smooth
   * [TF Research Cloud](https://www.tensorflow.org/tfrc/): TPUs for researchers working on cutting edge deep learning research.
+  * [TFHub.dev](https://tfhub.dev): Prebuilt models that can be utilized by tensorflow's hub API
 * Conferences
   * [TensorFlow DevSummit](https://www.tensorflow.org/dev-summit/): Meet machine learning user, researchers and industry leaders utilizing or contributing to TensorFlow.
   * [NeurIPS](https://neurips.cc/): Neural Information Processing Systems \(NeurIPS\) is a multi-track machine learning and computational neuroscience conference.
 * Demo
   * [TensorFlow Playground](http://playground.tensorflow.org): A one stop place to learn and understand various Machine Learning concepts.
   * [AI Experiments](https://experiments.withgoogle.com/collection/ai): Showcase of simple experiments by Google to start exploring machine learning.
-  * [What-If](https://pair-code.github.io/what-if-tool/)... you could inspect a machine learning model, with no coding required?
+    * [TechableMachines](https://teachablemachine.withgoogle.com/): An interactive playground to train and test a model in browser
   * [Seedbank](https://research.google.com/seedbank/): Interactive Machine Learning examples with linked notebooks
   * [Magenta Demos](https://magenta.tensorflow.org/demos): Music by machines, no, not the clunky kind
+  * [TF/examples](https://github.com/tensorflow/examples): Examples of using TensorFlow
+  * [TPU demo](http://tpudemo.com): Shows how TPUs are more powerful than other processing systems
 * End-to-End solution
   * [Presentation](https://docs.google.com/presentation/d/1P8bbVuj_xegG2TaDKLtavZIcvlCAae9VMmDk-C7WpQQ/edit?usp=sharing): End-To-End Machine Learning walkthrough, updated regularly!
   * [Code](https://github.com/VikramTiwari/end-to-end-machine-learning-with-google-cloud): End-To-End solution that you can use in production right now on Google Cloud
-* Hands-on
+* Hands-on Learning
   * Structured:
     * Learn ML basics
     * TensorFlow 2.0
