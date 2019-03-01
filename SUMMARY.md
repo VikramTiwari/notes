@@ -9,6 +9,8 @@
 * [Terminal](tech/terminal.md)
 * [gRPC](tech/grpc.md)
 * [Help me!](tech/help-me.md)
+* [Nginx + Docker + Let'sEncrypt on Ubuntu](tech/nginx-+-docker-+-letsencrypt-on-ubuntu.md)
+* [Google Cloud](tech/google-cloud.md)
 
 ## Community
 
