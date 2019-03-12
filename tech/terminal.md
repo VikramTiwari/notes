@@ -84,3 +84,42 @@ apt-get update && apt-get install -y wget --no-install-recommends \
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Loops
+
+{% code-tabs %}
+{% code-tabs-item title="for.sh" %}
+```bash
+# For loop using counter
+for COUNTER in `seq 1 10`;
+do
+    echo The counter is $COUNTER
+done
+
+# For loop using other values
+for i in $( ls ); do
+    echo item: $i
+done
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="while.sh" %}
+```bash
+COUNTER=0
+while [  $COUNTER -lt 10 ]; do
+    echo The counter is $COUNTER
+    let COUNTER=COUNTER+1
+done
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="until.sh" %}
+```bash
+COUNTER=20
+until [  $COUNTER -lt 10 ]; do
+    echo COUNTER $COUNTER
+    let COUNTER-=1
+done
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
