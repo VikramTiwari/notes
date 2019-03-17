@@ -123,3 +123,30 @@ done
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Usage checks
+
+{% code-tabs %}
+{% code-tabs-item title="usage.sh" %}
+```bash
+# check docker usage
+sudo docker stats
+
+# check process usage
+top
+
+# check memory usage
+free -h
+
+# check disk usage
+df -lh
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Processes
+
+```bash
+# full process tree
+ps -axfo pid,uname,cmd
+```
+

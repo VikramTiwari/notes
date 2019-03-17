@@ -12,6 +12,7 @@
 * [Nginx + Docker + Let'sEncrypt on Ubuntu](tech/nginx-+-docker-+-letsencrypt-on-ubuntu.md)
 * [Google Cloud](tech/google-cloud.md)
 * [Docker](tech/docker.md)
+* [Kubernetes](tech/kubernetes.md)
 
 ## Community
 
