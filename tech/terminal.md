@@ -11,22 +11,23 @@ Let there be life!
 {% code-tabs %}
 {% code-tabs-item title="create.sh" %}
 ```bash
+# create directory named george
+mkdir george
+
 # create file with name george
 touch george
 
-# create directory named george
-mkdir george
+# edit file
+nano george
+
+# edit with vi
+vi george
 ```
 {% endcode-tabs-item %}
-{% endcode-tabs %}
 
-Upgrades.
-
-{% code-tabs %}
 {% code-tabs-item title="upgrades.sh" %}
 ```bash
-# check 
-for updates
+# check for updates
 sudo apt-get update
 
 # upgrade
@@ -34,13 +35,12 @@ sudo apt-get upgrade
 
 # install new package
 sudo apt-get install new_package
+
+# cleanup
+sudo apt-get autoremove
 ```
 {% endcode-tabs-item %}
-{% endcode-tabs %}
 
-Destruction superpowers! **Be careful**.
-
-{% code-tabs %}
 {% code-tabs-item title="destroy.sh" %}
 ```bash
 # find process running on port 5000
@@ -54,6 +54,29 @@ sudo kill $( sudo lsof -i tcp:5000 -t )
 
 # kill all processes named Preview
 killall -9 Preview
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="usage.sh" %}
+```bash
+# check docker usage
+sudo docker stats
+
+# check process usage
+top
+
+# check memory usage
+free -h
+
+# check disk usage
+df -lh
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="process.sh" %}
+```bash
+# full process tree
+ps -axfo pid,uname,cmd
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -122,31 +145,4 @@ done
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-Usage checks
-
-{% code-tabs %}
-{% code-tabs-item title="usage.sh" %}
-```bash
-# check docker usage
-sudo docker stats
-
-# check process usage
-top
-
-# check memory usage
-free -h
-
-# check disk usage
-df -lh
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-Processes
-
-```bash
-# full process tree
-ps -axfo pid,uname,cmd
-```
 

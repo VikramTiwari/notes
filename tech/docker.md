@@ -1,12 +1,17 @@
 ---
-description: some docker commands I don't wanna search over internet
+description: some docker and k8s commands I don't wanna search over internet
 ---
 
-# Docker
+# Docker and Kubernetes
 
-```text
+Docker ecosystem
+
+{% code-tabs %}
+{% code-tabs-item title="docker-basics.sh" %}
+```bash
 # access bash inside a running container
 sudo docker exec -it container-name bash
+
 
 # remove all stopped containers
 docker rm -v $(docker ps -a -q -f status=exited)
@@ -26,10 +31,8 @@ docker stop $(docker ps -a -q) && \
     docker rmi $(docker images -a -q) && \
     docker system prune
 ```
+{% endcode-tabs-item %}
 
-Some scripts for Docker related systems
-
-{% code-tabs %}
 {% code-tabs-item title="logger.sh" %}
 ```bash
 #!/bin/bash
@@ -49,6 +52,31 @@ wait
 # $ Command + C
 
 # from https://stackoverflow.com/a/54917272/1724300
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Kubernetes
+
+{% code-tabs %}
+{% code-tabs-item title="deployments-using-kubectl.sh" %}
+```bash
+# all commands: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+
+# get credentials for your gcp cluster
+gcloud container clusters get-credentials dev-cluster --zone=us-central1-f
+
+# create a deployment on your cluster
+kubectl run website-deployment --image=gcr.io/ivikramtiwari/website
+
+# check if deployment was successful
+kubectl get deployments
+
+# get pods
+kubectl get pods
+
+# scale deployments
+kubectl scale deployment website-deployment --replicas=4
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

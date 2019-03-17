@@ -13,6 +13,8 @@ description: Tech blogs which most probably are already outdated
   * [Story of a failed pentest](https://threader.app/thread/1063423110513418240)
 * Apps
   * [Where to store per-user program data](https://0x46.net/thoughts/2019/02/01/dotfile-madness/)
+* On API development
+  * [https://www.chromium.org/developers/design-documents/sync/sync-data-best-practices](https://www.chromium.org/developers/design-documents/sync/sync-data-best-practices)
 * Machine Learning
   * [Papers with Code \(state of the art\)](https://paperswithcode.com/sota)
 * Web Dev
