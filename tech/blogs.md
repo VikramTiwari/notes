@@ -22,6 +22,8 @@ description: Tech blogs which most probably are already outdated
   * [swoosh.app](https://squoosh.app/)
   * [gallery.io](https://gallery.io/#recent)
   * [project visbug](https://github.com/GoogleChromeLabs/ProjectVisBug)
+* Technical Leadership
+  * [Defining a distinguished engineer](https://blog.jessfraz.com/post/defining-a-distinguished-engineer/)
 
 
 
