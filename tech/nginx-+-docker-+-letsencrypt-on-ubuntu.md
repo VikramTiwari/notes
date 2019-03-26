@@ -13,17 +13,17 @@ description: How to setup a webservice using nginx + docker + LetsEncrypt on Ubu
 
 Now let's prepare our VM for the task at hand. Install various packages:
 
-```
+```bash
 # Update dependencies
 sudo apt update
-sudo apt upgrade
-sudo apt install docker.io
-sudo apt install nginx
+sudo apt -y upgrade
+sudo apt install -y docker.io
+sudo apt install -y nginx
 ```
 
 Update Firewall
 
-```text
+```bash
 # check firewall options
 sudo ufw app list
 

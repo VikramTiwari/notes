@@ -11,6 +11,7 @@ description: Tech blogs which most probably are already outdated
 * Security
   * [Reading privileged memory with a side-channel](https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html)
   * [Story of a failed pentest](https://threader.app/thread/1063423110513418240)
+  * [Endless SSH tarpit](https://nullprogram.com/blog/2019/03/22/)
 * Apps
   * [Where to store per-user program data](https://0x46.net/thoughts/2019/02/01/dotfile-madness/)
 * On API development
