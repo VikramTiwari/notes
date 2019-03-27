@@ -81,6 +81,9 @@ kubectl scale deployment website-deployment --replicas=4
 # remove evicted pods
 kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
 
+# remove all pods
+kubectl delete --all pods 
+
 # tail a deployment
 kubectl logs deployment/website-deployment --tail 10 -f
 ```
