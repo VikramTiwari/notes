@@ -9,9 +9,12 @@ Docker ecosystem
 {% code-tabs %}
 {% code-tabs-item title="docker-basics.sh" %}
 ```bash
+# run container
+sudo docker run -p 3000:8080 -e NODE_ENV='production' --name website-prod \
+    --restart=always -d gcr.io/ivikramtiwari/website:prod
+
 # access bash inside a running container
 sudo docker exec -it container-name bash
-
 
 # remove all stopped containers
 docker rm -v $(docker ps -a -q -f status=exited)
@@ -77,6 +80,9 @@ kubectl get pods
 
 # scale deployments
 kubectl scale deployment website-deployment --replicas=4
+
+# rolling updates
+kubectl set image deployments/website-deployment website-deployment=gcr.io/ivikramtiwari/website@sha256:$SHA
 
 # remove evicted pods
 kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
