@@ -11,6 +11,7 @@
 * [Google Cloud](tech/google-cloud.md)
 * [Docker and Kubernetes](tech/docker.md)
 * [Help me!](tech/help-me.md)
+* [Another way to put it](tech/another-way-to-put-it.md)
 
 ## Community
 
