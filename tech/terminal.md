@@ -52,8 +52,8 @@ kill -9 1990
 # find and kill a process running on port 5000
 sudo kill $( sudo lsof -i tcp:5000 -t )
 
-# kill all processes named Preview
-killall -9 Preview
+# kill all processes named Google Chrome Helper
+killall -9 "Google Chrome Helper"
 ```
 {% endcode-tabs-item %}
 
