@@ -92,6 +92,9 @@ kubectl delete --all pods
 
 # tail a deployment
 kubectl logs deployment/website-deployment --tail 10 -f
+
+# ssh into a pod
+kubectl exec -it my-pod -- /bin/bash
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
