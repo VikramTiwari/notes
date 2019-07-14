@@ -70,6 +70,9 @@ free -h
 
 # check disk usage
 df -lh
+
+# list all directories in current folder with their size
+du -h
 ```
 {% endcode-tabs-item %}
 
@@ -80,6 +83,10 @@ ps -axfo pid,uname,cmd
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+
+
+
 
 Virtual Screen
 
