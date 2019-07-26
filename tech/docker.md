@@ -4,17 +4,20 @@ description: some docker and k8s commands I don't wanna search over internet
 
 # Docker and Kubernetes
 
-Docker ecosystem
+ Docker ecosystem
 
 {% code-tabs %}
 {% code-tabs-item title="docker-basics.sh" %}
 ```bash
+# create an image with a tag from git (courtesy of @ahmetb: https://twitter.com/ahmetb/status/1154882328813924352)
+docker build -t website:${git describe --always --tags --dirty} .
+
 # run container
-sudo docker run -p 3000:8080 -e NODE_ENV='production' --name website-prod \
+docker run -p 3000:8080 -e NODE_ENV='production' --name website-prod \
     --restart=always -d gcr.io/ivikramtiwari/website:prod
 
 # access bash inside a running container
-sudo docker exec -it container-name bash
+docker exec -it container-name bash
 
 # remove all stopped containers
 docker rm -v $(docker ps -a -q -f status=exited)
