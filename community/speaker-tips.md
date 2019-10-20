@@ -2,7 +2,7 @@
 description: Tips from best speakers around
 ---
 
-# Speaker Tips
+# Speaking and writing Tips
 
 ## Presentation Checklist
 
@@ -41,5 +41,35 @@ Courtesy of [Lynn Langit](https://twitter.com/lynnlangit) \([tweet](https://twit
 [] Be your emotion
 ```
 
+### Documentation Types
 
+[Courtesy of DIVIO](https://www.divio.com/blog/documentation/)
+
+A **tutorials**
+
+* is learning oriented
+* allows the newcomer to get started
+* is a lesson
+* Analogy: teaching a child how to cook
+
+A **how-to guides**
+
+* is goal-oriented
+* shows how to solve a specific problem
+* is a series of steps
+* Analogy: a recipe in cookery book
+
+An **explanation**
+
+* is understanding-oriented
+* explains
+* provides background and context
+* Analogy: an article on culinary social history
+
+A **reference guide**:
+
+* is information-oriented
+* describes the machinery
+* is accurate and complete
+* Analogy: a reference encyclopaedia article
 

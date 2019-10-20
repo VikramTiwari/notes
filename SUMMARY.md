@@ -16,7 +16,7 @@
 
 ## Community
 
-* [Speaker Tips](community/speaker-tips.md)
+* [Speaking and writing Tips](community/speaker-tips.md)
 * [Social](community/social.md)
 * [Books](community/books.md)
 * [Activities](community/activities.md)
