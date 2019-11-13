@@ -8,8 +8,8 @@ description: Various terminal commands that I don't wanna remember
 
 Let there be life!
 
-{% code-tabs %}
-{% code-tabs-item title="create.sh" %}
+{% tabs %}
+{% tab title="create.sh" %}
 ```bash
 # create directory named george
 mkdir george
@@ -23,9 +23,9 @@ nano george
 # edit with vi
 vi george
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="upgrades.sh" %}
+{% tab title="upgrades.sh" %}
 ```bash
 # check for updates
 sudo apt-get update
@@ -39,9 +39,9 @@ sudo apt-get install new_package
 # cleanup
 sudo apt-get autoremove
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="destroy.sh" %}
+{% tab title="destroy.sh" %}
 ```bash
 # find process running on port 5000
 sudo lsof -i tcp:5000
@@ -55,9 +55,9 @@ sudo kill $( sudo lsof -i tcp:5000 -t )
 # kill all processes named Google Chrome Helper
 killall -9 "Google Chrome Helper"
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="usage.sh" %}
+{% tab title="usage.sh" %}
 ```bash
 # check docker usage
 sudo docker stats
@@ -74,15 +74,15 @@ df -lh
 # list all directories in current folder with their size
 du -h
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="process.sh" %}
+{% tab title="process.sh" %}
 ```bash
 # full process tree
 ps -axfo pid,uname,cmd
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -90,15 +90,15 @@ ps -axfo pid,uname,cmd
 
 Virtual Screen
 
-{% code-tabs %}
-{% code-tabs-item title="virtual-screen.sh" %}
+{% tabs %}
+{% tab title="virtual-screen.sh" %}
 ```bash
 # Note: you will still need to install all the dependencies for xvfb to run
 xvfb-run --server-args='-screen 0 1024x768x24' node src
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="xvfb-deps.sh" %}
+{% tab title="xvfb-deps.sh" %}
 ```bash
 apt-get update && apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget x11vnc x11-xkb-utils xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic x11-apps xvfb
 apt-get update && apt-get install -y wget --no-install-recommends \
@@ -111,13 +111,13 @@ apt-get update && apt-get install -y wget --no-install-recommends \
     && apt-get purge --auto-remove -y curl \
     && rm -rf /src/*.deb
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Loops
 
-{% code-tabs %}
-{% code-tabs-item title="for.sh" %}
+{% tabs %}
+{% tab title="for.sh" %}
 ```bash
 # For loop using counter
 for COUNTER in `seq 1 10`;
@@ -130,9 +130,9 @@ for i in $( ls ); do
     echo item: $i
 done
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="while.sh" %}
+{% tab title="while.sh" %}
 ```bash
 COUNTER=0
 while [  $COUNTER -lt 10 ]; do
@@ -140,9 +140,9 @@ while [  $COUNTER -lt 10 ]; do
     let COUNTER=COUNTER+1
 done
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="until.sh" %}
+{% tab title="until.sh" %}
 ```bash
 COUNTER=20
 until [  $COUNTER -lt 10 ]; do
@@ -150,6 +150,6 @@ until [  $COUNTER -lt 10 ]; do
     let COUNTER-=1
 done
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 

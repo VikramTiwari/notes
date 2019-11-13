@@ -4,6 +4,7 @@
 
 ## Tech
 
+* [JS and Node.js](tech/js-and-node.js.md)
 * [Blogs](tech/blogs.md)
 * [TensorFlow](tech/tensorflow.md)
 * [Terminal](tech/terminal.md)
