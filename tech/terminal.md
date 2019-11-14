@@ -82,6 +82,16 @@ du -h
 ps -axfo pid,uname,cmd
 ```
 {% endtab %}
+
+{% tab title="security.sh" %}
+```bash
+# check application certificate
+spctl -a -vv /Applications/Google\ Chrome.app
+# /Applications/Google Chrome.app: accepted
+# source=Notarized Developer ID
+# origin=Developer ID Application: Google, Inc. (EQHXZ8M8AV)
+```
+{% endtab %}
 {% endtabs %}
 
 
