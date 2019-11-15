@@ -54,8 +54,7 @@ Before we can enable HTTPs access, we need to have HTTP access enabled for our a
 sudo nano /etc/nginx/sites-available/vikramtiwari.com
 ```
 
-{% tabs %}
-{% tab title="nginx.conf" %}
+{% code title="nginx.conf" %}
 ```
 server {
       listen 80;
@@ -87,8 +86,7 @@ server {
       }
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ```text
 # create a symlink in sites-enabled

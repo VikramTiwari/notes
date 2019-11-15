@@ -64,8 +64,7 @@ wait
 
 Kubernetes
 
-{% tabs %}
-{% tab title="deployments-using-kubectl.sh" %}
+{% code title="deployments-using-kubectl.sh" %}
 ```bash
 # all commands: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
@@ -99,8 +98,7 @@ kubectl logs deployment/website-deployment --tail 10 -f
 # ssh into a pod
 kubectl exec -it my-pod -- /bin/bash
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 
