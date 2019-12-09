@@ -92,6 +92,16 @@ spctl -a -vv /Applications/Google\ Chrome.app
 # origin=Developer ID Application: Google, Inc. (EQHXZ8M8AV)
 ```
 {% endtab %}
+
+{% tab title="compression.sh" %}
+```bash
+# gzip compression on a tar archiv: tar_file files_or_folder_to_be_compressed
+tar cvzf my-files.tar.gz ./my-files
+
+# unzip a tar file
+tar xvzf my-files.tar.gz
+```
+{% endtab %}
 {% endtabs %}
 
 
