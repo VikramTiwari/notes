@@ -102,6 +102,16 @@ tar cvzf my-files.tar.gz ./my-files
 tar xvzf my-files.tar.gz
 ```
 {% endtab %}
+
+{% tab title="searching.sh" %}
+```bash
+# Find a file by name on your machine
+sudo find / -name 'secret.txt'
+
+# delete backup files
+sudo find . -name "*.bak" -delete
+```
+{% endtab %}
 {% endtabs %}
 
 
