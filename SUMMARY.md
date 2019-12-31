@@ -11,10 +11,11 @@
 * [Terminal](tech/terminal.md)
 * [Nginx + Docker + Let'sEncrypt on Ubuntu](tech/nginx-+-docker-+-letsencrypt-on-ubuntu.md)
 * [Google Cloud](tech/google-cloud.md)
+* [MediaWiki Pages](tech/mediawiki-pages.md)
 * [Docker and Kubernetes](tech/docker.md)
-* [Help me!](tech/help-me.md)
 * [Another way to put it](tech/another-way-to-put-it.md)
 * [Databases](tech/databases.md)
+* [Help me!](tech/help-me.md)
 
 ## Community
 
