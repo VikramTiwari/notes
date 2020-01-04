@@ -4,7 +4,9 @@
 
 ## Tech
 
-* [JS and Node.js](tech/js-and-node.js.md)
+* [Programming Languages](tech/programming-languages/README.md)
+  * [JS and Node.js](tech/programming-languages/js-and-node.js.md)
+  * [Python](tech/programming-languages/python.md)
 * [Browsers](tech/browsers.md)
 * [Blogs](tech/blogs.md)
 * [TensorFlow](tech/tensorflow.md)
