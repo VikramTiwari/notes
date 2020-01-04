@@ -5,12 +5,12 @@
 ## Tech
 
 * [Programming Languages](tech/programming-languages/README.md)
+  * [Bash](tech/programming-languages/bash.md)
   * [JS and Node.js](tech/programming-languages/js-and-node.js.md)
   * [Python](tech/programming-languages/python.md)
 * [Browsers](tech/browsers.md)
 * [Blogs](tech/blogs.md)
 * [TensorFlow](tech/tensorflow.md)
-* [Terminal](tech/terminal.md)
 * [Nginx + Docker + Let'sEncrypt on Ubuntu](tech/nginx-+-docker-+-letsencrypt-on-ubuntu.md)
 * [Google Cloud](tech/google-cloud.md)
 * [MediaWiki Pages](tech/mediawiki-pages.md)
