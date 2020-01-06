@@ -5,8 +5,8 @@
 ## Tech
 
 * [Programming Languages](tech/programming-languages/README.md)
-  * [Bash](tech/programming-languages/bash.md)
-  * [JS and Node.js](tech/programming-languages/js-and-node.js.md)
+  * [Bash](tech/terminal.md)
+  * [JS and Node.js](tech/js-and-node.js.md)
   * [Python](tech/programming-languages/python.md)
 * [Browsers](tech/browsers.md)
 * [Blogs](tech/blogs.md)

@@ -15,5 +15,3 @@ File a bug:
 * [crbug.com](https://crbug.com)
 * My starred issues: [https://bugs.chromium.org/p/chromium/issues/list?q=&can=5](https://bugs.chromium.org/p/chromium/issues/list?q=&can=5)
 
-
-

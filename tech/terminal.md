@@ -2,7 +2,7 @@
 description: Various terminal commands that I don't wanna remember
 ---
 
-# Bash
+# Terminal
 
 ## Super Powers
 
