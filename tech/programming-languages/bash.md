@@ -2,7 +2,7 @@
 description: Various terminal commands that I don't wanna remember
 ---
 
-# Terminal
+# Bash
 
 ## Super Powers
 
@@ -38,6 +38,9 @@ sudo apt-get install new_package
 
 # cleanup
 sudo apt-get autoremove
+
+# Fix missing keys
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4B8EC3BAABDC4346
 ```
 {% endtab %}
 
@@ -113,10 +116,6 @@ sudo find . -name "*.bak" -delete
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-
 
 Virtual Screen
 
