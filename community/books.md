@@ -1,5 +1,5 @@
 ---
-description: 'Books that I have read or I am reading, in no particular order'
+description: 'Books that I have read or I am reading/listening, in no particular order'
 ---
 
 # Books
