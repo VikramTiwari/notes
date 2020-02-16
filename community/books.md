@@ -98,6 +98,11 @@ description: 'Books that I have read or I am reading, in no particular order'
 * How Google Works by Eric Schmidt and Jonathan Rosenberg
 * The Lean Startup by Eric Ries
 * Atomic Habits by James Clear
+* Scrum: The art of doing twice the work in half the time by Jeff Sutherland
+* Talking to strangers by Malcom Gladwell
+* Outliers by Malcom Gladwell
+* Leaders eat last by Simon Sinek
+* Solving the procrastination puzzle by Timothy A. Pychyl
 
 
 
