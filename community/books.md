@@ -87,6 +87,10 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Northern Lights
   * The Subtle Knife
   * The Amber Spyglass
+* Orson Scott Card
+  * Ender's Game
+* Isaac Asimov
+  * Foundation
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
