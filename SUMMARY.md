@@ -18,6 +18,7 @@
 * [Another way to put it](tech/another-way-to-put-it.md)
 * [Databases](tech/databases.md)
 * [Help me!](tech/help-me.md)
+* [Design Resources](tech/design-resources.md)
 
 ## Community
 
