@@ -13,6 +13,7 @@ Free icons \(with attribution to author\)
 * [https://www.flaticon.com](https://www.flaticon.com/)
 * [https://icons8.com](https://icons8.com)
 * [https://www.iconfinder.com](https://www.iconfinder.com/)
+* [https://materialdesignicons.com/](https://materialdesignicons.com/)
 
 Free backdrops \(with attribution to author\)
 
