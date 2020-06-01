@@ -15,6 +15,8 @@ Bash commands
 
 ```bash
 # use a specific branch as a nodejs package
-npm i git+ssh://git@github.com:VikramTiwari/world-domnination-tools.git#top-secret-branch
+npm i VikramTiwari/tools#v1
 ```
+
+
 
