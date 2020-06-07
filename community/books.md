@@ -95,6 +95,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The hitchhiker's guide to the galaxy
 * George Orwell
   * 1984
+* Robert A. Heinlein
+  * Stranger in a strange land
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
