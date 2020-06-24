@@ -12,7 +12,8 @@ await new Promise(resolve => setTimeout(resolve, 2000))
 
 // get URL params from URL
 const urlParams = new URLSearchParams(window.location.search)
-const referrer = urlParams.get('referrer')
+const referrer = urlParams.get('referrer') // google
+const sizes = urlParams.getAll('sizes') // ['small', 'medium']
 ```
 
 Bash commands
