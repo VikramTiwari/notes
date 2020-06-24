@@ -9,6 +9,10 @@ JS code snippets
 ```javascript
 // async await timeout
 await new Promise(resolve => setTimeout(resolve, 2000))
+
+// get URL params from URL
+const urlParams = new URLSearchParams(window.location.search)
+const referrer = urlParams.get('referrer')
 ```
 
 Bash commands
