@@ -134,4 +134,6 @@ Non Fiction
 Fiction
 
 * Emma by Jane Austen
+* David Copperfield by Charles Dickens
+* The Sandman by Neil Gaiman
 
