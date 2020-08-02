@@ -98,8 +98,11 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * 1984
 * Robert A. Heinlein
   * Stranger in a strange land
+  * Starship Troopers
 * Frank Herbert
   * Dune
+* Franz Kafka
+  * The Metamorphosis
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
