@@ -103,6 +103,9 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Dune
 * Franz Kafka
   * The Metamorphosis
+* Neil Gaiman
+  * The Sandman
+  * Norse Mythology
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
@@ -135,5 +138,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* The Sandman by Neil Gaiman
+* American Gods by Neil Gaiman
 
