@@ -91,6 +91,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Ender's Game
 * Isaac Asimov
   * Foundation
+  * Foundation and Empire
   * I, Robots
 * Douglas Adams
   * The hitchhiker's guide to the galaxy
@@ -106,6 +107,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * Neil Gaiman
   * The Sandman
   * Norse Mythology
+  * American Gods
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
@@ -138,5 +140,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* American Gods by Neil Gaiman
+* Second Foundation by Issac Asimov
 
