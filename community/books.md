@@ -92,6 +92,9 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * Isaac Asimov
   * Foundation
   * Foundation and Empire
+  * Second Foundation
+  * Foundation's Edge
+  * Foundation and Earth
   * I, Robots
 * Douglas Adams
   * The hitchhiker's guide to the galaxy
@@ -140,5 +143,4 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Second Foundation by Issac Asimov
 
