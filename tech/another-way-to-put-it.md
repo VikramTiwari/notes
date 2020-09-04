@@ -15,3 +15,18 @@ O(2ⁿ) = O(no)
 O(n!) = O(mg!)
 ```
 
+[Technical Observability](https://twitter.com/mipsytipsy/status/1295606425280946176)
+
+```text
+high cardinality
+high dimensionality
+wide, rich events (aka spans)
+schemas are inferred and dynamic
+no friction to adding more context
+unique ids, propagated
+SLOs
+tracing
+column store or autoindexed
+very near realtime
+```
+
