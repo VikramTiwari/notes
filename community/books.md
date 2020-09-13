@@ -111,6 +111,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Sandman
   * Norse Mythology
   * American Gods
+* William Gibson
+  * Neuromancer
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
@@ -143,4 +145,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
+* Do androids dream of electric sheet? by Philip K. Dick
 
