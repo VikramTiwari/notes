@@ -113,6 +113,10 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * American Gods
 * William Gibson
   * Neuromancer
+* Philip K Dick
+  * Do Androids Dream of Electric Sheep
+* Paulo Coelho
+  * The Alchemist
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
@@ -145,5 +149,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Do androids dream of electric sheet? by Philip K. Dick
+* Ringworld by Larry Niven
 
