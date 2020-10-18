@@ -4,7 +4,7 @@ description: Dis-correlation between decision quality and outcome quality
 
 # How to decide
 
-
+Source: [https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life)
 
 * Paradox of experience
   * experience is necessary to be a good decision maker
