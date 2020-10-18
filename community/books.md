@@ -117,6 +117,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Do Androids Dream of Electric Sheep
 * Paulo Coelho
   * The Alchemist
+* Arthur C. Clarke
+  * Rendezvous with Rama
 * Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
@@ -149,5 +151,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Ringworld by Larry Niven
+* Hyperion by Dan Simmons
 
