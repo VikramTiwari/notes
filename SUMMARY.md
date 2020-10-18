@@ -21,7 +21,7 @@
 * [Design Resources](tech/design-resources.md)
 * [Practices for debugging](tech/practices-for-debugging.md)
 * [Byte Bites](tech/byte-bites/README.md)
-  * [How to decide, convey vs convince and more](tech/byte-bites/how-to-decide-convey-vs-convince-and-more.md)
+  * [How to decide](tech/byte-bites/how-to-decide-convey-vs-convince-and-more.md)
 
 ## Community
 

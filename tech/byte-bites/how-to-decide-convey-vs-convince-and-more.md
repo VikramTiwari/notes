@@ -2,7 +2,7 @@
 description: Dis-correlation between decision quality and outcome quality
 ---
 
-# How to decide, convey vs convince and more
+# How to decide
 
 
 
