@@ -14,4 +14,10 @@ description: Bite size terms from byte world
 * [Fox-light vs Hedgehog-light](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life)
   * Fox light: Looking at the world from all sorts of different perspectives and applying lots of different mental models to get to your answer.
   * Hedgehog-light: You approach the world through your one big idea/thesis. Generally, this doesn't work very well.
+* [OODA loop](https://en.wikipedia.org/wiki/OODA_loop)
+  * Observe -&gt; Orient -&gt; Decide -&gt; Act
+  * At times agility can overcome raw power
+  * Machines have much faster OODA loops than humans
+
+
 
