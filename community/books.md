@@ -36,15 +36,6 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * King Solomon's Mines
 * P. G. Wodehouse
   * Right ho, Jeeves
-* Eoin Colfer
-  * Artemis Fowl
-  * Artemis Fowl and the Arctic Incident
-  * Artemis Fowl and the Eternity Code
-  * Artemis Fowl and the Opal Deception
-  * Artemis Fowl and the Lost Colony
-  * Artemis Fowl and the Time Paradox
-  * Artemis Fowl and the Atlantis Complex
-  * Artemis Fowl and the Last Guardian
 * Daniel Defoe
   * Robinson Crusoe
 * Charles Dickens
@@ -64,6 +55,27 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Charlie and the chocolate factory 
 * Johnathan Swift
   * Gulliver's Travels
+* Dan Brown
+  * The Da Vinci Code
+  * Deception Point
+  * Digital Fortress
+  * Angels and Demons
+  * Inferno
+  * Origin
+  * The Lost Symbol
+* Lots of Marvel, DC and Raj Comics :\)
+
+2019
+
+* Eoin Colfer
+  * Artemis Fowl
+  * Artemis Fowl and the Arctic Incident
+  * Artemis Fowl and the Eternity Code
+  * Artemis Fowl and the Opal Deception
+  * Artemis Fowl and the Lost Colony
+  * Artemis Fowl and the Time Paradox
+  * Artemis Fowl and the Atlantis Complex
+  * Artemis Fowl and the Last Guardian
 * Cixin Liu
   * The three-body problem
   * The Dark Forest
@@ -75,18 +87,13 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Ranger's Apprentice - The Battle for Skandia
   * Ranger's Apprentice - The Sorcerer of the North
   * Ranger's Apprentice - The Siege of Macindaw
-* Dan Brown
-  * The Da Vinci Code
-  * Deception Point
-  * Digital Fortress
-  * Angels and Demons
-  * Inferno
-  * Origin
-  * The Lost Symbol
 * Philip Pullman
   * Northern Lights
   * The Subtle Knife
   * The Amber Spyglass
+
+2020
+
 * Orson Scott Card
   * Ender's Game
 * Isaac Asimov
@@ -119,7 +126,6 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Alchemist
 * Arthur C. Clarke
   * Rendezvous with Rama
-* Lots of Marvel, DC and Raj Comics :\)
 
 **Non Fiction**
 
