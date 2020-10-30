@@ -126,6 +126,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Alchemist
 * Arthur C. Clarke
   * Rendezvous with Rama
+* Dan Simmons
+  * Hyperion
 
 **Non Fiction**
 
@@ -157,5 +159,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Hyperion by Dan Simmons
+* Brave New World by Aldous Huxley
 
