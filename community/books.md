@@ -128,6 +128,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Rendezvous with Rama
 * Dan Simmons
   * Hyperion
+* Aldous Huxley
+  * Brave New World
 
 **Non Fiction**
 
@@ -159,5 +161,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Brave New World by Aldous Huxley
+* The time machine by H. G. Wells
 
