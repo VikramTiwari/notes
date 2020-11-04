@@ -31,6 +31,12 @@ description: Bite size terms from byte world
   * Measure during run
     * Reliability: System uptime, test-suite coverage, chaos engineering
     * Thread safety: Important in distributed systems, information assimilation
+* OCEAN
+  * O: Open to experiences
+  * C: Conscientiousness
+  * E: Extroversion
+  * A: Agreeable
+  * N: Neurotic
 
 
 
