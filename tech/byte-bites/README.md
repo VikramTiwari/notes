@@ -37,7 +37,7 @@ description: Bite size terms from byte world
   * **E**xtroversion
   * **A**greeable
   * **N**eurotic
-* Time Management
+* [Time Management](https://en.wikipedia.org/wiki/Time_management)
   * The Eisenhower Method
     * Important and Urgent
     * Important and Not Urgent
