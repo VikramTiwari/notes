@@ -32,11 +32,23 @@ description: Bite size terms from byte world
     * Reliability: System uptime, test-suite coverage, chaos engineering
     * Thread safety: Important in distributed systems, information assimilation
 * OCEAN
-  * O: Open to experiences
-  * C: Conscientiousness
-  * E: Extroversion
-  * A: Agreeable
-  * N: Neurotic
+  * **O**pen to experiences
+  * **C**onscientiousness
+  * **E**xtroversion
+  * **A**greeable
+  * **N**eurotic
+* Time Management
+  * The Eisenhower Method
+    * Important and Urgent
+    * Important and Not Urgent
+    * Not Important and Urgent
+    * Not Important and Not Urgent
+  * POSEC method
+    * **P**rioritize your time and define your life by goals
+    * **O**rganize things you have to accomplish regularly to be successful \(family, friends and finances\)
+    * **S**treamline things you may not like to do, but must do \(work and chores\)
+    * **E**conomize things you should do or may even like to do, but they're not pressingly urgent \(pastimes and socializing\)
+    * **C**ontribute by paying attention to a few remaining things that make a difference \(social obligations\)
 
 
 
