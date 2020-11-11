@@ -126,6 +126,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Alchemist
 * Arthur C. Clarke
   * Rendezvous with Rama
+  * Childhood's End
 * Dan Simmons
   * Hyperion
 * Aldous Huxley
@@ -163,5 +164,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* Childhood's End by Arthur C. Clarke
+* The moon is a harsh mistress by Robert A Heinlein
 
