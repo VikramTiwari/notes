@@ -110,6 +110,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * Robert A. Heinlein
   * Stranger in a strange land
   * Starship Troopers
+  * The Moon is a Harsh Mistress
 * Frank Herbert
   * Dune
 * Franz Kafka
@@ -133,6 +134,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Brave New World
 * H. G. Wells
   * The Time Machine
+* Kurt Vonnegut
+  * Slaughterhouse Five  
 
 **Non Fiction**
 
@@ -164,5 +167,5 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* The moon is a harsh mistress by Robert A Heinlein
+* The War of the World by H. G. Wells
 
