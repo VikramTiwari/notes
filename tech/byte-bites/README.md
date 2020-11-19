@@ -49,6 +49,14 @@ description: Bite size terms from byte world
     * **S**treamline things you may not like to do, but must do \(work and chores\)
     * **E**conomize things you should do or may even like to do, but they're not pressingly urgent \(pastimes and socializing\)
     * **C**ontribute by paying attention to a few remaining things that make a difference \(social obligations\)
+* Speech Settings
+  * Volume
+  * Pitch
+  * Pace
+  * Clarity
+  * Inflection
+  * Physical Expression
+  * Facial Expression
 
 
 
