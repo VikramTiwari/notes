@@ -8,6 +8,7 @@
   * [Bash](tech/programming-languages/bash.md)
   * [JS and Node.js](tech/programming-languages/js-and-node.js.md)
   * [Python](tech/programming-languages/python.md)
+* [GitHub](tech/github.md)
 * [Browsers](tech/browsers.md)
 * [Blogs](tech/blogs.md)
 * [TensorFlow](tech/tensorflow.md)
