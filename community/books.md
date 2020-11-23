@@ -135,7 +135,9 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * H. G. Wells
   * The Time Machine
 * Kurt Vonnegut
-  * Slaughterhouse Five  
+  * Slaughterhouse Five
+* Joe Haldeman
+  * The Forever War
 
 **Non Fiction**
 
@@ -168,4 +170,5 @@ Fiction
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
 * The War of the World by H. G. Wells
+* Snow Crash by Neal Stephenson
 
