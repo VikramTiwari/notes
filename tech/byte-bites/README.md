@@ -57,6 +57,12 @@ description: Bite size terms from byte world
   * Inflection
   * Physical Expression
   * Facial Expression
+* [ADEPT Method](https://betterexplained.com/articles/adept-method/)
+  * Analogy
+  * Diagram
+  * Example
+  * Plain English
+  * Technical Definition
 
 
 
