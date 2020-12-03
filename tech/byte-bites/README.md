@@ -63,7 +63,7 @@ description: Bite size terms from byte world
   * Example
   * Plain English
   * Technical Definition
-* Understanding users
+* [Understanding users](https://mgadams.com/the-founders-guide-to-actually-understanding-users-c68feaecac44)
   * Generative user research: Discover the problems
   * Evaluative user testing: Evaluate possible solution \(low fidelity\)
   * Usability testing
