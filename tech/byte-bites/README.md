@@ -11,10 +11,10 @@ description: Bite size terms from byte world
     * Personal preference for a user
     * Availability of music in that geo
     * More than just the songs in the original playlist
-* [Fox-light vs Hedgehog-light](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life)
+* [Fox-light vs Hedgehog-light](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life) for problem solving
   * Fox light: Looking at the world from all sorts of different perspectives and applying lots of different mental models to get to your answer.
   * Hedgehog-light: You approach the world through your one big idea/thesis. Generally, this doesn't work very well.
-* [OODA loop](https://en.wikipedia.org/wiki/OODA_loop)
+* [OODA loop](https://en.wikipedia.org/wiki/OODA_loop) for decision making
   * Observe -&gt; Orient -&gt; Decide -&gt; Act
   * At times agility can overcome raw power
   * Machines have much faster OODA loops than humans
@@ -31,13 +31,13 @@ description: Bite size terms from byte world
   * Measure during run
     * Reliability: System uptime, test-suite coverage, chaos engineering
     * Thread safety: Important in distributed systems, information assimilation
-* OCEAN
+* OCEAN Personality Assessment
   * **O**pen to experiences
   * **C**onscientiousness
   * **E**xtroversion
   * **A**greeable
   * **N**eurotic
-* [Time Management](https://en.wikipedia.org/wiki/Time_management)
+* [Time Management](https://en.wikipedia.org/wiki/Time_management) methods
   * The Eisenhower Method
     * Important and Urgent
     * Important and Not Urgent
@@ -49,7 +49,7 @@ description: Bite size terms from byte world
     * **S**treamline things you may not like to do, but must do \(work and chores\)
     * **E**conomize things you should do or may even like to do, but they're not pressingly urgent \(pastimes and socializing\)
     * **C**ontribute by paying attention to a few remaining things that make a difference \(social obligations\)
-* Speech Settings
+* Speech settings for speaker
   * Volume
   * Pitch
   * Pace
