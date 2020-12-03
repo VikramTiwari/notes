@@ -57,12 +57,24 @@ description: Bite size terms from byte world
   * Inflection
   * Physical Expression
   * Facial Expression
-* [ADEPT Method](https://betterexplained.com/articles/adept-method/)
+* [ADEPT Method](https://betterexplained.com/articles/adept-method/) for communicating ideas and concepts
   * Analogy
   * Diagram
   * Example
   * Plain English
   * Technical Definition
+* Understanding users
+  * Generative user research: Discover the problems
+  * Evaluative user testing: Evaluate possible solution \(low fidelity\)
+  * Usability testing
+    * Expectation \(about what will happen\)
+    * Reaction \(to what happens\)
+    * Reflection \(on the difference between 1 and 2\)
+  * Continuous data-driven discovery
+    * user generated events
+    * talking to users for delights, frustrations, what's there, what works, what's missing
+    * shared with everyone in team
+    * shared annotated video notes
 
 
 

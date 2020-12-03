@@ -138,6 +138,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Slaughterhouse Five
 * Joe Haldeman
   * The Forever War
+* Neal Stephenson
+  * Snow Crash
 
 **Non Fiction**
 
@@ -170,5 +172,5 @@ Fiction
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
 * The War of the World by H. G. Wells
-* Snow Crash by Neal Stephenson
+* The Mote in God's Eye by Jerry Pournelle and Lary Niven
 
