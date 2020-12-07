@@ -140,6 +140,8 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Forever War
 * Neal Stephenson
   * Snow Crash
+* Jerry Pournelle and Larry Niven
+  * The Mote in God's Eye
 
 **Non Fiction**
 
@@ -172,5 +174,5 @@ Fiction
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
 * The War of the World by H. G. Wells
-* The Mote in God's Eye by Jerry Pournelle and Lary Niven
+* The Martian Chronicles by Ray Bradbury
 
