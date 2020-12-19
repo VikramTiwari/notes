@@ -95,53 +95,59 @@ description: 'Books that I have read or I am reading/listening, in no particular
 2020
 
 * Orson Scott Card
-  * Ender's Game
+  * Ender's Game \(1985\)
+  * Speaker for the Dead \(1986\)
 * Isaac Asimov
-  * Foundation
-  * Foundation and Empire
-  * Second Foundation
-  * Foundation's Edge
-  * Foundation and Earth
-  * I, Robots
+  * Foundation \(1951\)
+  * Foundation and Empire \(1952\)
+  * Second Foundation \(1953\)
+  * Foundation's Edge \(1981\)
+  * Foundation and Earth \(1986\)
+  * I, Robots \(1950\)
 * Douglas Adams
-  * The hitchhiker's guide to the galaxy
+  * Hitchhiker's Guide to the Galaxy \(1979\)
 * George Orwell
-  * 1984
+  * 1984 \(1949\)
 * Robert A. Heinlein
-  * Stranger in a strange land
-  * Starship Troopers
-  * The Moon is a Harsh Mistress
+  * Stranger in a strange land \(1961\)
+  * Starship Troopers \(1959\)
+  * The Moon is a Harsh Mistress \(1966\)
 * Frank Herbert
-  * Dune
+  * Dune \(1965\)
 * Franz Kafka
-  * The Metamorphosis
+  * The Metamorphosis \(1915\)
 * Neil Gaiman
-  * The Sandman
-  * Norse Mythology
-  * American Gods
+  * The Sandman \(1989-present\)
+  * Norse Mythology \(2017\)
+  * American Gods \(2001\)
 * William Gibson
-  * Neuromancer
+  * Neuromancer \(1984\)
 * Philip K Dick
-  * Do Androids Dream of Electric Sheep
+  * Do Androids Dream of Electric Sheep \(1968\)
+  * The Man in the High Castle \(1962\)
 * Paulo Coelho
-  * The Alchemist
+  * The Alchemist \(1988\)
 * Arthur C. Clarke
-  * Rendezvous with Rama
-  * Childhood's End
+  * Rendezvous with Rama \(1973\)
+  * Childhood's End \(1954\)
 * Dan Simmons
-  * Hyperion
+  * Hyperion \(1989\)
 * Aldous Huxley
-  * Brave New World
+  * Brave New World \(1932\)
 * H. G. Wells
-  * The Time Machine
+  * The Time Machine \(1895\)
 * Kurt Vonnegut
-  * Slaughterhouse Five
+  * Slaughterhouse Five \(1969\)
 * Joe Haldeman
-  * The Forever War
+  * The Forever War \(1974\)
 * Neal Stephenson
-  * Snow Crash
+  * Snow Crash \(1992\)
 * Jerry Pournelle and Larry Niven
-  * The Mote in God's Eye
+  * The Mote in God's Eye \(1975\)
+* Ray Bradbury
+  * The Martian Chronicles \(1950\)
+* Ursula K Le Guin
+  * The Left Hand of Darkness \(1969\)
 
 **Non Fiction**
 
@@ -173,6 +179,4 @@ Fiction
 
 * Emma by Jane Austen
 * David Copperfield by Charles Dickens
-* The War of the World by H. G. Wells
-* The Martian Chronicles by Ray Bradbury
 
