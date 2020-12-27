@@ -104,6 +104,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Foundation's Edge \(1981\)
   * Foundation and Earth \(1986\)
   * I, Robots \(1950\)
+  * The Caves of Steel \(1954\)
 * Douglas Adams
   * Hitchhiker's Guide to the Galaxy \(1979\)
 * George Orwell
@@ -148,6 +149,10 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * The Martian Chronicles \(1950\)
 * Ursula K Le Guin
   * The Left Hand of Darkness \(1969\)
+* Alfred Bester
+  * The Stars My Destination \(1956\)
+* Frederik Pohl
+  * Gateway \(1977\)
 
 **Non Fiction**
 
