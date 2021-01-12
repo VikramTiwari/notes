@@ -28,4 +28,5 @@
 * [Books](all/books.md)
 * [Activities](all/activities.md)
 * [Explore](all/explore.md)
+* [Trusted Services](all/trusted-services.md)
 
