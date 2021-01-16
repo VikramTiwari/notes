@@ -154,6 +154,17 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * Frederik Pohl
   * Gateway \(1977\)
 
+2021
+
+* Roger Zelazny
+  * Lord of Light \(1967\)
+* Jules Verne
+  * 20,000 Leagues Under the Sea \(1870\)
+* Lem Stanislaw
+  * Solaris \(1961\)
+* Neil Gaiman
+  * Neverwhere \(2008\)
+
 **Non Fiction**
 
 * The Passionate Programmer by Chad Fowler
