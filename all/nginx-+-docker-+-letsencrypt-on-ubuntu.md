@@ -112,11 +112,8 @@ Now use your IP address to create a "**A**" type DNS record on your provider. As
 ## Setup LetsEncrypt
 
 ```text
-# add repository
-sudo add-apt-repository ppa:certbot/certbot
-
-# install certbot
-sudo apt install python-certbot-nginx
+# install certbot and nginx plugin
+sudo apt install certbot python3-certbot-nginx
 
 # get certificates
 sudo certbot --nginx -d vikramtiwari.com -d www.vikramtiwari.com
