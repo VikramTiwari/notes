@@ -75,6 +75,12 @@ description: Bite size terms from byte world
     * talking to users for delights, frustrations, what's there, what works, what's missing
     * shared with everyone in team
     * shared annotated video notes
+* [Batching Tasks in Functions](https://thinkingthrough.substack.com/p/context-switching-cost-more-than)
+  * Easy batching: Mental vs Physical tasks
+  * Complex batching: Write Code, Review PR, Respond to Email
+  * Why batching
+    * Makes the context switching cost minimal and enables multitasking
+    * Example: Listening to podcast while walking
 
 
 
