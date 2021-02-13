@@ -171,6 +171,14 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * A Wrinkle in Time \(1962\)
 * Michael Crichton
   * The Andromeda Strain \(1969\)
+* Richard F. Weyand
+  * Empire: Reformer \(2018\)
+  * Empire: Usurper \(2019\)
+  * Empire: Tyrant \(2019\)
+* Issac Asimov:
+  * The Gods Themselves \(1972\)
+* Vernor Vinge
+  * A Fire Upon The Deep \(1991\)
 
 **Non Fiction**
 
