@@ -16,6 +16,39 @@ const referrer = urlParams.get('referrer') // google
 const sizes = urlParams.getAll('sizes') // ['small', 'medium']
 ```
 
+DOM Manipulation methods
+
+```javascript
+/**
+ * get an element DOM node from xpath
+ * 
+ * @param {string} path
+ * @returns {HTMLElement}
+ */
+function getElementByXpath(path) {
+  return document.evaluate(
+    path,
+    document,
+    null,
+    XPathResult.FIRST_ORDERED_NODE_TYPE,
+    null
+  ).singleNodeValue;
+}
+
+/** 
+ * Query Selectors
+ */
+let node 
+// by id
+node = document.querySelector(`#id`)
+// by class
+node = document.querySelector(`.class`)
+// by property of an element
+node = document.querySelector(`[aria-label="Search"]`)
+// by DOM path
+node = document.querySelector(`#body > div#id > p.class`)
+```
+
 Bash commands
 
 ```bash
