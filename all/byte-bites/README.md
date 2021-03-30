@@ -81,6 +81,9 @@ description: Bite size terms from byte world
   * Why batching
     * Makes the context switching cost minimal and enables multitasking
     * Example: Listening to podcast while walking
+* [Poka-Yoke](https://en.wikipedia.org/wiki/Poka-yoke)
+  * It’s a Japanese term that roughly translates to “mistake-proofing” or “avoiding an unthinkably bad move.”
+  * Poka-Yoke is a streamlined process to prevent incorrect usage by a user.
 
 
 
