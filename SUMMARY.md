@@ -23,6 +23,7 @@
 * [Design Resources](all/design-resources.md)
 * [Practices for debugging](all/practices-for-debugging.md)
 * [Byte Bites](all/byte-bites/README.md)
+  * [Better Conversations](all/byte-bites/better-conversations.md)
   * [How to decide](all/byte-bites/how-to-decide-convey-vs-convince-and-more.md)
 * [Speaking and writing Tips](all/speaker-tips.md)
 * [Social](all/social.md)
