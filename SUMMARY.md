@@ -15,7 +15,6 @@
 * [TensorFlow](all/tensorflow.md)
 * [Nginx + Docker + Let'sEncrypt on Ubuntu](all/nginx-+-docker-+-letsencrypt-on-ubuntu.md)
 * [Google Cloud](all/google-cloud.md)
-* [MediaWiki Pages](all/mediawiki-pages.md)
 * [Docker and Kubernetes](all/docker.md)
 * [Another way to put it](all/another-way-to-put-it.md)
 * [Databases](all/databases.md)

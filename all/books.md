@@ -165,6 +165,7 @@ description: 'Books that I have read or I am reading/listening, in no particular
 * Neil Gaiman
   * Neverwhere \(2008\)
   * Anansi Boys \(2005\)
+  * Trigger Warning and Other short stories
 *  Carl Sagan
   * Contact \(1985\)
 * Madelein L'Engle
@@ -177,8 +178,23 @@ description: 'Books that I have read or I am reading/listening, in no particular
   * Empire: Tyrant \(2019\)
 * Issac Asimov:
   * The Gods Themselves \(1972\)
+  * The End of Eternity \(1955\)
 * Vernor Vinge
   * A Fire Upon The Deep \(1991\)
+* John Wyndham
+  * The Day of the Triffids \(1951\)
+* Philip K Dick
+  * UBIK \(1969\)
+* Robert A Heinlein
+  * Time Enough for Love \(1973\)
+* Anthony Burgess
+  * A Clockwork Orange \(1962\)
+* Kim Stanley Robinson
+  * Red Mars \(1992\)
+* Walter M Miller
+  * A Canticle for Leibowitz \(1959\)
+* L Ron Hubbard
+  * Battlefield Earth \(1982\)
 
 **Non Fiction**
 
