@@ -19,6 +19,7 @@
 * [Another way to put it](all/another-way-to-put-it.md)
 * [Databases](all/databases.md)
 * [Help me!](all/help-me.md)
+* [Website Testing Tools](all/website-testing-tools.md)
 * [Design Resources](all/design-resources.md)
 * [Practices for debugging](all/practices-for-debugging.md)
 * [Byte Bites](all/byte-bites/README.md)
