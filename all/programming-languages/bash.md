@@ -115,6 +115,13 @@ sudo find / -name 'secret.txt'
 sudo find . -name "*.bak" -delete
 ```
 {% endtab %}
+
+{% tab title="git.sh" %}
+```bash
+# delete all local branches except main, master and develop
+git branch | grep -v "main" | grep -v "master" | grep -v "develop" | xargs git branch -D
+```
+{% endtab %}
 {% endtabs %}
 
 Virtual Screen
