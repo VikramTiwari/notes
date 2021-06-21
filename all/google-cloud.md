@@ -40,12 +40,20 @@ gcloud docker -- pull gcr.io/ivikramtiwari/website:latest
 # docker
 ```
 
-More commands for quick usage
+VMs
 
+{% tabs %}
+{% tab title="Copy data from VM to Local" %}
 ```bash
 # copy files from a VM to local
 gcloud compute scp --recurse my-vm://home/vikramtheone1/my-files/ ./ --zone=us-central1-b
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 BigQuery
 
