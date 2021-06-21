@@ -47,3 +47,20 @@ More commands for quick usage
 gcloud compute scp --recurse my-vm://home/vikramtheone1/my-files/ ./ --zone=us-central1-b
 ```
 
+BigQuery
+
+{% tabs %}
+{% tab title="De-dupe complete table" %}
+```bash
+# this will de-deup data based on all rows matching each other
+CREATE OR REPLACE TABLE `project.dataset.table`
+PARTITION BY timestamp
+AS SELECT DISTINCT * FROM `project.dataset.table`
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
