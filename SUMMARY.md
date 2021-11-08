@@ -26,10 +26,10 @@
   * [Software Development Waste](all/byte-bites/software-development-waste.md)
   * [Better Conversations](all/byte-bites/better-conversations.md)
   * [How to decide](all/byte-bites/how-to-decide-convey-vs-convince-and-more.md)
+  * [Effective delegation](all/byte-bites/effective-delegation.md)
 * [Speaking and writing Tips](all/speaker-tips.md)
 * [Social](all/social.md)
 * [Books](all/books.md)
 * [Activities](all/activities.md)
 * [Explore](all/explore.md)
 * [Trusted Services](all/trusted-services.md)
-
