@@ -244,7 +244,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 * Julian May
   * The Many-Colored Land (1981)
 * E E 'Doc' Smith
-  * Gray Lensman
+  * Gray Lensman (1940)
 
 ****
 
