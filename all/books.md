@@ -264,6 +264,10 @@ description: Books that I have read or I am reading/listening, in no particular 
 * Outliers by Malcom Gladwell
 * Leaders eat last by Simon Sinek
 * Solving the procrastination puzzle by Timothy A. Pychyl
+* A Short History of Nearly Everything by Billy Bryson
+* Humble Pi: A Comedy of Maths Errors by Matt Parker
+* Influence: Science and Practice by Robert Cialdini
+* Thinking, Fast and Slow by Daniel Kahneman
 
 
 
@@ -271,10 +275,8 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* Measure what matters by John Doerr
-* The Manager's Path by Camille Fournier
-* Homo Deus by Yuval Noah Harari
-* Principles by Ray Dalio
+* Maps of Meaning by Jordan Peterson
+* Trillion Dollar Coach by Alan Eagle, Eric Schmidt and Jonathan Rosenberg
 
 Fiction
 
