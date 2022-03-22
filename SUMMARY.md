@@ -28,6 +28,7 @@
   * [How to decide](all/byte-bites/how-to-decide-convey-vs-convince-and-more.md)
   * [Effective delegation](all/byte-bites/effective-delegation.md)
   * [Important Statistical Ideas of Past 50 years](all/byte-bites/important-statistical-ideas-of-past-50-years.md)
+  * [9 Lines with all of Physics](all/byte-bites/9-lines-with-all-of-physics.md)
 * [Speaking and writing Tips](all/speaker-tips.md)
 * [Social](all/social.md)
 * [Books](all/books.md)
