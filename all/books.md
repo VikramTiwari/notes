@@ -268,6 +268,16 @@ description: Books that I have read or I am reading/listening, in no particular 
 * Humble Pi: A Comedy of Maths Errors by Matt Parker
 * Influence: Science and Practice by Robert Cialdini
 * Thinking, Fast and Slow by Daniel Kahneman
+* Maps of Meaning by Jordan B. Peterson
+* Trillion Dollar Coach by Alan Eagle, Eric Schmidt and Jonathan Rosenberg
+* Be Obsessed or Be Average by Grant Cardone
+* The Science of Rapid Skill Acquisition by Peter Hollins
+* The Innovators: How a group of Hackers, Geniuses, and Geeks created the digital revolution by Walter Isaacson
+* Shoe Dog by Phil Knight
+* The Hard Thing About Hard Things by Ben Horowitz
+* E=mc^2 A biography of the world's most famous equation by David Bodanis
+* Principles: Life and Work by Ray Dalio
+* Freakonomics by Stephen J. Dubner and Steven Levitt
 
 
 
@@ -275,10 +285,14 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* Maps of Meaning by Jordan Peterson
-* Trillion Dollar Coach by Alan Eagle, Eric Schmidt and Jonathan Rosenberg
+* Life Force: How New Breakthroughs in Precision Medicine Can Transform the Quality of Your Life & Those You Love by Peter Diamandis and Tony Robbins
+* Algorithms to Live By: The Computer Science of Human Decisions by Brian Christian
+* Stuff Matters: Exploring the Marvelous Materials That Shape Our Man-Made World by Mark Miodownik
+* The Idea Factory - Bell Labs and The Great Age of American Innovation by Jon Gertner
+* Zero To One by Blake Masters and Peter Thiel
+* How to Win Friends and Influence People by Dale Carnegie
+* The Universe in a Nutshell by Stephen Hawking
 
 Fiction
 
-* Emma by Jane Austen
-* David Copperfield by Charles Dickens
+* Discworld Series by Terry Pratchett
