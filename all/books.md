@@ -278,6 +278,13 @@ description: Books that I have read or I am reading/listening, in no particular 
 * E=mc^2 A biography of the world's most famous equation by David Bodanis
 * Principles: Life and Work by Ray Dalio
 * Freakonomics by Stephen J. Dubner and Steven Levitt
+* Life Force: How New Breakthroughs in Precision Medicine Can Transform the Quality of Your Life & Those You Love by Peter Diamandis and Tony Robbins
+* Algorithms to Live By: The Computer Science of Human Decisions by Brian Christian
+* Stuff Matters: Exploring the Marvelous Materials That Shape Our Man-Made World by Mark Miodownik
+* The Idea Factory - Bell Labs and The Great Age of American Innovation by Jon Gertner
+* Zero To One by Blake Masters and Peter Thiel
+* Titan - The life of John D. Rockefeller, Sr by Ron Chernow
+* The Universe in a Nutshell by Stephen Hawking
 
 
 
@@ -285,13 +292,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* Life Force: How New Breakthroughs in Precision Medicine Can Transform the Quality of Your Life & Those You Love by Peter Diamandis and Tony Robbins
-* Algorithms to Live By: The Computer Science of Human Decisions by Brian Christian
-* Stuff Matters: Exploring the Marvelous Materials That Shape Our Man-Made World by Mark Miodownik
-* The Idea Factory - Bell Labs and The Great Age of American Innovation by Jon Gertner
-* Zero To One by Blake Masters and Peter Thiel
 * How to Win Friends and Influence People by Dale Carnegie
-* The Universe in a Nutshell by Stephen Hawking
 
 Fiction
 
