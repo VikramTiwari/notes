@@ -285,6 +285,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 * Zero To One by Blake Masters and Peter Thiel
 * Titan - The life of John D. Rockefeller, Sr by Ron Chernow
 * The Universe in a Nutshell by Stephen Hawking
+* The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss Incredible Sex and Becoming Superhuman
 
 
 
@@ -292,7 +293,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss Incredible Sex and Becoming Superhuman
+* Can't Hurt Me: Master Your Mind and Defy the Odds by David Goggins
 * How to Win Friends and Influence People by Dale Carnegie
 
 Fiction
