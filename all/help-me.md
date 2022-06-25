@@ -4,8 +4,9 @@ description: Things that I would love some help with
 
 # Help me!
 
-* How to identify memory leaks in Python and write code that is free of such memory leaks
-* How to structure projects where multiple people can work independent of each other without causing friction.
-  * Possible Solutions
-    * use more micro-services based architecture
-
+* Build a healthy diet
+  * No sugar is my first step here
+* Get leaner
+  * I suck at skipping rope. Help me get to 100+ non-stop.
+* Reinforcement learning
+  * I am keen to use reinforcement learning for search space reduction. Not sure if it's possible even.

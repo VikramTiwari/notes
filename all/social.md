@@ -12,24 +12,25 @@ description: My social channels
 
 
 * My favorite meetup groups / communities
-  * [GDG Cloud SF](https://www.meetup.com/GDGCloudSF/) (organizer)
+  * [GDG Cloud SF](https://www.meetup.com/GDGCloudSF/) \(organizer\)
   * [GDG San Francisco](https://www.meetup.com/google-developer-group-san-francisco)
-  * [GDG Cloud Vancouver](https://www.meetup.com/gdgcloudvancouver/) (past organizer)
-  *
+  * [GDG Cloud Vancouver](https://www.meetup.com/gdgcloudvancouver/) \(past organizer\)
+  * 
 
 
 
 * Professional
   * [Linkedin](https://www.linkedin.com/in/vikramtiwari/)
   * [AngelList](https://angel.co/vikramtiwari)
-  * [Google Developers Expert](https://developers.google.com/community/experts/directory/profile/profile-vikram-tiwari)
+  * [Google Developers Expert](https://developers.google.com/experts/people/vikram-tiwari)
 
 
 
 * Personal
   * [Website](http://vikramtiwari.com/)
   * [Notes](https://notes.vikramtiwari.com)
-  * [Twitter](https://twitter.com/Vikram\_Tiwari)
+  * [Twitter](https://twitter.com/Vikram_Tiwari)
   * [Facebook](https://www.facebook.com/iVikramTiwari)
   * [Instagram](http://instagram.com/ivikramtiwari)
-  * [George's Instagram](https://www.instagram.com/the\_sirgeorge/)
+  * [George's Instagram](https://www.instagram.com/the_sirgeorge/)
+
