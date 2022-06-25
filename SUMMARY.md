@@ -9,7 +9,7 @@
   * [JS and Node.js](all/programming-languages/js-and-node.js.md)
   * [Regex](all/programming-languages/regex.md)
   * [Python](all/programming-languages/python.md)
-* [GitHub](all/github.md)
+* [Git/GitHub](all/github.md)
 * [Browsers](all/browsers.md)
 * [Blogs](all/blogs.md)
 * [TensorFlow](all/tensorflow.md)
