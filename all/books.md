@@ -13,7 +13,7 @@ Non Fiction
 
 Fiction
 
-* Discworld Series by Terry Pratchett
+* Discworld Series (19/41) by Terry Pratchett
 
 ## Read
 
