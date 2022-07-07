@@ -8,7 +8,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* Never Split the Difference: Negotiating as if your life depended on it by Chris Voss
+* Thinking in Bets: Making Smarter Decisions When You Don't Have All The Facts by Annie Duke
 * How to Win Friends and Influence People by Dale Carnegie
 
 Fiction
@@ -298,4 +298,6 @@ Fiction
 * The Universe in a Nutshell by Stephen Hawking
 * The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss Incredible Sex and Becoming Superhuman
 * Can't Hurt Me: Master Your Mind and Defy the Odds by David Goggins
+* Never Split the Difference: Negotiating as if your life depended on it by Chris Voss
+* Becoming Cliterate: Why Orgasm Equality Matters And How to Get It by Dr. Laurie Mintz
 
