@@ -8,7 +8,7 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 Non Fiction
 
-* Thinking in Bets: Making Smarter Decisions When You Don't Have All The Facts by Annie Duke
+*
 * How to Win Friends and Influence People by Dale Carnegie
 
 Fiction
@@ -300,4 +300,16 @@ Fiction
 * Can't Hurt Me: Master Your Mind and Defy the Odds by David Goggins
 * Never Split the Difference: Negotiating as if your life depended on it by Chris Voss
 * Becoming Cliterate: Why Orgasm Equality Matters And How to Get It by Dr. Laurie Mintz
+* Thinking in Bets: Making Smarter Decisions When You Don't Have All The Facts by Annie Duke
+* Attached: The New Science of Adult Attachment and How It Can Help YouFind - and Keep - Love by Amir Levine and Rachel Heller
+* Mating in Captivity: Unlocking Erotic Intelligence by Esther Perel
+* Hold Me Tight by Dr. Sue Johnson and Sandra Burr
+* The Man's Guide to Women: Scientifically Proven Secrets from the Love Lab About What Women Really Want by John Gottman
+* The 5 Love Languages: The Secret to Love that Lasts by Gary Chapman
+* Getting the Love You Want by Harville Hendrix
+* The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert by John Gottman Phd and Nan Silver
+* Man's Search for Meaning by Viktor Frankl
+* Nonviolent Communication: A Language of Life: Life-Changing Tools for Healthy Relationships by Marshall B. Rosenberg PhD and Deepak Chopra
+* Pleasure Activism: The Politics of Feeling Good by Adrienne Maree Brown
+* The Psychology of Money: Timeless lessons on wealth, greed, and happiness by Morgan Housel
 
