@@ -4,16 +4,16 @@ description: Books that I have read or I am reading/listening, in no particular 
 
 # Books
 
-## Reading
+## Now Reading
 
 Non Fiction
 
-*
+* The Pleasure of Finding Things Out: The Best Short Works of Richard P. Feynman by Richard P. Feynman
 * How to Win Friends and Influence People by Dale Carnegie
 
 Fiction
 
-* Discworld Series (19/41) by Terry Pratchett
+* Discworld Series (37/41) by Terry Pratchett
 
 ## Read
 
@@ -312,4 +312,6 @@ Fiction
 * Nonviolent Communication: A Language of Life: Life-Changing Tools for Healthy Relationships by Marshall B. Rosenberg PhD and Deepak Chopra
 * Pleasure Activism: The Politics of Feeling Good by Adrienne Maree Brown
 * The Psychology of Money: Timeless lessons on wealth, greed, and happiness by Morgan Housel
+* Is Paris Burning? by Dominique Lapierre and Larry Collins
+* A Man Called Ove by Fredrik Backman
 
