@@ -60,6 +60,8 @@ Usage stats
 
 ```
 {
+    "totalCPUs": 12, // Total number of cores, real or virtual
+    "processArchitecture": "x64", // process architecture for the CPU
     "cpu": {
         "percentCPUUsage": 1.0680278390927143, // Percentage of CPU used since the last call to getCPUUsage. First call returns 0
         "idleWakeupsPerSecond": 29 // The number of average idle CPI wakeups per second since the last call to getCPUUsage. First call returns 0. Will always return 0 on windows since it's a mac only optimization.
