@@ -54,6 +54,15 @@ Bash commands
 ```bash
 # use a specific branch as a nodejs package
 npm i VikramTiwari/tools#v1
+
+# rebuild packages for electron
+npm install --save-dev @electron/rebuild
+${npm bin}/electron-rebuild -f -w <ModuleName>
+# or in scripts for pacakge.json
+{
+  "rebuild": "electron-rebuild -f -w <ModuleName>"
+}
+
 ```
 
 Usage stats
