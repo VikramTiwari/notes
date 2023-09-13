@@ -23,3 +23,7 @@ description: >-
 15. Questions: Ask the right questions.
 16. Enjoyment: Enjoy yourself with a budget for pleasure.
 17. When in doubt... Whenever you're in doubt about a course of action, it is always better to err on the side of safety.
+
+**The rule of life**
+
+The rules of safe investing are little different from the rules of life: recognize that you live in an uncertain world, don't expect the impossible, and don't trust strangers. If you apply to your investments the same realistic attitude that produced your present wealth, you needn't feat that you'll ever go broke.
