@@ -30,6 +30,7 @@
   * [Important Statistical Ideas of Past 50 years](all/byte-bites/important-statistical-ideas-of-past-50-years.md)
   * [9 Lines with all of Physics](all/byte-bites/9-lines-with-all-of-physics.md)
   * [Akin's Laws of Spacecraft Design](all/byte-bites/akins-laws-of-spacecraft-design.md)
+  * [Harry Browne's 17 Golden Rules of Financial Safety](all/byte-bites/harry-brownes-17-golden-rules-of-financial-safety.md)
 * [Speaking and writing Tips](all/speaker-tips.md)
 * [Social](all/social.md)
 * [Books](all/books.md)
