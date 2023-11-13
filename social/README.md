@@ -5,6 +5,7 @@ description: My social channels
 # Social
 
 * Tech
+  * [g.dev](https://g.dev/vik)
   * [GitHub](https://github.com/VikramTiwari)
   * [Kaggle](https://kaggle.com/vikramtiwari)
   * [StackOverflow](https://stackoverflow.com/users/1724300/vikram-tiwari)
@@ -15,7 +16,6 @@ description: My social channels
   * [GDG Cloud SF](https://www.meetup.com/GDGCloudSF/) (organizer)
   * [GDG San Francisco](https://www.meetup.com/google-developer-group-san-francisco)
   * [GDG Cloud Vancouver](https://www.meetup.com/gdgcloudvancouver/) (past organizer)
-  *
 
 
 
