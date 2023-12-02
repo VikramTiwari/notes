@@ -15,6 +15,7 @@
   * [9 Lines with all of Physics](byte-bites/9-lines-with-all-of-physics.md)
   * [Akin's Laws of Spacecraft Design](byte-bites/akins-laws-of-spacecraft-design.md)
   * [Harry Browne's 17 Golden Rules of Financial Safety](byte-bites/harry-brownes-17-golden-rules-of-financial-safety.md)
+  * [Code lifecycle](byte-bites/code-lifecycle.md)
 * [Notes](notes/README.md)
   * [TensorFlow](notes/tensorflow.md)
   * [Programming Languages](notes/programming-languages/README.md)
