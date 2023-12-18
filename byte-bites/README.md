@@ -14,8 +14,8 @@ description: Bite size terms from byte world
 * [Fox-light vs Hedgehog-light](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life) for problem solving
   * Fox light: Looking at the world from all sorts of different perspectives and applying lots of different mental models to get to your answer.
   * Hedgehog-light: You approach the world through your one big idea/thesis. Generally, this doesn't work very well.
-* [OODA loop](https://en.wikipedia.org/wiki/OODA_loop) for decision making
-  * Observe -&gt; Orient -&gt; Decide -&gt; Act
+* [OODA loop](https://en.wikipedia.org/wiki/OODA\_loop) for decision making
+  * Observe -> Orient -> Decide -> Act
   * At times agility can overcome raw power
   * Machines have much faster OODA loops than humans
 * 1way vs 2way door decisions
@@ -37,7 +37,7 @@ description: Bite size terms from byte world
   * **E**xtroversion
   * **A**greeable
   * **N**eurotic
-* [Time Management](https://en.wikipedia.org/wiki/Time_management) methods
+* [Time Management](https://en.wikipedia.org/wiki/Time\_management) methods
   * The Eisenhower Method
     * Important and Urgent
     * Important and Not Urgent
@@ -45,10 +45,10 @@ description: Bite size terms from byte world
     * Not Important and Not Urgent
   * POSEC method
     * **P**rioritize your time and define your life by goals
-    * **O**rganize things you have to accomplish regularly to be successful \(family, friends and finances\)
-    * **S**treamline things you may not like to do, but must do \(work and chores\)
-    * **E**conomize things you should do or may even like to do, but they're not pressingly urgent \(pastimes and socializing\)
-    * **C**ontribute by paying attention to a few remaining things that make a difference \(social obligations\)
+    * **O**rganize things you have to accomplish regularly to be successful (family, friends and finances)
+    * **S**treamline things you may not like to do, but must do (work and chores)
+    * **E**conomize things you should do or may even like to do, but they're not pressingly urgent (pastimes and socializing)
+    * **C**ontribute by paying attention to a few remaining things that make a difference (social obligations)
 * Speech settings for speaker
   * Volume
   * Pitch
@@ -65,11 +65,11 @@ description: Bite size terms from byte world
   * Technical Definition
 * [Understanding users](https://mgadams.com/the-founders-guide-to-actually-understanding-users-c68feaecac44)
   * Generative user research: Discover the problems
-  * Evaluative user testing: Evaluate possible solution \(low fidelity\)
+  * Evaluative user testing: Evaluate possible solution (low fidelity)
   * Usability testing
-    * Expectation \(about what will happen\)
-    * Reaction \(to what happens\)
-    * Reflection \(on the difference between 1 and 2\)
+    * Expectation (about what will happen)
+    * Reaction (to what happens)
+    * Reflection (on the difference between 1 and 2)
   * Continuous data-driven discovery
     * user generated events
     * talking to users for delights, frustrations, what's there, what works, what's missing
@@ -84,6 +84,8 @@ description: Bite size terms from byte world
 * [Poka-Yoke](https://en.wikipedia.org/wiki/Poka-yoke)
   * It’s a Japanese term that roughly translates to “mistake-proofing” or “avoiding an unthinkably bad move.”
   * Poka-Yoke is a streamlined process to prevent incorrect usage by a user.
-
-
+* [Chestertons Fence](https://fs.blog/chestertons-fence/)
+  * There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, “I don’t see the use of this; let us clear it away.” To which the more intelligent type of reformer will do well to answer: “If you don’t see the use of it, I certainly won’t let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.”
+  * Unless we know why someone made a decision, we can’t safely change it or conclude that they were wrong.
+  * The first step before modifying an aspect of a system is to understand it. Observe it in full. Note how it interconnects with other aspects, including ones that might not be linked to you personally. Learn how it works, and then propose your change.
 
