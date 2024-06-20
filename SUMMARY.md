@@ -16,6 +16,7 @@
   * [Akin's Laws of Spacecraft Design](byte-bites/akins-laws-of-spacecraft-design.md)
   * [Harry Browne's 17 Golden Rules of Financial Safety](byte-bites/harry-brownes-17-golden-rules-of-financial-safety.md)
   * [Code lifecycle](byte-bites/code-lifecycle.md)
+  * [Experts vs Imitators](byte-bites/experts-vs-imitators.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)
