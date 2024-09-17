@@ -7,6 +7,7 @@
 ***
 
 * [Byte Bites](byte-bites/README.md)
+  * [Be a thermostat, not a thermometer](byte-bites/be-a-thermostat-not-a-thermometer.md)
   * [Software Development Waste](byte-bites/software-development-waste.md)
   * [Better Conversations](byte-bites/better-conversations.md)
   * [How to decide](byte-bites/how-to-decide-convey-vs-convince-and-more.md)
