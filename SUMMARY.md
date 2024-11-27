@@ -7,6 +7,7 @@
 ***
 
 * [Byte Bites](byte-bites/README.md)
+  * [What happens in the mind's eye](byte-bites/what-happens-in-the-minds-eye.md)
   * [Be a thermostat, not a thermometer](byte-bites/be-a-thermostat-not-a-thermometer.md)
   * [Software Development Waste](byte-bites/software-development-waste.md)
   * [Better Conversations](byte-bites/better-conversations.md)
@@ -18,6 +19,7 @@
   * [Harry Browne's 17 Golden Rules of Financial Safety](byte-bites/harry-brownes-17-golden-rules-of-financial-safety.md)
   * [Code lifecycle](byte-bites/code-lifecycle.md)
   * [Experts vs Imitators](byte-bites/experts-vs-imitators.md)
+  * [Giving feedback](byte-bites/giving-feedback.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)
