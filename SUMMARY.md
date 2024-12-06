@@ -20,6 +20,7 @@
   * [Code lifecycle](byte-bites/code-lifecycle.md)
   * [Experts vs Imitators](byte-bites/experts-vs-imitators.md)
   * [Giving feedback](byte-bites/giving-feedback.md)
+  * [Technical Documentation Authoring](byte-bites/technical-documentation-authoring.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)
