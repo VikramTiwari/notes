@@ -8,7 +8,7 @@ description: >-
 
 Agents Series
 
-* Taking Flight with AI Agents: A walkthrough with Google's new Agent Development Kit
+* [Taking Flight with AI Agents: A walkthrough with Google's new Agent Development Kit](https://notes.vikramtiwari.com/generative-ai-universe/taking-flight-with-ai-agents)
 * Coming soon!: Evaluating the evaluators - A walkthrough the landscape of evaluating LLM agents
 
 RAG Series
