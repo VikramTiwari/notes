@@ -42,6 +42,8 @@
   * [Website Testing Tools](notes/website-testing-tools.md)
   * [Design Resources](notes/design-resources.md)
   * [Trusted Services](notes/trusted-services.md)
+* [Generative AI Universe](generative-ai-universe/README.md)
+  * [Taking Flight with AI Agents](generative-ai-universe/taking-flight-with-ai-agents.md)
 * [Community](activities/README.md)
   * [Speaking and writing Tips](activities/speaker-tips.md)
 * [Social](social/README.md)
