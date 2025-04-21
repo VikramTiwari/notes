@@ -26,7 +26,7 @@ Now that we have confirmation that the model can recognize and extract bird name
 
 The goal of this tool is to provide factual information about birds, to our agent. The agent can then use this information to answer the user's question. We could pass in the complete dataset for all the birds to our model, on each user query. However, for our use case, a simpler lookup method would be much more economical to get information about one bird at a time.
 
-Note, passing in complete documents has it's advantages especially when it's a non-structured document and parts of the text might correlate with each other.
+Note: Passing in complete documents has it's advantages especially when it's a non-structured document and parts of the text might correlate with each other.
 
 #### Tools for the Agents to talk "Bird"
 
@@ -54,10 +54,10 @@ As a developer, I am too close to the agent and thus my testing isn't really a g
 
 I considered using Twilio to allow friends to text to my bot. However, my hobby projects have a habit of being forgotten until I am hit with a sudden bill of hundreds of \$$. I decided against using Twilio and turned to Telegram which offers a bot API. I ended up building a telegram bot that I could serve from my machine.
 
-Lo and behold, as soon as gave my friends access to this bot, their testing revealed a few things:
+Lo and behold, as soon as I gave my friends access to this bot, their testing revealed a few things:
 
 * Most people don't know the name of most birds. They generally see a bird and want to know more facts about it.
-  * I am taking this as a feature request where the next sub-agent I will be building, will take in an image sent by the user to first identify the bird, retrieve it's factual information and respond back to the user.
+  * I am taking this as a feature request for a new sub-agent. It will take in an image sent by the user and try to identify the bird in that image.
 * Even when folks know the bird names, the way they ask the questions can cause Gemini Flash Lite, to not find the correct bird name and thus fail often.
   * I ended up upgrading the model to `gemini-2.0-flash` . This instantly improved the accuracy of identifying bird names. I am sure I can get there by tuning the prompt for Gemini Flash Lite model as well. More on this in the evaluation process.
 
