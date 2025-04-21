@@ -52,7 +52,7 @@ Here's a peek at how the agent might respond when asked about a bird or it's spe
 
 As a developer, I am too close to the agent and thus my testing isn't really a good indication of real world use cases. I wanted to do some actual user testing to get a good gauge of where my agent is falling short. ADK is great for local development, and it has tools to deploy your agents to Google Cloud in a production environment. However, I wanted a more simpler setup. As much as I like my friends, I didn't want to host a party just to try out this agent.
 
-I considered using Twilio to allow friends to text to my bot. However, my hobby projects have a habit of being forgotten until I am hit with a sudden bill of hundreds of \$$. I decided against using Twilio and turned to Telegram which offers a bot API. I ended up building a telegram bot that I could serve from my machine.
+I considered using Twilio to allow friends to text to my bot. However, my hobby projects have a habit of being forgotten until I am hit with a sudden bill of hundreds of \$$. I decided against using Twilio and turned to Telegram which offers a bot API. I ended up building a Telegram bot that I could serve from my machine.
 
 Lo and behold, as soon as I gave my friends access to this bot, their testing revealed a few things:
 
@@ -71,7 +71,7 @@ Please excuse my slow typing and enjoy some birdsongs as background music
 
 #### A note on agent's "Memory"
 
-One interesting tidbit here. This whole conversation is maintained with an in-memory session for the user. We are using telegram's user and chat session as identifiers here to distinguish between different users and their different conversation sessions.
+One interesting tidbit here. This whole conversation is maintained with an in-memory session for the user. We are using Telegram's user identifier and chat session identifier to distinguish between different users and their different conversation sessions.
 
 This concept of memory for agents is becoming more and more crucial to make agents more personalized. This allows agents to refer back to the previous messages in the conversation and pick it back up from where a user left it off last. Developers are starting to distill the information from the user's conversations to form arbitrary user preferences, which can be used in future conversations for a more personalized results.
 
@@ -81,9 +81,9 @@ ADK provides more ways to store and retrieve session information. In-memory is g
 
 When Google released agent development kit at Google Cloud Next, I ended up chasing down some folks at the expo floor to talk more about evaluating these agents. I have been working on evaluating retrieval and agentic systems for a bit and I was very curious about how folks at Google were thinking about it. I will write a standalone blogpost about evaluations very soon.
 
-In the meantime, I was pleasatnly surprised by how easy ADK team made it to create an evaluate your AI agents. I started with creating a new session on the ADK web UI. Conversed with my agent. And with a click of a button, I was able to use conversation from that session to build my first evaluation dataset.
+In the meantime, I was pleasantly surprised by how easy the ADK team made it to create and evaluate your AI agents. I started with creating a new session on the ADK web UI. Conversed with my agent. And with a click of a button, I was able to use a conversation session to build my first evaluation dataset.
 
-With a little bit of more tooling, it was easy to run `pytest` to evaluate my Agent across real conversations. Remember, your agent is only as good as it's evaluations. You will be surprised to find what your agent can and can-not do. Evaluations are a great place to track them and consistenly improve.
+With a little bit of more tooling, it was easy to run `pytest` to evaluate my agent across real conversations. Remember, your agent is only as good as it's evaluations. You will be surprised to find what your agent can and can-not do. Evaluations are a great place to track them and consistently improve.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-04-20 at 6.53.12 PM.png" alt=""><figcaption><p>Adding a new evaluation is as easy as clicking a few buttons and ADK takes care of the rest for you.</p></figcaption></figure>
 
@@ -91,7 +91,7 @@ With a little bit of more tooling, it was easy to run `pytest` to evaluate my Ag
 
 This is just the beginning for the Wingspan Agent! There are so many more possibilities:
 
-* Adding more bird species and their factual information. The dataset doesn't contain birds from Asia. I would also love to add bird call audio snippets. Are you even a birdwatcher if you can't recognize a bird from it's call.
+* Adding more bird species and their factual information. The dataset doesn't contain birds from Asia. I would also love to add bird call audio snippets. Are you even a birdwatcher if you can't recognize a bird from it's call?
 * Adding image recognition capabilities so that you can just snap a photo and get the bird information. Does it give Pokémon vibes?
 * Quizzes, generating collectible cards, ...
 
