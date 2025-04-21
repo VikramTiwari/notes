@@ -4,7 +4,7 @@ description: Building the Wingspan Agent, your feathered friend finder!
 
 # Taking Flight with AI Agents
 
-Have you ever been strolling through a park, heard a distinct chirp, or spotted a flash of vibrant color flit past, and thought, "Wow, what bird _is_ that?" Me too! My strolls along the San Francisco piers often make me pause and stare in wonder. However, identifying my feathered visitors usually involves frantic googling or flipping through dense field guides.
+Have you ever been strolling through a park, heard a distinct chirp, or spotted a flash of vibrant color flit past, and thought, "Wow, what bird _is_ that?" Me too! My strolls along San Francisco's piers often make me pause and stare in wonder. However, identifying my feathered visitors usually involves frantic googling or flipping through dense field guides.
 
 Wouldn't it be cool if learning about birds was as simple as... just asking?
 
@@ -18,13 +18,15 @@ My goal was simple: create an agent you could chat with to get quick facts about
 
 Enter [Google's Agent Development Kit (ADK)](https://google.github.io/adk-docs/). I'd been keen to try it out, and this seemed like the perfect project. The ADK promises to simplify building sophisticated AI agents, providing tools and frameworks to handle various tasks that are part of building an AI agent.
 
-To get started, I wanted to create a proof-of-concept and understand cost mechanics. First challenge, Identify bird names in a conversation. I started with the goal of identifying the smallest (thus fastest and cheapest model) in the Gemini family of models for this task. [AI Studio](https://aistudio.google.com/) is the best place for these proof-of-concepts since it allows you to play around with different models and their configurations to find a good fit. Very quickly, I found out that Gemini Flash Lite was good at identifying the bird names. It's also the smallest and the fasted model in the 2.0 series of Gemini models.
+To get started, I wanted to create a proof-of-concept and understand cost mechanics. First challenge, identify bird names in a conversation. I started with the goal of identifying the smallest (thus fastest and cheapest model) in the Gemini family of models for this task. [AI Studio](https://aistudio.google.com/) is the best place for these proof-of-concepts since it allows you to play around with different models and their configurations to find a good fit. Very quickly, I found out that Gemini Flash Lite was good at identifying the bird names. It's also the smallest and the fasted model in the 2.0 series of Gemini models.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-04-20 at 5.34.26 PM.png" alt=""><figcaption><p>AI Studio Screenshot for the initial exploration</p></figcaption></figure>
 
-Now that we have the bird names, next step was to gather the bird knowledge. For this sample agent, I focused on sourcing key information like common names, scientific names, wing span and habitat. Sourcing and structuring this data was a mini-adventure in itself! This is where the [Wingspan game](https://stonemaiergames.com/games/wingspan/)'s data sheet was very helpful. If you are a bird enthusiast, this board game is a must have!
+Now that we have confirmation that the model can recognize and extract bird names from conversations, next step is to gather factual information about these birds. For this sample agent, I focused on sourcing key information like common names, scientific names, wing span and habitat. Sourcing and structuring this data was a mini-adventure in itself! This is where the [Wingspan game](https://stonemaiergames.com/games/wingspan/)'s data sheet was very helpful. If you are a bird enthusiast, this board game is a must have!
 
-Now, we could try to pass in the complete datasheet of all the birds, to our model, on each user query. And this approach has it's advantages, especially when there are parts of the document that might correlate to each other, contain instructions etc. However, for our use case, a simpler method would be much more economical. Let's build a tool to get the minimal information needed to answer user's question.
+The goal of this tool is to provide factual information about birds, to our agent. The agent can then use this information to answer the user's question. We could pass in the complete dataset for all the birds to our model, on each user query. However, for our use case, a simpler lookup method would be much more economical to get information about one bird at a time.
+
+Note, passing in complete documents has it's advantages especially when it's a non-structured document and parts of the text might correlate with each other.
 
 #### Tools for the Agents to talk "Bird"
 
