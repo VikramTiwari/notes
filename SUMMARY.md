@@ -46,6 +46,7 @@
   * [Taking Flight with AI Agents](generative-ai-universe/taking-flight-with-ai-agents.md)
 * [Community](activities/README.md)
   * [Speaking and writing Tips](activities/speaker-tips.md)
+  * [21 facts about throwing good parties](activities/21-facts-about-throwing-good-parties.md)
 * [Social](social/README.md)
   * [Books](social/books.md)
   * [Explore](social/explore.md)
