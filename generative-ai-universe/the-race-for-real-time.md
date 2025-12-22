@@ -16,7 +16,7 @@ The result was the replay engine. It was a week of high-velocity engineering, ha
 
 #### Building Context, Visually
 
-To effectively prepare for the upcoming sprint and ensure a deep, foundational understanding of the racing domain, a crucial "Build Context" phase was initiated one week prior. This involved the collection and distribution of highly specific, real-world data directly from [AJ](https://www.linkedin.com/in/ajmirwani/) , our professional race car driver. The core resources provided included a substantial collection of VBOX files and onboard video footage.
+To effectively prepare for the upcoming sprint and ensure a deep, foundational understanding of the racing domain, a crucial "Build Context" phase was initiated one week prior. This involved the collection and distribution of highly specific, real-world data directly from [Anthony Zwain](https://nasaspeed.news/columns/move-of-the-month/back-to-green/) our professional race car driver and [AJ](https://www.linkedin.com/in/ajmirwani/), our enthusiast race car driver who will be getting the suggestions. The core resources provided included a substantial collection of VBOX files and onboard video footage.
 
 The VBOX files, which typically contain detailed telemetry data—such as speed, GPS coordinates, g-forces, steering angle, brake pressure, and throttle position—served as the primary technical input. Analyzing this data was essential for understanding driving dynamics, identifying cornering lines, and quantifying performance metrics. Simultaneously, the accompanying video footage offered a crucial visual and qualitative complement to the raw numbers. By watching AJ's laps from both the in-car and telemetry perspectives, I could link the technical data points to the real-world action, gaining context on track features, driver inputs, and the car's behavior under various conditions.
 
@@ -55,10 +55,10 @@ I realized I was asking the AI to do the wrong job. I didn't need an LLM to perf
 
 The system was re-architected into four tiers of increasing complexity: Code, Nano, Flash, and Pro.
 
-* **Hot Path (The Bypass):** This tier utilizes deterministic code for split-second, instant, and zero-latency actions.
-* **Warm Path (Local LLM):** Gemini Nano, embedded within Chrome, served as our Local LLM to provide functionality while the car was on the track.
-* **Cold Path (Networked):** This system, utilizing Gemini Flash and Pro, aggregates data across an entire run, analyzing information like turns and segments. After a lap is completed, it identifies patterns and uses these observations to generate detailed, data-backed suggestions for improving performance on the subsequent lap.
-* **Data Dive (Post-Run Podcast):** Following the race, a comprehensive data analysis was conducted using Gemini 3 Pro. This analysis served as the basis for a podcast created by experts Chip and Stig. The podcast was then converted to audio using [Gemini 2.5 Pro TTS](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-preview-tts) for the driver's convenient listening during their leisure time.
+- **Hot Path (The Bypass):** This tier utilizes deterministic code for split-second, instant, and zero-latency actions.
+- **Warm Path (Local LLM):** Gemini Nano, embedded within Chrome, served as our Local LLM to provide functionality while the car was on the track.
+- **Cold Path (Networked):** This system, utilizing Gemini Flash and Pro, aggregates data across an entire run, analyzing information like turns and segments. After a lap is completed, it identifies patterns and uses these observations to generate detailed, data-backed suggestions for improving performance on the subsequent lap.
+- **Data Dive (Post-Run Podcast):** Following the race, a comprehensive data analysis was conducted using Gemini 3 Pro. This analysis served as the basis for a podcast created by experts Chip and Stig. The podcast was then converted to audio using [Gemini 2.5 Pro TTS](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-preview-tts) for the driver's convenient listening during their leisure time.
 
 This was the breakthrough. The AI became a strategic coach, not a co-pilot.
 
@@ -109,6 +109,7 @@ Now, if you'll excuse me, I need to sleep.
 Built as part of the GDE High-Velocity AI Field Test team, with the support of various teams working on Gemini models at Google Deepmind. Google Cloud credits were provided for this project.
 
 More links:
+
 - [LinkedIn post by AJ](https://www.linkedin.com/posts/ajmirwani_trustableai-antigravity-gemini-activity-7407396835935416320-pB17?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAlnqG4BY5UCRVuCWYkG-Tgov0KiKFQGpVU)
 - [LinkedIn post by Jigyasa](https://www.linkedin.com/posts/jigyasa-grover_trustableai-antigravity-gemini-activity-7407851580324057088-Qj5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAlnqG4BY5UCRVuCWYkG-Tgov0KiKFQGpVU)
 - [Post by Hemanth](https://h3manth.com/scribe/blog/high-velocity-ai-field-test/)
