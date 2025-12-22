@@ -5,3 +5,4 @@ _book
 home/
 .firebaserc
 fix_gitbook_syntax.py
+.firebase/

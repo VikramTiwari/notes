@@ -106,7 +106,7 @@ Now, if you'll excuse me, I need to sleep.
 
 ---
 
-Built as part of the GDE High-Velocity AI Field Test team, with the support of various teams working on Gemini models at Google Deepmind.
+Built as part of the GDE High-Velocity AI Field Test team, with the support of various teams working on Gemini models at Google Deepmind. Google Cloud credits were provided for this project.
 
 More links:
 - [LinkedIn post by AJ](https://www.linkedin.com/posts/ajmirwani_trustableai-antigravity-gemini-activity-7407396835935416320-pB17?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAlnqG4BY5UCRVuCWYkG-Tgov0KiKFQGpVU)
