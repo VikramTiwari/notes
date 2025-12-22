@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf _book",
-    "docs:build": "npm run clean && npx honkit build ./ _book/notes && rsync -av --exclude='.git' home/ _book/ && rm _book/service-worker.js",
+    "docs:build": "npm run clean && npx honkit build ./ _book/notes && rsync -av --exclude='.git' home/ _book/ && rm -f _book/service-worker.js",
     "docs:serve": "npx honkit serve --port 4001",
     "dev": "npm run docs:serve",
     "start": "npm run dev",
-    "home:update": "cd home && git pull origin master",
-    "deploy": "npm run docs:build && npx firebase-tools deploy",
+    "home:update": "if [ -d \"home/.git\" ]; then cd home && git pull origin master; else git clone git@github.com:VikramTiwari/vikramtiwari.github.com.git home; fi",
+    "deploy": "npm run home:update && npm run docs:build && npx firebase-tools deploy --project vik-website",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
