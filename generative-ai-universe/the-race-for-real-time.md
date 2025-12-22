@@ -6,7 +6,7 @@ description: >-
 
 # The Race for Real-Time
 
-If you look at the commit history for the **Gemini Field Test**, you’ll see a blur of activity around mid-December. To the outside observer, it looks like a standard software sprint. But from where I was sitting—staring at a monitor with multiple terminal windows open, trying to get a 3D car to render at 60FPS while a local LLM analyzed its telemetry—it felt more like a pit stop in Formula 1.
+If you look at the commit history for the [**replay**](https://github.com/gemini-fieldtest/replay/commits/main/), you’ll see a blur of activity around mid-December. To the outside observer, it looks like a standard software sprint. But from where I was sitting—staring at a monitor with multiple terminal windows open, trying to get a 3D car to render at 60FPS while a local LLM analyzed its telemetry—it felt more like a pit stop in Formula 1.
 
 We set out to build something ambitious: a real-time **Performance Coach** for motorsport. We wanted to prove that Google’s [**Gemini 3**](https://aistudio.google.com/models/gemini-3) model family could act as a performance coach for a race car driver as they raced live.
 
@@ -14,15 +14,15 @@ This was a team effort, but I wanted to test a hypothesis of mine: An individual
 
 The result was the replay engine. It was a week of high-velocity engineering, hard lessons about model latency, and one massive architectural pivot that saved the project. Here is the story behind the code.
 
-#### Build Context: Visually
+#### Building Context, Visually
 
-To effectively prepare for the upcoming sprint and ensure a deep, foundational understanding of the racing domain, a crucial "Build Context" phase was initiated one week prior. This involved the collection and distribution of highly specific, real-world data directly from AJ, our professional race car driver. The core resources provided included a substantial collection of VBOX files and onboard video footage.
+To effectively prepare for the upcoming sprint and ensure a deep, foundational understanding of the racing domain, a crucial "Build Context" phase was initiated one week prior. This involved the collection and distribution of highly specific, real-world data directly from [AJ](https://www.linkedin.com/in/ajmirwani/) , our professional race car driver. The core resources provided included a substantial collection of VBOX files and onboard video footage.
 
 The VBOX files, which typically contain detailed telemetry data—such as speed, GPS coordinates, g-forces, steering angle, brake pressure, and throttle position—served as the primary technical input. Analyzing this data was essential for understanding driving dynamics, identifying cornering lines, and quantifying performance metrics. Simultaneously, the accompanying video footage offered a crucial visual and qualitative complement to the raw numbers. By watching AJ's laps from both the in-car and telemetry perspectives, I could link the technical data points to the real-world action, gaining context on track features, driver inputs, and the car's behavior under various conditions.
 
 I learn visually—I understand best when I can see things like charts, graphs, or spatial layouts. I quickly realized that just reading a bunch of CSV files wouldn't give me the deep, intuitive understanding I needed. So, I jumped right into building a system to turn all that raw data into visuals. This visualization isn't just key for me to "get it," but it's also the best way to clearly share the complex patterns in the data with everyone else.
 
-I started with a "fast-fail" philosophy. I used Antigravity with Gemini 3 Pro to spin up the replay repo using Vite and Tailwind. I needed speed, both in the car and in the build pipeline. I deployed my initial version to Firebase hosting immediately because, in a project moving this fast, if it isn't live, it doesn't exist.
+I started with a "fast-fail" philosophy. I used [Antigravity](https://antigravity.google/) with [Gemini 3 Pro](https://deepmind.google/models/gemini/pro/) to spin up the replay repo using Vite and Tailwind. I needed speed, both in the car and in the build pipeline. I deployed my initial version to Firebase hosting immediately because, in a project moving this fast, if it isn't live, it doesn't exist.
 
 #### The First Wall: The Physics of Rendering
 
@@ -47,18 +47,18 @@ The original dream was a tight loop:
 
 **It didn't work.**
 
-Even with an efficient model like Gemini 3 Flash with the thought level set to minimal, inference takes time, and we were doing it over the wire. If I waited for the LLM to "think" before rendering the next frame, the whole application became useless. You can't tell a driver to hit the brakes 500 milliseconds after they’ve missed the apex.
+Even with an efficient model like [Gemini 3 Flash](https://blog.google/products/gemini/gemini-3-flash/) with the thought level set to minimal, inference takes time, and we were doing it over the wire. If I waited for the LLM to "think" before rendering the next frame, the whole application became useless. You can't tell a driver to hit the brakes 500 milliseconds after they’ve missed the apex.
 
 This led to the most critical commit of the project: fix: bypass the LLM.
 
-I realized I was asking the AI to do the wrong job. I didn't need an LLM to perform mathematical calculations that come with high-speed race data—simple functions in JavaScript can do that in microseconds. Also, during our weekly team sessions, I learned about my teammates' work with Gemini Nano, which provided a new perspective on the system.
+I realized I was asking the AI to do the wrong job. I didn't need an LLM to perform mathematical calculations that come with high-speed race data—simple functions in JavaScript can do that in microseconds. Also, during our weekly team sessions, I learned about my teammates' work with [Gemini Nano](https://developer.chrome.com/docs/ai), which provided a new perspective on the system.
 
 The system was re-architected into four tiers of increasing complexity: Code, Nano, Flash, and Pro.
 
 * **Hot Path (The Bypass):** This tier utilizes deterministic code for split-second, instant, and zero-latency actions.
 * **Warm Path (Local LLM):** Gemini Nano, embedded within Chrome, served as our Local LLM to provide functionality while the car was on the track.
 * **Cold Path (Networked):** This system, utilizing Gemini Flash and Pro, aggregates data across an entire run, analyzing information like turns and segments. After a lap is completed, it identifies patterns and uses these observations to generate detailed, data-backed suggestions for improving performance on the subsequent lap.
-* **Post-Run Data Dive:** Following the race, a comprehensive data analysis was conducted using Gemini 3 Pro. This analysis served as the basis for a podcast created by experts Chip and Stig. The podcast was then converted to audio using Gemini for the driver's convenient listening during their leisure time.
+* **Data Dive (Post-Run Podcast):** Following the race, a comprehensive data analysis was conducted using Gemini 3 Pro. This analysis served as the basis for a podcast created by experts Chip and Stig. The podcast was then converted to audio using [Gemini 2.5 Pro TTS](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-preview-tts) for the driver's convenient listening during their leisure time.
 
 This was the breakthrough. The AI became a strategic coach, not a co-pilot.
 
@@ -92,7 +92,7 @@ It was a breakthrough weekend at Thunderhill Raceway. The entire team showed inc
 
 The experimental Reactive Coach system performed exceptionally well, providing timely, data-driven, and actionable suggestions to the driver using real-time telemetry and predictive modeling. Furthermore, the post-race podcast analysis—despite the hosts being highly critical of the driver—was extremely helpful in identifying specific areas for immediate driver and car-setup improvement.
 
-The weekend provided a clear direction, leading to the solidification of ideas and specifications for the next version of the entire system, focusing on integrating lessons learned, new map data, and addressing performance gaps.
+The weekend provided a clear direction, leading to the solidification of ideas and specifications for the next version of the entire system, focusing on integrating lessons learned, new map data, and addressing performance gaps. If you wanna learn more about it, don't forget to [connect with me on LinkedIn](https://linkedin.com/in/vikramtiwari).
 
 #### The Future of Edge AI
 
@@ -104,4 +104,15 @@ The Gemini Field Test was a race in every sense of the word. We crashed a few ti
 
 Now, if you'll excuse me, I need to sleep.
 
-\- Vik
+---
+
+Built as part of the GDE High-Velocity AI Field Test team, with the support of various teams working on Gemini models at Google Deepmind.
+
+More links:
+- [LinkedIn post by AJ](https://www.linkedin.com/posts/ajmirwani_trustableai-antigravity-gemini-activity-7407396835935416320-pB17?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAlnqG4BY5UCRVuCWYkG-Tgov0KiKFQGpVU)
+- [LinkedIn post by Jigyasa](https://www.linkedin.com/posts/jigyasa-grover_trustableai-antigravity-gemini-activity-7407851580324057088-Qj5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAlnqG4BY5UCRVuCWYkG-Tgov0KiKFQGpVU)
+- [Post by Hemanth](https://h3manth.com/scribe/blog/high-velocity-ai-field-test/)
+- [Jigyasa'sInstgram reel](https://www.instagram.com/reel/DSeGmDekfT8/?igsh=NTc4MTIwNjQ2YQ%3D%3D)
+- [AJ's Instgram reel](https://www.instagram.com/p/DSbGqKgDa2u/)
+- [Some photos and screenshots](https://photos.app.goo.gl/mjjtHwBhRiWDEd666)
+- [Demo video with podcast](https://youtu.be/G0897qVsU4c)

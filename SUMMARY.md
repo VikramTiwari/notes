@@ -44,8 +44,9 @@
   * [Trusted Services](notes/trusted-services.md)
 * [Generative AI Universe](generative-ai-universe/README.md)
   * [Taking Flight with AI Agents](generative-ai-universe/taking-flight-with-ai-agents.md)
+  * [The Race for Real-Time](generative-ai-universe/the-race-for-real-time.md)
 * [Community](activities/README.md)
-  * [The Race for Real-Time](activities/the-race-for-real-time.md)
+
   * [Speaking and writing Tips](activities/speaker-tips.md)
   * [21 facts about throwing good parties](activities/21-facts-about-throwing-good-parties.md)
 * [Social](social/README.md)

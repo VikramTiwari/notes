@@ -1,0 +1,7 @@
+node_modules
+_book
+*.log
+.DS_Store
+home/
+.firebaserc
+fix_gitbook_syntax.py

@@ -12,3 +12,28 @@ With that out of the way, let's get other things settled as well. These are my n
 
 Enjoy!
 
+
+## How to run locally
+
+This project uses [HonKit](https://github.com/honkit/honkit) to generate the static website.
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run docs:serve
+   ```
+
+3. Build the static site:
+   ```bash
+   npm run docs:build
+   ```
+
+### 4. Update Home Page content
+The home page is a separate repository cloned into `home/`. To update it:
+```bash
+npm run home:update
+```

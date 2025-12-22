@@ -6,8 +6,7 @@ description: some docker and k8s commands I don't wanna search over internet
 
  Docker ecosystem
 
-{% tabs %}
-{% tab title="docker-basics.sh" %}
+### docker-basics.sh
 ```bash
 # create an image with a tag from git (courtesy of @ahmetb: https://twitter.com/ahmetb/status/1154882328813924352)
 docker build -t website:${git describe --always --tags --dirty} .
@@ -37,9 +36,8 @@ docker stop $(docker ps -a -q) && \
     docker rmi $(docker images -a -q) && \
     docker system prune
 ```
-{% endtab %}
 
-{% tab title="logger.sh" %}
+### logger.sh
 ```bash
 #!/bin/bash
 function _exit {
@@ -59,12 +57,10 @@ wait
 
 # from https://stackoverflow.com/a/54917272/1724300
 ```
-{% endtab %}
-{% endtabs %}
 
 Kubernetes
 
-{% code title="deployments-using-kubectl.sh" %}
+#### deployments-using-kubectl.sh
 ```bash
 # all commands: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
@@ -98,7 +94,6 @@ kubectl logs deployment/website-deployment --tail 10 -f
 # ssh into a pod
 kubectl exec -it my-pod -- /bin/bash
 ```
-{% endcode %}
 
 
 

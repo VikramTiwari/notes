@@ -8,8 +8,7 @@ description: Various terminal commands that I don't wanna remember
 
 Let there be life!
 
-{% tabs %}
-{% tab title="create.sh" %}
+### create.sh
 ```bash
 # create directory named george
 mkdir george
@@ -23,9 +22,8 @@ nano george
 # edit with vi
 vi george
 ```
-{% endtab %}
 
-{% tab title="upgrades.sh" %}
+### upgrades.sh
 ```bash
 # check for updates
 sudo apt-get update
@@ -42,9 +40,8 @@ sudo apt-get autoremove
 # Fix missing keys
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4B8EC3BAABDC4346
 ```
-{% endtab %}
 
-{% tab title="destroy.sh" %}
+### destroy.sh
 ```bash
 # find process running on port 5000
 sudo lsof -i tcp:5000
@@ -58,9 +55,8 @@ sudo kill $( sudo lsof -i tcp:5000 -t )
 # kill all processes named Google Chrome Helper
 killall -9 "Google Chrome Helper"
 ```
-{% endtab %}
 
-{% tab title="usage.sh" %}
+### usage.sh
 ```bash
 # check docker usage
 sudo docker stats
@@ -77,16 +73,14 @@ df -lh
 # list all directories in current folder with their size
 du -h
 ```
-{% endtab %}
 
-{% tab title="process.sh" %}
+### process.sh
 ```bash
 # full process tree
 ps -axfo pid,uname,cmd
 ```
-{% endtab %}
 
-{% tab title="security.sh" %}
+### security.sh
 ```bash
 # check application certificate
 spctl -a -vv /Applications/Google\ Chrome.app
@@ -94,9 +88,8 @@ spctl -a -vv /Applications/Google\ Chrome.app
 # source=Notarized Developer ID
 # origin=Developer ID Application: Google, Inc. (EQHXZ8M8AV)
 ```
-{% endtab %}
 
-{% tab title="compression.sh" %}
+### compression.sh
 ```bash
 # gzip compression on a tar archiv: tar_file files_or_folder_to_be_compressed
 tar cvzf my-files.tar.gz ./my-files
@@ -104,9 +97,8 @@ tar cvzf my-files.tar.gz ./my-files
 # unzip a tar file
 tar xvzf my-files.tar.gz
 ```
-{% endtab %}
 
-{% tab title="searching.sh" %}
+### searching.sh
 ```bash
 # Find a file by name on your machine
 sudo find / -name 'secret.txt'
@@ -114,27 +106,22 @@ sudo find / -name 'secret.txt'
 # delete backup files
 sudo find . -name "*.bak" -delete
 ```
-{% endtab %}
 
-{% tab title="git.sh" %}
+### git.sh
 ```bash
 # delete all local branches except main, master and develop
 git branch | grep -v "main" | grep -v "master" | grep -v "develop" | xargs git branch -D
 ```
-{% endtab %}
-{% endtabs %}
 
 Virtual Screen
 
-{% tabs %}
-{% tab title="virtual-screen.sh" %}
+### virtual-screen.sh
 ```bash
 # Note: you will still need to install all the dependencies for xvfb to run
 xvfb-run --server-args='-screen 0 1024x768x24' node src
 ```
-{% endtab %}
 
-{% tab title="xvfb-deps.sh" %}
+### xvfb-deps.sh
 ```bash
 apt-get update && apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget x11vnc x11-xkb-utils xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic x11-apps xvfb
 apt-get update && apt-get install -y wget --no-install-recommends \
@@ -147,13 +134,10 @@ apt-get update && apt-get install -y wget --no-install-recommends \
     && apt-get purge --auto-remove -y curl \
     && rm -rf /src/*.deb
 ```
-{% endtab %}
-{% endtabs %}
 
 Loops
 
-{% tabs %}
-{% tab title="for.sh" %}
+### for.sh
 ```bash
 # For loop using counter
 for COUNTER in `seq 1 10`;
@@ -166,9 +150,8 @@ for i in $( ls ); do
     echo item: $i
 done
 ```
-{% endtab %}
 
-{% tab title="while.sh" %}
+### while.sh
 ```bash
 COUNTER=0
 while [  $COUNTER -lt 10 ]; do
@@ -176,9 +159,8 @@ while [  $COUNTER -lt 10 ]; do
     let COUNTER=COUNTER+1
 done
 ```
-{% endtab %}
 
-{% tab title="until.sh" %}
+### until.sh
 ```bash
 COUNTER=20
 until [  $COUNTER -lt 10 ]; do
@@ -186,6 +168,4 @@ until [  $COUNTER -lt 10 ]; do
     let COUNTER-=1
 done
 ```
-{% endtab %}
-{% endtabs %}
 

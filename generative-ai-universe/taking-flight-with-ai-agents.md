@@ -65,9 +65,8 @@ Lo and behold, as soon as I gave my friends access to this bot, their testing re
 
 Seeing is believing! Here's a short walkthrough of a typical conversation with the Wingspan Agent on Telegram
 
-{% embed url="https://youtube.com/shorts/ql1e7TEYswU?feature=share" %}
+[Watch on YouTube](https://youtube.com/shorts/ql1e7TEYswU?feature=share)
 Please excuse my slow typing and enjoy some birdsongs as background music
-{% endembed %}
 
 #### A note on agent's "Memory"
 
