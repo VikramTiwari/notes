@@ -6,3 +6,4 @@ home/
 .firebaserc
 fix_gitbook_syntax.py
 .firebase/
+book-shelf/
