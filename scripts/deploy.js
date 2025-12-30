@@ -32,7 +32,7 @@ if (dirExists('home/.git')) {
 // 2. Update Book Shelf Repo
 console.log('\n--- Updating Book Shelf Repo ---');
 if (dirExists('book-shelf/.git')) {
-    run('cd book-shelf && git pull origin main');
+    run('cd book-shelf && git fetch origin && git reset --hard origin/main');
 } else {
     run('git clone https://github.com/VikramTiwari/book-shelf book-shelf');
 }

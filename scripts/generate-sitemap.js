@@ -117,7 +117,7 @@ if (fs.existsSync(BOOK_DATA_PATH)) {
         }
         
         if (bookId) {
-            addUrl(`${DOMAIN}/books/?book=${bookId}`, 0.6);
+            addUrl(`${DOMAIN}/books/carousel/${bookId}`, 0.6);
         }
     }
 }
