@@ -9,11 +9,8 @@
     "docs:serve": "npx honkit serve --port 4001",
     "dev": "npm run docs:serve",
     "start": "npm run dev",
-    "books:update": "if [ -d \"book-shelf/.git\" ]; then cd book-shelf && git pull origin main; else git clone https://github.com/VikramTiwari/book-shelf book-shelf; fi",
-    "books:build": "cd book-shelf && npm install && npx vite build --base=/books/",
-    "books:deploy-prep": "mkdir -p _book/books && cp -r book-shelf/dist/* _book/books/",
-    "home:update": "if [ -d \"home/.git\" ]; then cd home && git pull origin master; else git clone git@github.com:VikramTiwari/vikramtiwari.github.com.git home; fi",
-    "deploy": "npm run home:update && npm run books:update && npm run docs:build && npm run books:build && npm run books:deploy-prep && npx firebase-tools deploy --project vik-website",
+
+    "deploy": "node scripts/deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
