@@ -51,7 +51,11 @@ console.log('\n--- Preparing Book Shelf for Deployment ---');
 run('mkdir -p _book/books');
 run('cp -r book-shelf/dist/* _book/books/');
 
-// 6. Deploy to Firebase
+// 6. Generate Sitemap
+console.log('\n--- Generating Sitemap ---');
+run('node scripts/generate-sitemap.js');
+
+// 7. Deploy to Firebase
 console.log('\n--- Deploying to Firebase ---');
 run('npx firebase-tools deploy --project vik-website');
 
