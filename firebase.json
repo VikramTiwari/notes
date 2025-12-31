@@ -6,6 +6,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "rewrites": [
+      {
+        "source": "/books/**",
+        "destination": "/books/index.html"
+      }
+    ],
     "sidebar": false
   }
 }
