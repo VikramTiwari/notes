@@ -91,36 +91,10 @@ function scanDirectory(dir) {
 
 scanDirectory(NOTES_ROOT);
 
-// 3. Books (from CSV)
-console.log('Scanning Books...');
-if (fs.existsSync(BOOK_DATA_PATH)) {
-    const content = fs.readFileSync(BOOK_DATA_PATH, 'utf-8');
-    const lines = content.split('\n');
-    
-    // Skip header (index 0)
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        
-        // Simple CSV parse: assume "Book Id" is first and comma separated or quoted
-        // The previous peek showed: 53443339,"Troy ...
-        // So simple split by comma works for the first element usually
-        
-        let bookId = '';
-        if (line.startsWith('"')) {
-             // Handle quoted ID if that ever happens, but simple split might fail if ID is quoted. 
-             // RegEx for first CSV column: ^("([^"]*)"|([^,]*))
-             const match = line.match(/^"([^"]*)"|([^,]*)/);
-             bookId = match[1] || match[2]; // match[1] if quoted, match[2] if not
-        } else {
-             bookId = line.split(',')[0];
-        }
-        
-        if (bookId) {
-            addUrl(`${DOMAIN}/books/carousel/${bookId}`, 0.6);
-        }
-    }
-}
+// 3. Books (Static)
+console.log('Adding Books routes...');
+addUrl(`${DOMAIN}/books/`, 0.8, 'daily');
+addUrl(`${DOMAIN}/books/db`, 0.8, 'daily');
 
 // Generate XML
 const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
