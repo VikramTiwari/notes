@@ -2,6 +2,7 @@
 description: >-
   Delegate to increase your ability to deliver the results your business depends
   on to grow and thrive
+date: 2023-11-13
 ---
 
 # Effective delegation

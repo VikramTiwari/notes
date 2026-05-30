@@ -1,5 +1,6 @@
 ---
 description: Tips from best speakers around
+date: 2018-12-01
 ---
 
 # Speaking and writing Tips

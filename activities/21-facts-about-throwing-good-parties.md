@@ -1,5 +1,6 @@
 ---
 description: 'From: https://www.atvbt.com/21-facts-about-throwing-good-parties/'
+date: 2025-11-03
 ---
 
 # 21 facts about throwing good parties

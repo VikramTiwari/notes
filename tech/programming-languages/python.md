@@ -1,5 +1,6 @@
 ---
 description: Quick code samples that I use often times for Python
+date: 2020-01-04
 ---
 
 # Python

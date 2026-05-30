@@ -1,5 +1,6 @@
 ---
 description: Mapping a 300-dimensional galaxy of 1,790 ingredients using UMAP, Taste Anchors, and a highly optimized Rust WASM engine.
+date: 2026-05-30
 ---
 
 # 🚀 Journey into the 300-Dimensional Culinary Universe
@@ -31,22 +32,14 @@ A 300-dimensional space is great for calculations, but terrible for human brains
 
 To map this dense multidimensional cosmos onto a 3D web canvas, the engine uses **UMAP (Uniform Manifold Approximation and Projection)** with a cosine metric. 
 
-```
-┌─────────────────────────────────┐
-│ Epicure Core Corpus (300-D)     │
-│ 1,790 Ingredients (dense vectors)│
-└────────────────┬────────────────┘
-                 │
-                 ▼  [ UMAP Non-Linear Projection ]
-┌─────────────────────────────────┐
-│ Dimensional Reduction Manifold  │
-│ Preserves Local Aromatic Closeness
-└────────────────┬────────────────┘
-                 │
-                 ▼  [ 3D Render Loop (Canvas / WASM) ]
-🛸 Organic Constellations Emerge:
-   * Aromatic Herbs  * Citrus Esters  * Roasted Alliums
-   * Smoked Fats     * Sweet Sugars
+```mermaid
+flowchart LR
+    A["Epicure Core Corpus (300-D)<br>1,790 Ingredients (dense vectors)"] -->|UMAP Non-Linear Projection| B["Dimensional Reduction Manifold<br>(Preserves Aromatic Proximity)"]
+    B -->|"3D Render Loop (Canvas / WASM)"| C["🛸 Organic Constellations Emerge:<br>• Aromatic Herbs<br>• Citrus Esters<br>• Roasted Alliums<br>• Smoked Fats<br>• Sweet Sugars"]
+    
+    style A fill:#f8fafc,stroke:#0369a1,stroke-width:2px,color:#0f172a
+    style B fill:#f8fafc,stroke:#0e7490,stroke-width:2px,color:#0f172a
+    style C fill:#f8fafc,stroke:#0f766e,stroke-width:2px,color:#0f172a
 ```
 
 Because UMAP preserves local relationships, beautiful, organic flavor constellations naturally emerge. You can zoom **20.0x** through a warm-parchment aesthetic galaxy, drifting from **Citrus Esters** (lemons, limes, lemongrass) over to **Smoked Fats** (smoked Gouda, bacon) and watch the dynamic tethers link them.
@@ -91,6 +84,32 @@ This **$S^{1.6}$ exponential contrast multiplier** suppresses noise in weak flav
 Rendering 1,790 nodes, calculating real-time distance tethers, applying lighting, and projecting vectors at 60 FPS in a web browser is incredibly demanding. 
 
 To achieve blistering performance, the project uses a highly optimized hybrid architecture:
+
+```mermaid
+flowchart TD
+    subgraph Offline ["Offline Pipeline (Python)"]
+        CSV["Raw CSV Dataset<br>(5.1 MB)"] -->|Parse & Filter| JSON["ingredients.json<br>(~448 KB)"]
+    end
+
+    subgraph Browser ["Web Browser Run-time (60 FPS)"]
+        JSON -->|Fetch & Hydrate| Core["React 18 State HUD<br>(TypeScript)"]
+        Core -->|Compute Tethers & Cosine Similarity| WASM["Rust WASM Engine<br>(Real-time Math Math Vector Engine)"]
+        WASM -->|Calculated Metrics| Core
+        
+        Core -->|Update Viewport Coordinates| Canvas["HTML Canvas Renderer<br>(Point Clouds & Custom Lighting)"]
+        
+        State["Browser Address Bar<br>(URL Search Params)"] <-->|Real-time State Sync| Core
+    end
+
+    style CSV fill:#f8fafc,stroke:#64748b,stroke-width:2px,color:#0f172a
+    style JSON fill:#f8fafc,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style Core fill:#f8fafc,stroke:#4f46e5,stroke-width:2px,color:#0f172a
+    style WASM fill:#f8fafc,stroke:#ea580c,stroke-width:2px,color:#0f172a
+    style Canvas fill:#f8fafc,stroke:#0891b2,stroke-width:2px,color:#0f172a
+    style State fill:#f8fafc,stroke:#0d9488,stroke-width:2px,color:#0f172a
+    style Offline fill:#f8fafc,stroke:#cbd5e1,stroke-width:2px,color:#334155,stroke-dasharray: 5 5
+    style Browser fill:#f8fafc,stroke:#cbd5e1,stroke-width:2px,color:#334155,stroke-dasharray: 5 5
+```
 
 * **React 18 & TypeScript**: Handles state synchronization and UI HUD layout.
 * **Pure HTML Canvas Renderer**: Renders point clouds, lighting, point offsets, and cosmic dust.

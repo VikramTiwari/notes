@@ -2,6 +2,7 @@
 description: >-
   Space for Agents, RAG and all the cool things around the future of software
   engineering
+date: 2025-04-21
 ---
 
 # Generative AI Universe

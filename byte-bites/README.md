@@ -1,5 +1,6 @@
 ---
 description: Bite size terms from byte world
+date: 2023-11-13
 ---
 
 # Byte Bites

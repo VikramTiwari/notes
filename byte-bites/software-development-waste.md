@@ -1,5 +1,6 @@
 ---
 description: From https://neverworkintheory.org/2021/08/29/software-development-waste.html
+date: 2023-11-13
 ---
 
 # Software Development Waste

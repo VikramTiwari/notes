@@ -2,6 +2,7 @@
 description: >-
   These focus on financial security, not maximizing profits. From:
   https://thetaoofwealth.wordpress.com/2013/02/17/harry-brownes-17-golden-rules-of-financial-safety/
+date: 2023-11-13
 ---
 
 # Harry Browne's 17 Golden Rules of Financial Safety

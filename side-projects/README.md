@@ -1,5 +1,6 @@
 ---
 description: A curation of things I have built or am actively building.
+date: 2026-05-30
 ---
 
 # 🚀 Side Projects

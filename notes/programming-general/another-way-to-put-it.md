@@ -1,5 +1,6 @@
 ---
 description: easier ways to explain stuff
+date: 2024-03-30
 ---
 
 # Another way to put it

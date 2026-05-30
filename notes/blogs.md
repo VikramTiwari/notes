@@ -1,5 +1,6 @@
 ---
 description: Tech blogs which most probably are already outdated
+date: 2023-11-13
 ---
 
 # Blogs

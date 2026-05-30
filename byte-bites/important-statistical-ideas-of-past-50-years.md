@@ -1,5 +1,6 @@
 ---
 description: https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1938081
+date: 2023-11-13
 ---
 
 # Important Statistical Ideas of Past 50 years

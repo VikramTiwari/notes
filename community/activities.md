@@ -1,5 +1,6 @@
 ---
 description: My various activities with communities all around North America region
+date: 2019-02-10
 ---
 
 # Activities

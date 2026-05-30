@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* --- 🧪 🔬 THE CLINICAL LOGBOOK: LIGHT SCIENTIFIC THEME 🔬 🧪 --- */
+/* Fusing archival lab notebooks, sky-blue blueprint grids, and dark console panels */
+
+:root {
+  /* --- Light Page Aesthetics --- */
+  --bg-archival: #f5f4ef;        /* Darker warm cotton lab paper for high card contrast */
+  --bg-clipboard: #ffffff;       /* Pure white floating clipboard card */
+  --bg-sidebar: #e2e8f0;         /* More distinct clinical slate-gray console */
+  
+  /* --- Scientific Accent Colors (Light Compliant) --- */
+  --cobalt-blue: #0b4f8c;        /* High-contrast deep accessible cobalt blue (> 8:1) */
+  --cobalt-glow: rgba(11, 79, 140, 0.06);
+  --blueprint-line: rgba(14, 165, 233, 0.08); /* Crisp, highly contrasty sky-blue grid lines */
+  
+  --vintage-amber: #a14400;      /* High-contrast accessible amber dials */
+  --border-light: #cbd5e1;       /* Sharp steel gray borders (slate-300) */
+  
+  /* --- Dark Console Panels (for high-contrast code blocks) --- */
+  --bg-terminal: #060913;        /* Deeper midnight black console screen */
+  --neon-volt: #00ff87;          /* Glowing radioactive green */
+  --neon-volt-glow: rgba(0, 255, 135, 0.25);
+  --border-volt: rgba(0, 255, 135, 0.15);
+  
+  --text-primary: #020617;       /* Ink black for maximum title readability */
+  --text-secondary: #0f172a;     /* Dark charcoal for body copy */
+  --text-dim: #334155;           /* Slate-700 for dim/muted tag labels */
+  
+  --sidebar-width: 290px;
+}
+
+/* --- 📐 Global Setup & sky-blue blueprint Grid --- */
+body, html {
+  background-color: var(--bg-archival) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Space Grotesk', -apple-system, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  
+  /* Delicate engineering graphing paper background */
+  background-image: 
+    linear-gradient(var(--blueprint-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blueprint-line) 1px, transparent 1px);
+  background-size: 25px 25px !important;
+  background-attachment: fixed !important;
+}

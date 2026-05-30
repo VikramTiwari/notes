@@ -1,5 +1,6 @@
 ---
 description: From https://fs.blog/experts-vs-imitators/
+date: 2024-06-20
 ---
 
 # Experts vs Imitators

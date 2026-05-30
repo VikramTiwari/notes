@@ -1,5 +1,6 @@
 ---
 description: some docker and k8s commands I don't wanna search over internet
+date: 2019-03-06
 ---
 
 # Docker and Kubernetes

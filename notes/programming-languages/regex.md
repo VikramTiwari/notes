@@ -1,5 +1,6 @@
 ---
 description: Various regex resources that I have found useful
+date: 2023-11-13
 ---
 
 # Regex

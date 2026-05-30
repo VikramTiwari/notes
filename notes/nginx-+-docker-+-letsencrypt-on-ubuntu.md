@@ -1,5 +1,6 @@
 ---
 description: How to setup a webservice using nginx + docker + LetsEncrypt on Ubuntu VMs
+date: 2023-11-13
 ---
 
 # Nginx + Docker + Let'sEncrypt on Ubuntu

@@ -1,0 +1,300 @@
+/* --- 🎛️ Sidebar: Control Console --- */
+.book-summary {
+  background: var(--bg-sidebar) !important;
+  border-right: 1px solid var(--border-light) !important;
+  width: var(--sidebar-width) !important;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.03) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important; /* Locks overall scrolling, keeping header & search static */
+}
+
+/* Custom header for the console */
+.book-summary::before {
+  content: "⚡ [LAB LOG: NOTES.VIKRAMTIWARI.COM] ⚡" !important;
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--cobalt-blue);
+  text-align: center;
+  padding: 15px 10px 5px 10px;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+  border-bottom: 1px dashed var(--border-light);
+  flex-shrink: 0 !important;
+}
+
+/* Search Box: Terminal input style */
+#book-search-input {
+  background: transparent !important;
+  border-bottom: 1px dashed var(--border-light) !important;
+  padding: 15px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Enable scrolling underneath the pinned search box */
+.book-summary nav {
+  flex-grow: 1 !important;
+  overflow-y: auto !important;
+  padding-bottom: 20px !important;
+}
+
+/* Slick Custom Scrollbar for Sidebar list */
+.book-summary nav::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.book-summary nav::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.book-summary nav::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.04) !important;
+  border-radius: 4px !important;
+}
+
+.book-summary nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 132, 199, 0.15) !important;
+}
+
+#book-search-input input {
+  background: #ffffff !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+  border-radius: 6px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  padding: 8px 12px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+#book-search-input input:focus {
+  border-color: var(--cobalt-blue) !important;
+  box-shadow: 0 0 10px var(--cobalt-glow) !important;
+  outline: none !important;
+}
+
+/* Navigation List items */
+.book-summary ul.summary li a, 
+.book-summary ul.summary li span {
+  color: var(--text-secondary) !important;
+  padding: 10px 24px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border-left: 4px solid transparent;
+}
+
+.book-summary ul.summary li a:hover {
+  color: var(--cobalt-blue) !important;
+  background: rgba(2, 132, 199, 0.03) !important;
+  text-decoration: none !important;
+  padding-left: 28px !important; /* smooth indent transition */
+}
+
+.book-summary ul.summary li.active > a {
+  color: var(--cobalt-blue) !important;
+  font-weight: 700 !important;
+  background: rgba(2, 132, 199, 0.05) !important;
+  border-left: 4px solid var(--cobalt-blue) !important;
+  box-shadow: inset 3px 0 8px rgba(2, 132, 199, 0.02);
+}
+
+.book-summary ul.summary li.header {
+  color: var(--text-primary) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  padding: 25px 24px 8px 24px !important;
+  opacity: 0.95;
+}
+
+.book-summary ul.summary li.header::before {
+  content: "/* " !important;
+  color: var(--vintage-amber);
+}
+
+.book-summary ul.summary li.header::after {
+  content: " */" !important;
+  color: var(--vintage-amber);
+}
+
+.book-summary ul.summary li.divider {
+  background: var(--border-light) !important;
+  height: 1px !important;
+  margin: 15px 0 !important;
+}
+
+/* --- 🔬 Main Page: Floating Scientific Board --- */
+.book-body {
+  background: transparent !important;
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important; /* Smooth sliding animation! */
+}
+
+/* Shunted right when summary sidebar is visible */
+.book.with-summary .book-body {
+  left: var(--sidebar-width) !important;
+}
+
+/* Fills the screen dynamically when summary sidebar is hidden */
+.book:not(.with-summary) .book-body {
+  left: 0 !important;
+}
+
+.page-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.page-inner {
+  background: var(--bg-clipboard) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 16px !important;
+  margin: 40px auto !important;
+  max-width: 1400px !important; /* Expanded from 1160px since navigation buttons are hidden */
+  width: 95% !important; /* Increased from 90% to utilize more screen real estate */
+  padding: 40px 48px !important;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.04), 
+    0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  position: relative;
+}
+
+/* Lab log frame aesthetics (Hidden in favor of dynamic metadata bar) */
+.page-inner::before {
+  display: none !important;
+}
+
+/* Dynamic Header Metadata HUD Bar */
+.header-meta-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  pointer-events: none !important; /* Let clicks pass through to standard header toggle buttons */
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 50px !important;
+  padding: 0 80px !important; /* Inward padding to clear far-left toggle button and far-right action buttons */
+  align-items: center !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.header-meta-item {
+  pointer-events: auto !important; /* Re-enable clicks specifically for clickable items */
+  color: var(--text-secondary) !important;
+  opacity: 0.6 !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  user-select: none !important;
+}
+
+.header-meta-item.page-meta-clickable {
+  cursor: pointer !important;
+}
+
+.header-meta-item.page-meta-clickable:hover {
+  opacity: 1 !important;
+  color: var(--vintage-amber) !important; /* Glow vintage amber on hover */
+  text-shadow: 0 0 4px rgba(217, 119, 6, 0.15) !important;
+}
+
+/* Hide header metadata bar on tablet/mobile to prevent overlapping navigation buttons */
+@media screen and (max-width: 768px) {
+  .header-meta-bar {
+    display: none !important;
+  }
+}
+
+/* --- 🎚️ Header HUD --- */
+.book-header {
+  background: var(--bg-archival) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+}
+
+.book-header h1 {
+  opacity: 1 !important; /* Make section title visible at all times, not just on hover */
+}
+
+.book-header h1 a {
+  color: var(--text-primary) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* --- 🔍 Header Search Bar (Revealed on title click) --- */
+.header-search-bar {
+  display: none; /* Hidden by default, shown dynamically via JS */
+  align-items: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 380px !important; /* Sleek centered Spotlight-style search panel */
+  max-width: 70% !important; /* Dynamic mobile fallback wrapper */
+  height: 49px !important;
+  background: var(--bg-archival) !important;
+  padding: 0 15px !important;
+  z-index: 20 !important;
+  border-bottom: 2px dashed var(--cobalt-blue) !important; /* Premium console dashed line */
+}
+
+.header-search-icon {
+  color: var(--cobalt-blue) !important;
+  font-size: 14px !important;
+  margin-right: 12px !important;
+}
+
+#header-search-input {
+  flex-grow: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  color: var(--text-primary) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  height: 100% !important;
+}
+
+#header-search-input::placeholder {
+  color: var(--text-dim) !important;
+  opacity: 0.5 !important;
+}
+
+.header-search-close {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text-secondary) !important;
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  cursor: pointer !important;
+  padding: 0 10px !important;
+  line-height: 1 !important;
+  transition: color 0.2s ease !important;
+}
+
+.header-search-close:hover {
+  color: var(--vintage-amber) !important;
+}
+
+.btn {
+  color: var(--text-secondary) !important;
+}
+
+.btn:hover {
+  color: var(--cobalt-blue) !important;
+}
+
+/* --- 🎛️ Calibration Arrows (Navigation) --- */
+.navigation {
+  display: none !important;
+}

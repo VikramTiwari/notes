@@ -2,6 +2,7 @@
 description: >-
   From
   https://newsletter.weskao.com/p/how-to-give-a-senior-leader-feedback-without-getting-fired
+date: 2024-11-27
 ---
 
 # Giving feedback

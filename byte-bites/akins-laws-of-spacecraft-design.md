@@ -2,6 +2,7 @@
 description: >-
   Applicable to a lot more scenarios. From:
   https://spacecraft.ssl.umd.edu/akins_laws.html
+date: 2023-11-13
 ---
 
 # Akin's Laws of Spacecraft Design

@@ -11,4 +11,295 @@
 
       gtag('config', 'G-KEFZF9R883');
     </script>
+    <!-- Dynamic HUD Copy Button & Mermaid.js Integration -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Helper to format absolute dates
+        function formatAbsoluteDate(date, includeTime) {
+          var yyyy = date.getFullYear();
+          var mm = String(date.getMonth() + 1).padStart(2, '0');
+          var dd = String(date.getDate()).padStart(2, '0');
+          if (includeTime) {
+            var hh = String(date.getHours()).padStart(2, '0');
+            var min = String(date.getMinutes()).padStart(2, '0');
+            return yyyy + "-" + mm + "-" + dd + " " + hh + ":" + min;
+          }
+          return yyyy + "-" + mm + "-" + dd;
+        }
+
+        // Helper to calculate relative time
+        function getRelativeTimeString(date) {
+          var now = new Date();
+          var diffMs = now.getTime() - date.getTime();
+          if (diffMs < 0) return "just now";
+          
+          var diffSeconds = Math.floor(diffMs / 1000);
+          var diffMinutes = Math.floor(diffSeconds / 60);
+          var diffHours = Math.floor(diffMinutes / 60);
+          var diffDays = Math.floor(diffHours / 24);
+          var diffWeeks = Math.floor(diffDays / 7);
+          var diffMonths = Math.floor(diffDays / 30);
+          var diffYears = Math.floor(diffDays / 365);
+
+          if (diffSeconds < 60) {
+            return "just now";
+          } else if (diffMinutes < 60) {
+            return diffMinutes === 1 ? "1 minute ago" : diffMinutes + " minutes ago";
+          } else if (diffHours < 24) {
+            return diffHours === 1 ? "1 hour ago" : diffHours + " hours ago";
+          } else if (diffDays < 7) {
+            if (diffDays === 0) return "today";
+            if (diffDays === 1) return "yesterday";
+            return diffDays + " days ago";
+          } else if (diffWeeks < 4) {
+            return diffWeeks === 1 ? "1 week ago" : diffWeeks + " weeks ago";
+          } else if (diffMonths < 12) {
+            return diffMonths === 1 ? "1 month ago" : diffMonths + " months ago";
+          } else {
+            return diffYears === 1 ? "1 year ago" : diffYears + " years ago";
+          }
+        }
+
+        function initializePage() {
+          // 1. Copy Buttons for Standard Code Blocks
+          var preBlocks = document.querySelectorAll(".markdown-section pre");
+          preBlocks.forEach(function(pre) {
+            if (pre.querySelector("code.lang-mermaid")) return; // Skip mermaid blocks
+            if (pre.querySelector(".copy-code-btn")) return; // Skip if already added
+            
+            var copyBtn = document.createElement("button");
+            copyBtn.className = "copy-code-btn";
+            copyBtn.innerHTML = "COPY";
+            
+            copyBtn.addEventListener("click", function() {
+              var code = pre.querySelector("code");
+              var text = code ? code.innerText : pre.innerText;
+              
+              navigator.clipboard.writeText(text).then(function() {
+                copyBtn.innerHTML = "COPIED!";
+                copyBtn.classList.add("copied");
+                setTimeout(function() {
+                  copyBtn.innerHTML = "COPY";
+                  copyBtn.classList.remove("copied");
+                }, 2000);
+              });
+            });
+            
+            pre.appendChild(copyBtn);
+          });
+
+          // 2. Convert raw Mermaid code blocks to renderable containers
+          var mermaidBlocks = document.querySelectorAll("pre code.lang-mermaid");
+          mermaidBlocks.forEach(function(code) {
+            var pre = code.parentNode;
+            var div = document.createElement("div");
+            div.className = "mermaid";
+            div.textContent = code.textContent;
+            pre.parentNode.replaceChild(div, pre);
+          });
+
+          // 3. Initialize Mermaid rendering
+          if (typeof mermaid !== "undefined") {
+            mermaid.initialize({ 
+              startOnLoad: true, 
+              theme: 'neutral',
+              securityLevel: 'loose'
+            });
+            // Re-trigger rendering of dynamically loaded mermaid containers
+            mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+          }
+
+          // 4. Format dynamic relative/absolute metadata dates
+          var clickables = document.querySelectorAll(".page-meta-clickable");
+          clickables.forEach(function(el) {
+            if (el.hasAttribute("data-dates-initialized")) return; // Skip if already done
+            
+            var rawVal = el.getAttribute("data-date") || el.getAttribute("data-mtime");
+            if (!rawVal) return;
+
+            var date = new Date(rawVal);
+            if (isNaN(date.getTime())) return;
+
+            var isMtime = el.hasAttribute("data-mtime");
+            var prefix = isMtime ? "LAST UPDATED // " : "PUBLISHED // ";
+
+            var relativeStr = prefix + getRelativeTimeString(date);
+            var absoluteStr = prefix + formatAbsoluteDate(date, isMtime);
+
+            // Render relative by default
+            el.textContent = relativeStr;
+            el.title = "Click to show raw timestamp";
+            el.setAttribute("data-dates-initialized", "true");
+
+            // Toggle state on click
+            var showingRelative = true;
+            el.addEventListener("click", function() {
+              if (showingRelative) {
+                el.textContent = absoluteStr;
+                el.title = "Click to show relative time";
+              } else {
+                el.textContent = relativeStr;
+                el.title = "Click to show raw timestamp";
+              }
+              showingRelative = !showingRelative;
+            });
+          });
+
+          // 5. Header Title Search Click Interceptor
+          var headerTitleLink = document.querySelector(".book-header h1 a");
+          var headerSearch = document.querySelector(".header-search-bar");
+          var headerMetaBar = document.querySelector(".header-meta-bar");
+          var headerH1 = document.querySelector(".book-header h1");
+          var headerSearchInput = document.getElementById("header-search-input");
+          var headerSearchClose = document.querySelector(".header-search-close");
+
+          if (headerTitleLink && headerSearch && headerH1 && headerSearchInput && headerSearchClose) {
+            // Intercept click on the header title
+            headerTitleLink.addEventListener("click", function(e) {
+              e.preventDefault(); // Stop redirection to home
+              e.stopPropagation();
+
+              // Hide title only, keeping dynamic published/updated metadata fully visible
+              headerH1.style.setProperty("display", "none", "important");
+
+              // Show search bar and focus input
+              headerSearch.style.setProperty("display", "flex", "important");
+              headerSearchInput.focus();
+            });
+
+            // Close search on close button click
+            headerSearchClose.addEventListener("click", function(e) {
+              e.stopPropagation();
+              closeHeaderSearch();
+            });
+
+            // Close search on Escape key press
+            headerSearchInput.addEventListener("keydown", function(e) {
+              if (e.key === "Escape") {
+                closeHeaderSearch();
+              }
+            });
+
+            // Close search on click out (blur) if the input is empty
+            headerSearchInput.addEventListener("blur", function() {
+              if (headerSearchInput.value.trim() === "") {
+                closeHeaderSearch();
+              }
+            });
+
+            // Sync typing to sidebar search input
+            headerSearchInput.addEventListener("input", function() {
+              var query = headerSearchInput.value;
+              var sidebarInput = document.querySelector("#book-search-input input");
+              if (sidebarInput) {
+                sidebarInput.value = query;
+                // Dispatch input events so the native search plugin handles it
+                var inputEvent = new Event("input", { bubbles: true });
+                var changeEvent = new Event("change", { bubbles: true });
+                var keyupEvent = new KeyboardEvent("keyup", { bubbles: true, key: "Enter" });
+                sidebarInput.dispatchEvent(inputEvent);
+                sidebarInput.dispatchEvent(changeEvent);
+                sidebarInput.dispatchEvent(keyupEvent);
+              }
+            });
+
+            function closeHeaderSearch() {
+              // Clear inputs
+              headerSearchInput.value = "";
+              var sidebarInput = document.querySelector("#book-search-input input");
+              if (sidebarInput) {
+                sidebarInput.value = "";
+                var inputEvent = new Event("input", { bubbles: true });
+                sidebarInput.dispatchEvent(inputEvent);
+              }
+
+              // Hide search bar
+              headerSearch.style.setProperty("display", "none", "important");
+
+              // Restore title by clearing custom inline displays, metadata was never hidden
+              headerH1.style.display = "";
+            }
+          }
+
+          // 6. Persist Sidebar Scroll Position Across PJAX Transitions
+          var sidebarNav = document.querySelector(".book-summary nav");
+          if (sidebarNav) {
+            // Restore scroll position
+            var savedScrollTop = sessionStorage.getItem("sidebarScrollTop");
+            if (savedScrollTop !== null) {
+              var targetScroll = parseFloat(savedScrollTop);
+              sidebarNav.scrollTop = targetScroll;
+              // Re-check scroll on the next animation frame to prevent timing layout resets
+              requestAnimationFrame(function() {
+                if (sidebarNav) sidebarNav.scrollTop = targetScroll;
+              });
+            }
+
+            // Save scroll position on scroll with a short debounce
+            var scrollTimeout;
+            sidebarNav.addEventListener("scroll", function() {
+              clearTimeout(scrollTimeout);
+              scrollTimeout = setTimeout(function() {
+                sessionStorage.setItem("sidebarScrollTop", sidebarNav.scrollTop);
+              }, 50);
+            });
+          }
+        }
+
+        // Run once on DOM load
+        initializePage();
+
+        // Register callback in GitBook pushState event bus to re-run on PJAX navigation
+        var gitbook = window.gitbook || [];
+        gitbook.push(function() {
+          gitbook.events.bind("page.change", function() {
+            initializePage();
+          });
+        });
+      });
+    </script>
+{% endblock %}
+
+{% block book_inner %}
+    <div class="book-header" role="navigation">
+        <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            <a href="{{ "/"|resolveFile }}" >{{ page.title }}</a>
+        </h1>
+        
+        <!-- Premium Header Search HUD -->
+        <div class="header-search-bar" style="display: none;">
+            <i class="fa fa-search header-search-icon"></i>
+            <input type="text" id="header-search-input" placeholder="Type to search notes..." autocomplete="off" />
+            <button class="header-search-close" title="Close search">&times;</button>
+        </div>
+
+        <div class="header-meta-bar">
+            {% if page.date %}
+                <div class="header-meta-item page-meta-clickable header-meta-left" data-date="{{ page.date }}">
+                    PUBLISHED // {{ page.date }}
+                </div>
+            {% else %}
+                <div class="header-meta-item header-meta-left">
+                    SYSTEM NOTE
+                </div>
+            {% endif %}
+            <div class="header-meta-item page-meta-clickable header-meta-right" data-mtime="{{ file.mtime }}">
+                LAST UPDATED // {{ file.mtime }}
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+            {% block search_results %}
+                <section class="normal markdown-section">
+                {% block page %}
+                {{ page.content|safe }}
+                {% endblock %}
+                </section>
+            {% endblock %}
+        </div>
+    </div>
 {% endblock %}

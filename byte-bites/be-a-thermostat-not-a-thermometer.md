@@ -1,5 +1,6 @@
 ---
 description: 'From: https://larahogan.me/blog/be-a-thermostat-not-a-thermometer/'
+date: 2024-09-17
 ---
 
 # Be a thermostat, not a thermometer

@@ -2,6 +2,7 @@
 description: >-
   What I learned building a realtime race coach using Gemini 3, Antigravity,
   Chrome and Firebase
+date: 2025-12-21
 ---
 
 # The Race for Real-Time

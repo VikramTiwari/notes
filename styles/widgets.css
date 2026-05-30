@@ -1,0 +1,176 @@
+/* --- 🖥️ Terminal CRT Code Blocks (Glowing Embedded console screens) --- */
+.markdown-section code {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.88em !important;
+}
+
+.markdown-section pre {
+  background-color: var(--bg-terminal) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 25px 0 !important;
+  overflow-x: auto !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 255, 135, 0.02) !important;
+  position: relative;
+}
+
+/* Terminal top bar decoration */
+.markdown-section pre::before {
+  content: "[SYS/LOG -- CONSOLE LOG]" !important;
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+.markdown-section pre code {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #e2e8f0 !important;
+  font-size: 0.9em !important;
+}
+
+/* --- 📋 Dynamic HUD COPY Button --- */
+.copy-code-btn {
+  position: absolute !important;
+  top: 10px !important;
+  right: 15px !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid var(--border-volt) !important;
+  color: var(--text-secondary) !important;
+  border-radius: 4px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+  cursor: pointer !important;
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  z-index: 10 !important;
+}
+
+/* Smoothly reveal COPY button when code block is hovered */
+.markdown-section pre:hover .copy-code-btn {
+  opacity: 1 !important;
+}
+
+.copy-code-btn:hover {
+  color: var(--neon-volt) !important;
+  border-color: var(--neon-volt) !important;
+  box-shadow: 0 0 10px var(--neon-volt-glow) !important;
+  background: rgba(0, 255, 135, 0.05) !important;
+}
+
+.copy-code-btn.copied {
+  color: #020408 !important;
+  background: var(--neon-volt) !important;
+  border-color: var(--neon-volt) !important;
+  box-shadow: 0 0 15px var(--neon-volt-glow) !important;
+  font-weight: 700 !important;
+}
+
+/* --- 🎚️ Thin, Glowing Custom Scrollbars for Code Panels --- */
+.markdown-section pre::-webkit-scrollbar {
+  height: 6px !important;
+  width: 6px !important;
+}
+
+.markdown-section pre::-webkit-scrollbar-track {
+  background: #020408 !important;
+  border-radius: 4px !important;
+}
+
+.markdown-section pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 135, 0.2) !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(0, 255, 135, 0.1) !important;
+  transition: background 0.3s ease !important;
+}
+
+.markdown-section pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 135, 0.5) !important;
+  border-color: var(--neon-volt) !important;
+  box-shadow: 0 0 10px var(--neon-volt-glow) !important;
+}
+
+/* --- 🎨 Custom Code Highlighting (Professional Mad Scientist Console Palette) --- */
+.token.comment, .hljs-comment, .pl-c {
+  color: #576f8e !important; /* soft clinical slate comment */
+  font-style: italic !important;
+}
+
+.token.keyword, .hljs-keyword, .pl-k {
+  color: #00ff87 !important; /* Volt green for instructions */
+  font-weight: 600 !important;
+}
+
+.token.string, .hljs-string, .pl-s {
+  color: #fbbf24 !important; /* amber/gold for strings */
+}
+
+.token.number, .hljs-number, .pl-c1, .token.boolean, .token.regex {
+  color: #ff007f !important; /* neon pink/magenta for values/literals */
+}
+
+.token.function, .hljs-function, .pl-en, .token.class-name {
+  color: #38bdf8 !important; /* glowing sky blue for definitions */
+}
+
+.token.operator, .token.punctuation, .hljs-punctuation {
+  color: #8fa0ba !important; /* secondary log color */
+}
+
+.token.selector, .token.attr-name, .hljs-attr, .pl-v {
+  color: #a855f7 !important; /* glowing electric purple for attributes */
+}
+
+/* --- ♿ Accessibility (a11y) & Interactive Focus Indicators --- */
+a:focus-visible, 
+button:focus-visible, 
+input:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--cobalt-blue) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 12px rgba(3, 105, 161, 0.3) !important;
+}
+
+/* Skip link visibility helper (if present in markup) */
+.skip-link:focus-visible {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  background: var(--bg-clipboard) !important;
+  padding: 10px 20px !important;
+  border: 1px solid var(--cobalt-blue) !important;
+  z-index: 1000 !important;
+}
+
+/* --- 📊 Mermaid Diagrams --- */
+.mermaid {
+  background: var(--bg-clipboard) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 25px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02) !important;
+}
+
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+}

@@ -10,6 +10,8 @@ clean:
 
 # Build all components locally (Notes, Home page, and Book Shelf)
 build: clean
+	@echo "🧬 Injecting Git-based publication dates..."
+	node scripts/inject-git-dates.js
 	@echo "🏗️ Building HonKit notes..."
 	npx honkit build ./ _book/notes
 	@echo "🏠 Copying Home landing page..."

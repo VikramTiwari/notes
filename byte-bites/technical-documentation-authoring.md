@@ -1,5 +1,6 @@
 ---
 description: From https://diataxis.fr/
+date: 2024-12-06
 ---
 
 # Technical Documentation Authoring

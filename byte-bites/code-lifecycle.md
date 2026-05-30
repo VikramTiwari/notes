@@ -1,5 +1,6 @@
 ---
 description: 'From: https://olano.dev/2023-11-30-code-is-run-more-than-read/'
+date: 2023-12-02
 ---
 
 # Code lifecycle

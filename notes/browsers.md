@@ -1,5 +1,6 @@
 ---
 description: Various tips and tricks for browsers
+date: 2023-11-13
 ---
 
 # Browsers

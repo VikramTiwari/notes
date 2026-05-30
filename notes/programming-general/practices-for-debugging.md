@@ -1,5 +1,6 @@
 ---
 description: Not products or tools
+date: 2024-03-30
 ---
 
 # Practices for debugging

@@ -1,5 +1,6 @@
 ---
 description: Dis-correlation between decision quality and outcome quality
+date: 2023-11-13
 ---
 
 # How to decide

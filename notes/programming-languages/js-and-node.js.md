@@ -1,5 +1,6 @@
 ---
 description: Quick code samples that I use often times for Node and JS
+date: 2023-11-13
 ---
 
 # JS and Node.js

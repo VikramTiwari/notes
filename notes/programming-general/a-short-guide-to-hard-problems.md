@@ -1,5 +1,6 @@
 ---
 description: From https://www.quantamagazine.org/a-short-guide-to-hard-problems-20180716/
+date: 2024-03-30
 ---
 
 # A short guide to hard problems

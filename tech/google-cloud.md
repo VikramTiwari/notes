@@ -1,5 +1,6 @@
 ---
 description: All the goodness of Google Cloud Platform
+date: 2019-03-01
 ---
 
 # Google Cloud

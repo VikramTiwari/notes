@@ -1,5 +1,6 @@
 ---
 description: Links to pages in mediawiki
+date: 2019-12-31
 ---
 
 # MediaWiki Pages

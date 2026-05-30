@@ -1,5 +1,6 @@
 ---
 description: 'From: https://www.motionmountain.net/9lines.html'
+date: 2023-11-13
 ---
 
 # 9 Lines with all of Physics

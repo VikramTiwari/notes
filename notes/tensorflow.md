@@ -1,5 +1,6 @@
 ---
 description: 'Resources for TensorFlow, Machine Learning and AI'
+date: 2023-11-13
 ---
 
 # TensorFlow

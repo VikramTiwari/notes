@@ -1,5 +1,6 @@
 ---
 description: easier ways to explain stuff
+date: 2019-04-12
 ---
 
 # Another way to put it

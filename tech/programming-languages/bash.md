@@ -1,5 +1,6 @@
 ---
 description: Various terminal commands that I don't wanna remember
+date: 2026-05-30
 ---
 
 # Bash
