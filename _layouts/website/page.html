@@ -13,6 +13,11 @@
 <!-- Optimizing Font Delivery (Space Grotesk & Fira Code) -->
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+<!-- Production-Grade Standard Meta SEO Tags -->
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
+<meta name="author" content="Vikram Tiwari" />
+<meta name="robots" content="index, follow" />
+
 <!-- Dynamic Social Social Share SEO HUD (Open Graph & Twitter Cards) -->
 <meta property="og:title"
   content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />

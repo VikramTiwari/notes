@@ -1,8 +1,8 @@
 ---
+title: "Design Resources"
 description: 'Find icons, background etc'
 date: 2020-03-07
 ---
-
 # Design Resources
 
 Image manipulation software
@@ -29,6 +29,3 @@ CSS Frameworks
 Colors
 
 * [https://material.io/resources/color](https://material.io/resources/color)
-
-
-

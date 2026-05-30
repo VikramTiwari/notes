@@ -1,10 +1,9 @@
 ---
-description: >-
-  Applicable to a lot more scenarios. From:
-  https://spacecraft.ssl.umd.edu/akins_laws.html
+title: "Akin's Laws of Spacecraft Design"
+description: >- 
+  Akin's laws of spacecraft design, outlining the iterative nature of engineering, error tolerance, and realistic expectations. From Dave Akin, UMD.
 date: 2023-11-13
 ---
-
 # Akin's Laws of Spacecraft Design
 
 1. Engineering is done with numbers. Analysis without numbers is only an opinion.

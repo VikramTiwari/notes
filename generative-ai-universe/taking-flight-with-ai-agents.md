@@ -1,8 +1,9 @@
 ---
-description: Building the Wingspan Agent, your feathered friend finder!
+title: "Taking Flight with AI Agents"
+description: >- 
+  Building the Wingspan Agent, a conversational bird identifier leveraging Google's Agent Development Kit (ADK) and Gemini 2.0 Flash Lite for cost-effective AI.
 date: 2025-04-21
 ---
-
 # Taking Flight with AI Agents
 
 Have you ever been strolling through a park, heard a distinct chirp, or spotted a flash of vibrant color flit past, and thought, "Wow, what bird _is_ that?" Me too! My strolls along San Francisco's piers often make me pause and stare in wonder. However, identifying my feathered visitors usually involves frantic googling or flipping through dense field guides.
@@ -107,4 +108,3 @@ Building the Wingspan Agent felt like teaching a digital friend about the wonder
 
 
 Happy birding, and happy coding! :hatching\_chick:
-

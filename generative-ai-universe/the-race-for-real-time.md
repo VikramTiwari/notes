@@ -1,10 +1,9 @@
 ---
-description: >-
-  What I learned building a realtime race coach using Gemini 3, Antigravity,
-  Chrome and Firebase
+title: "The Race for Real-Time"
+description: >- 
+  What I learned building a real-time Formula 1 performance coach with Gemini 3, Chrome, and Firebase, including key insights on telemetry analysis and model latency.
 date: 2025-12-21
 ---
-
 # The Race for Real-Time
 
 If you look at the commit history for the [**replay**](https://github.com/gemini-fieldtest/replay/commits/main/), you’ll see a blur of activity around mid-December. To the outside observer, it looks like a standard software sprint. But from where I was sitting—staring at a monitor with multiple terminal windows open, trying to get a 3D car to render at 60FPS while a local LLM analyzed its telemetry—it felt more like a pit stop in Formula 1.

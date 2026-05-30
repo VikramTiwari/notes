@@ -11,8 +11,8 @@ clean:
 # Build all components locally (Notes, Home page, and Book Shelf)
 # Reuses cached book-shelf/dist build if present to dramatically speed up notes iteration
 build: clean
-	@echo "🧬 Injecting Git-based publication dates..."
-	node scripts/inject-git-dates.js
+	@echo "🧬 Compiling document metadata (dates, titles, descriptions)..."
+	node scripts/compile-metadata.js
 	@echo "🏗️ Building HonKit notes..."
 	npx honkit build ./ _book/notes
 	@echo "🏠 Copying Home landing page..."
@@ -33,8 +33,8 @@ build: clean
 
 # Force a completely clean build including book-shelf Vite compilation
 build-force: clean
-	@echo "🧬 Injecting Git-based publication dates..."
-	node scripts/inject-git-dates.js
+	@echo "🧬 Compiling document metadata (dates, titles, descriptions)..."
+	node scripts/compile-metadata.js
 	@echo "🏗️ Building HonKit notes..."
 	npx honkit build ./ _book/notes
 	@echo "🏠 Copying Home landing page..."

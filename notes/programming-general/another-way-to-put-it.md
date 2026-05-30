@@ -1,8 +1,8 @@
 ---
+title: "Another way to put it"
 description: easier ways to explain stuff
 date: 2024-03-30
 ---
-
 # Another way to put it
 
 [Alternative Big-O notations](https://twitter.com/jwcarroll/status/1114576190247976960)
@@ -30,4 +30,3 @@ tracing
 column store or autoindexed
 very near realtime
 ```
-

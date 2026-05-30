@@ -1,8 +1,9 @@
 ---
-description: A deep dive into the engineering, modular layouts, and automated pipeline behind this notes logbook.
+title: "📐 Notes Architecture & Build Engineering"
+description: >- 
+  A deep dive into the engineering behind this clinical logbook, covering modular CSS imports, scroll state persistence, metadata compilation, and Git submodules.
 date: 2026-05-30
 ---
-
 # 📐 Notes Architecture & Build Engineering
 
 This website, [notes.vikramtiwari.com](https://notes.vikramtiwari.com), is more than a simple static site; it is a highly custom, technically optimized, and accessible **"Clinical Logbook"** and knowledge base. 
@@ -21,7 +22,7 @@ graph TD
         M["Makefile"] -->|"1. make build"| H["HonKit Compiler"]
         M -->|"2. make sync"| S["scripts/deploy.js"]
         H -->|"Generates html/css"| O["Static Output: _book/"]
-        D["scripts/inject-git-dates.js"] -->|"Injects frontmatter"| H
+        D["scripts/compile-metadata.js"] -->|"Compiles frontmatter"| H
     end
 
     subgraph Submodules ["Submodule Folders"]
@@ -110,13 +111,13 @@ headerTitleLink.addEventListener("click", function(e) {
 
 The website relies on automated targets managed by a top-level **`Makefile`**:
 
-### 1. Git-based Date Injection
-To prevent hardcoding publication variables, the build pipeline runs `node scripts/inject-git-dates.js` automatically during build:
+### 1. Automated Document Metadata Compilation
+To prevent manual YAML frontmatter authoring, the build pipeline runs `node scripts/compile-metadata.js` automatically during build:
 1. Scans all markdown pages in the workspace.
-2. Queries local Git commit history to extract the absolute creation date (`git log --diff-filter=A --format=%aI`) for each page.
-3. Automatically writes a `date` field in the frontmatter of pages missing it.
-4. Reads the file modification metadata (`file.mtime`) to dynamically display last-updated values.
-5. In the browser, these dates are displayed relative to the present moment (e.g. `yesterday`, `3 weeks ago`) and toggle to raw absolute timestamps on-click.
+2. Queries local Git commit history to extract the absolute creation date (`git log --diff-filter=A --format=%as`) for each page and writes `date: YYYY-MM-DD`.
+3. Dynamically extracts the H1 markdown heading as `title: "..."` and the first descriptive text paragraph as `description: "..."` if missing.
+4. Reassembles the frontmatter cleanly, preserving any existing multiline block scalar descriptions exactly as written.
+5. In the browser, dynamic timestamps are displayed relative to the present moment (e.g. `yesterday`, `3 weeks ago`) and toggle to raw absolute timestamps on-click.
 
 ### 2. Multi-Repository Orchestration
 Landing pages and specialized catalog apps are maintained in independent repositories. To integrate them without writing dynamic loaders:
@@ -124,12 +125,10 @@ Landing pages and specialized catalog apps are maintained in independent reposit
 * The Makefile automates their synchronization:
   ```makefile
   build:
-      node scripts/inject-git-dates.js
+      node scripts/compile-metadata.js
       npx honkit build ./ _book/notes
       rsync -av --exclude='.git' home/ _book/
-      cd book-shelf && npm install && npx vite build --base=/books/
-      mkdir -p _book/books && cp -r book-shelf/dist/* _book/books/
-      node scripts/generate-sitemap.js
+      ...
   ```
 * Running `make build` compiles the book, updates sitemaps, bundles the Vite catalog assets, and packages them into the clean static folder `_book` ready for 2-second hosting deploys!
 

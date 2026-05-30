@@ -1,8 +1,8 @@
 ---
+title: "21 facts about throwing good parties"
 description: 'From: https://www.atvbt.com/21-facts-about-throwing-good-parties/'
 date: 2025-11-03
 ---
-
 # 21 facts about throwing good parties
 
 1. Prioritize your ease of being over any other consideration: parties are like babies, if you’re stressed while holding them they’ll get stressed too. Every other decision is downstream of your serenity: e.g. it's better to have mediocre pizza from a happy host than fabulous hors d'oeuvres from a frazzled one.

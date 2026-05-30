@@ -1,8 +1,9 @@
 ---
-description: From https://neverworkintheory.org/2021/08/29/software-development-waste.html
+title: "Software Development Waste"
+description: >- 
+  A structural taxonomy of the nine types of software development waste—such as backlog mismatch, extraneous cognitive load, and knowledge loss—to audit engineering efficiency.
 date: 2023-11-13
 ---
-
 # Software Development Waste
 
 These findings may not generalize, but the taxonomy is still a valuable checklist for any team that's trying to figure out how to be more efficient.

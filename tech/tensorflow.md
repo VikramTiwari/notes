@@ -1,8 +1,8 @@
 ---
+title: "TensorFlow"
 description: 'Resources for TensorFlow, Machine Learning and AI'
 date: 2019-01-10
 ---
-
 # TensorFlow
 
 * Docs/Publications
@@ -56,6 +56,3 @@ date: 2019-01-10
   * [TensorFlow on YouTube](https://youtube.com/tensorflow)
   * [Siraj Raval on YouTube](https://www.youtube.com/sirajraval)
   * [Arxiv Insights on YouTube](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg)
-
-
-

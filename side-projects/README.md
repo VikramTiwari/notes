@@ -1,8 +1,8 @@
 ---
+title: "🚀 Side Projects"
 description: A curation of things I have built or am actively building.
 date: 2026-05-30
 ---
-
 # 🚀 Side Projects
 
 Here is a collection of side projects that I've built, ranging from data engineering toolkits to interactive ML applications.

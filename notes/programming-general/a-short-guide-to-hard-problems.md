@@ -1,8 +1,8 @@
 ---
+title: "A short guide to hard problems"
 description: From https://www.quantamagazine.org/a-short-guide-to-hard-problems-20180716/
 date: 2024-03-30
 ---
-
 # A short guide to hard problems
 
 What's easy for a computer to do, and what's almost impossible? These questions are at the core of computational complexity. Here's a landscape.

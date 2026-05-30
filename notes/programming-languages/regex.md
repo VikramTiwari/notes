@@ -1,8 +1,8 @@
 ---
+title: "Regex"
 description: Various regex resources that I have found useful
 date: 2023-11-13
 ---
-
 # Regex
 
 Websites
@@ -17,4 +17,3 @@ Samples
 // Increase 8 to larger number to check for longer timestamps.
 const isDurationTimestamp = /^([0-9:]{5,8})$/.test(`00:01`)
 ```
-

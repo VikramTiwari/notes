@@ -1,8 +1,9 @@
 ---
-description: 'From: https://larahogan.me/blog/be-a-thermostat-not-a-thermometer/'
+title: "Be a thermostat, not a thermometer"
+description: >- 
+  Learn the difference between being a thermometer that reflects weird vibes and a thermostat that actively influences and regulates the emotional temperature of the room. From Lara Hogan.
 date: 2024-09-17
 ---
-
 # Be a thermostat, not a thermometer
 
 We can identify weird vibes, even when we can't put our finger on it, we can tell that something is off. And it affects us, even if in subtle ways. This gut instinct is threat detection in our amygdalas.&#x20;

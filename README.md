@@ -1,8 +1,8 @@
 ---
+title: "Welcome"
 description: 'hey dreamer, let''s create'
 date: 2018-11-30
 ---
-
 # Welcome
 
 Hi there! Welcome to my notes.

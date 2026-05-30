@@ -1,8 +1,8 @@
 ---
+title: "Nginx + Docker + Let'sEncrypt on Ubuntu"
 description: How to setup a webservice using nginx + docker + LetsEncrypt on Ubuntu VMs
 date: 2019-03-01
 ---
-
 # Nginx + Docker + Let'sEncrypt on Ubuntu
 
 ## Pre-requisites
@@ -145,4 +145,3 @@ sudo certbot renew --dry-run
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 ```
-

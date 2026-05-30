@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf _book",
-    "docs:build": "npm run clean && node scripts/inject-git-dates.js && npx honkit build ./ _book/notes && rsync -av --exclude='.git' home/ _book/ && rm -f _book/service-worker.js",
+    "docs:build": "npm run clean && node scripts/compile-metadata.js && npx honkit build ./ _book/notes && rsync -av --exclude='.git' home/ _book/ && rm -f _book/service-worker.js",
     "docs:serve": "npx honkit serve --port 4001",
     "dev": "npm run docs:serve",
     "start": "npm run dev",

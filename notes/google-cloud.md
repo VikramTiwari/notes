@@ -1,8 +1,8 @@
 ---
+title: "Google Cloud"
 description: All the goodness of Google Cloud Platform
 date: 2023-11-13
 ---
-
 # Google Cloud
 
 * Free
@@ -63,5 +63,3 @@ AS SELECT DISTINCT * FROM `project.dataset.table`
 ```
 
 ### Second Tab
-
-

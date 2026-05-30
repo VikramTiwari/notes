@@ -1,8 +1,8 @@
 ---
+title: "Practices for debugging"
 description: Not products or tools
 date: 2024-03-30
 ---
-
 # Practices for debugging
 
 * Environment
@@ -21,4 +21,3 @@ date: 2024-03-30
   * Correct function calls
   * Function defaults and constants
   * Call stack/error stack
-

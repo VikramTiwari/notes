@@ -1,8 +1,9 @@
 ---
-description: 'From: https://www.youtube.com/watch?v=R1vskiVDwl4'
+title: "Better Conversations"
+description: >- 
+  Ten rules for better conversations: active listening, avoiding multitasking and pontificating, asking open-ended questions, and entering dialogues to learn. From Celeste Headlee.
 date: 2023-11-13
 ---
-
 # Better Conversations
 
 * Don’t multitask
@@ -40,4 +41,3 @@ date: 2023-11-13
   * We get distracted.
   * "Most of us don't listen with the intent to understand. We listen with the intent to reply."
 * Be brief
-

@@ -1,10 +1,9 @@
 ---
-description: >-
-  From
-  https://newsletter.weskao.com/p/how-to-give-a-senior-leader-feedback-without-getting-fired
+title: "Giving feedback"
+description: >- 
+  Advanced strategies for upward feedback, including the "even more" technique and self-exemplification to share insights with senior leadership safely and constructively. From Wes Kao.
 date: 2024-11-27
 ---
-
 # Giving feedback
 
 1. "Even more" technique. Because it's not binary, it's a spectrum.

@@ -1,8 +1,8 @@
 ---
+title: "Social"
 description: My social channels
 date: 2023-11-13
 ---
-
 # Social
 
 * Tech

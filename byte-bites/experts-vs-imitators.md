@@ -1,8 +1,9 @@
 ---
-description: From https://fs.blog/experts-vs-imitators/
+title: "Experts vs Imitators"
+description: >- 
+  How to distinguish true subject matter experts from shallow imitators using first principles testing, vocabulary adaptation, failure transparency, and knowledge boundaries. From Farnam Street.
 date: 2024-06-20
 ---
-
 # Experts vs Imitators
 
 If you want the highest quality of information, you have to speak to the best people. The trouble is that many claim to be experts, but aren't. A safeguard is to take your time to distinguish real experts from imitators. Example of imitators: A money manager who borrows talking points from Buffet but has no deeper understanding of the craft.

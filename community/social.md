@@ -1,8 +1,8 @@
 ---
+title: "Social"
 description: My social channels
 date: 2018-12-01
 ---
-
 # Social
 
 * Tech
@@ -34,4 +34,3 @@ date: 2018-12-01
   * [Facebook](https://www.facebook.com/iVikramTiwari)
   * [Instagram](http://instagram.com/ivikramtiwari)
   * [George's Instagram](https://www.instagram.com/the_sirgeorge/)
-

@@ -1,6 +1,5 @@
 ---
+title: "Notes"
 date: 2023-11-13
 ---
-
 # Notes
-

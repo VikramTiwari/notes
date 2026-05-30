@@ -1,7 +1,8 @@
 ---
+title: "Git/GitHub"
+description: "Fix issues with git hooks"
 date: 2023-11-13
 ---
-
 # Git/GitHub
 
 Fix issues with git hooks

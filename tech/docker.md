@@ -1,8 +1,8 @@
 ---
+title: "Docker and Kubernetes"
 description: some docker and k8s commands I don't wanna search over internet
 date: 2019-03-06
 ---
-
 # Docker and Kubernetes
 
  Docker ecosystem
@@ -95,6 +95,3 @@ kubectl logs deployment/website-deployment --tail 10 -f
 # ssh into a pod
 kubectl exec -it my-pod -- /bin/bash
 ```
-
-
-

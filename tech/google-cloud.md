@@ -1,8 +1,8 @@
 ---
+title: "Google Cloud"
 description: All the goodness of Google Cloud Platform
 date: 2019-03-01
 ---
-
 # Google Cloud
 
 * Free
@@ -47,4 +47,3 @@ More commands for quick usage
 # copy files from a VM to local
 gcloud compute scp --recurse my-vm://home/vikramtheone1/my-files/ ./ --zone=us-central1-b
 ```
-

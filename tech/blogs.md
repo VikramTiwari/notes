@@ -1,8 +1,8 @@
 ---
+title: "Blogs"
 description: Tech blogs which most probably are already outdated
 date: 2019-01-10
 ---
-
 # Blogs
 
 
@@ -27,6 +27,3 @@ date: 2019-01-10
   * [project visbug](https://github.com/GoogleChromeLabs/ProjectVisBug)
 * Technical Leadership
   * [Defining a distinguished engineer](https://blog.jessfraz.com/post/defining-a-distinguished-engineer/)
-
-
-

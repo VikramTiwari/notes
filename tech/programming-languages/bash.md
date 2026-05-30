@@ -1,8 +1,8 @@
 ---
+title: "Bash"
 description: Various terminal commands that I don't wanna remember
 date: 2026-05-30
 ---
-
 # Bash
 
 ## Super Powers
@@ -163,4 +163,3 @@ until [  $COUNTER -lt 10 ]; do
     let COUNTER-=1
 done
 ```
-

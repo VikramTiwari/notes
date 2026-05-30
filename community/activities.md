@@ -1,8 +1,8 @@
 ---
+title: "Activities"
 description: My various activities with communities all around North America region
 date: 2019-02-10
 ---
-
 # Activities
 
 
@@ -67,6 +67,3 @@ date: 2019-02-10
   * [https://medium.com/google-cloud/recipe-for-success-start-cooking-300d813f616d](https://medium.com/google-cloud/recipe-for-success-start-cooking-300d813f616d)
   * [https://medium.com/google-cloud/why-tensorflow-and-kubernetes-secret-sauce-2a0dd4c0b157](https://medium.com/google-cloud/why-tensorflow-and-kubernetes-secret-sauce-2a0dd4c0b157)
   * [https://medium.com/google-cloud/a-dissection-of-google-cloud-next-17-whats-next-c32f4d803750](https://medium.com/google-cloud/a-dissection-of-google-cloud-next-17-whats-next-c32f4d803750)
-
-
-

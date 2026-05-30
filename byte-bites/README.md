@@ -1,8 +1,8 @@
 ---
+title: "Byte Bites"
 description: Bite size terms from byte world
 date: 2023-11-13
 ---
-
 # Byte Bites
 
 * [Algotorial](https://a16z.simplecast.com/episodes/future-of-audio-video-music-podcasting-radio-interactivity-recommendation-discovery-spotify): Editors + Algorithms
@@ -89,4 +89,3 @@ date: 2023-11-13
   * There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, “I don’t see the use of this; let us clear it away.” To which the more intelligent type of reformer will do well to answer: “If you don’t see the use of it, I certainly won’t let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.”
   * Unless we know why someone made a decision, we can’t safely change it or conclude that they were wrong.
   * The first step before modifying an aspect of a system is to understand it. Observe it in full. Note how it interconnects with other aspects, including ones that might not be linked to you personally. Learn how it works, and then propose your change.
-

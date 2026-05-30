@@ -1,8 +1,9 @@
 ---
-description: 'From: https://olano.dev/2023-11-30-code-is-run-more-than-read/'
+title: "Code lifecycle"
+description: >- 
+  An architectural look at the software lifecycle hierarchy, demonstrating why code execution and user utility always outrank maintainer and author preferences. From Facundo Olano.
 date: 2023-12-02
 ---
-
 # Code lifecycle
 
 `maintainer > author` Code is read more than written
@@ -30,6 +31,3 @@ date: 2023-12-02
 `biz > user > ops > dev` Late capitalism
 
 `biz > user`: An elephant
-
-
-

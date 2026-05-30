@@ -1,8 +1,8 @@
 ---
+title: "Byte Bites"
 description: Bite size terms from byte world
 date: 2020-10-18
 ---
-
 # Byte Bites
 
 * [Algotorial](https://a16z.simplecast.com/episodes/future-of-audio-video-music-podcasting-radio-interactivity-recommendation-discovery-spotify): Editors + Algorithms
@@ -76,6 +76,3 @@ date: 2020-10-18
     * talking to users for delights, frustrations, what's there, what works, what's missing
     * shared with everyone in team
     * shared annotated video notes
-
-
-

@@ -1,10 +1,9 @@
 ---
-description: >-
-  Delegate to increase your ability to deliver the results your business depends
-  on to grow and thrive
+title: "Effective delegation"
+description: >- 
+  Master the five levels of effective engineering delegation—from Assess & Report to full autonomy—to increase deliverable throughput and scale team capability. From Lara Hogan.
 date: 2023-11-13
 ---
-
 # Effective delegation
 
 Five levels of delgation

@@ -1,8 +1,8 @@
 ---
+title: "MediaWiki Pages"
 description: Links to pages in mediawiki
 date: 2019-12-31
 ---
-
 # MediaWiki Pages
 
 * [MediaWiki:Sidebar](https://www.mediawiki.org/wiki/Manual:Interface/Sidebar)
@@ -16,4 +16,3 @@ date: 2019-12-31
 Other tasks:
 
 * [Preventing Access](https://www.mediawiki.org/wiki/Manual:Preventing_access)
-

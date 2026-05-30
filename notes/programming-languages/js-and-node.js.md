@@ -1,8 +1,8 @@
 ---
+title: "JS and Node.js"
 description: Quick code samples that I use often times for Node and JS
 date: 2023-11-13
 ---
-
 # JS and Node.js
 
 JS code snippets
@@ -111,4 +111,3 @@ My packages
 
 * [geo-from-ip](https://www.npmjs.com/package/geo-from-ip)
 * [reverse-geocode](https://www.npmjs.com/package/reverse-geocode)
-

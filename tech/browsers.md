@@ -1,8 +1,8 @@
 ---
+title: "Browsers"
 description: Various tips and tricks for browsers
 date: 2019-11-15
 ---
-
 # Browsers
 
 **Chromium**
@@ -21,6 +21,3 @@ Chrome URLs for specific use cases:
 * chrome://discards for tabs usage map
 * chrome://version for all configuration related to chrome's launch
 * chrome://flags for all the flags enabled/disabled for chrome
-
-
-

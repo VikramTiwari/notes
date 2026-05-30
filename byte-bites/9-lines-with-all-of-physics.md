@@ -1,8 +1,8 @@
 ---
+title: "9 Lines with all of Physics"
 description: 'From: https://www.motionmountain.net/9lines.html'
 date: 2023-11-13
 ---
-
 # 9 Lines with all of Physics
 
 1. Nature dislikes squander.
@@ -72,4 +72,3 @@ Three questions are open in fundamental physics:
    2. What determines the limits of lines 2 to 5?
    3. What determines lines 6 to 9, i.e. the force spectrum, the particle spectrum and the fundamental constants?
    4. The lines 6 to 9 contain the only known physics effects unexplained by and thus beyond the standard model.
-

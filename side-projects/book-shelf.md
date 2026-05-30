@@ -1,8 +1,9 @@
 ---
-description: Engineering a 3D WebGL library catalog using Three.js circular orbits, real-time CSV parsing, and fuzzy index searching.
+title: "📚 Engineering a 3D WebGL Book Shelf & Infinite Carousel"
+description: >- 
+  Engineering a 3D WebGL catalog using Three.js circular carousel orbits, real-time CSV parsing, and Fuse.js fuzzy index searching.
 date: 2026-05-30
 ---
-
 # 📚 Engineering a 3D WebGL Book Shelf & Infinite Carousel
 
 Have you ever wanted to walk through your digital library catalog as if it were a physical room?

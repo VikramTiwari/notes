@@ -1,8 +1,8 @@
 ---
+title: "Speaking and writing Tips"
 description: Tips from best speakers around
 date: 2023-11-13
 ---
-
 # Speaking and writing Tips
 
 ## Presentation Checklist
@@ -73,4 +73,3 @@ A **reference guide**:
 * describes the machinery
 * is accurate and complete
 * Analogy: a reference encyclopaedia article
-

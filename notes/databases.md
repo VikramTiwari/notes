@@ -1,8 +1,8 @@
 ---
+title: "Databases"
 description: 'Mongo, MySQL, Redis and BigQuery. Mostly!'
 date: 2023-11-13
 ---
-
 # Databases
 
 ## Mongo
@@ -18,4 +18,3 @@ Import the collection from exported `json` file
 ```bash
 mongoimport --host <host>:<port> --ssl --username <username> --password <password> --authenticationDatabase admin --db <collection> --collection <collection> --type json --file <collection>.json
 ```
-

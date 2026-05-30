@@ -1,8 +1,9 @@
 ---
-description: Dis-correlation between decision quality and outcome quality
+title: "How to decide"
+description: >- 
+  Decoupling decision quality from outcome quality by analyzing hindsight bias, the paradox of sequential experience, and information state mapping. From Annie Duke.
 date: 2023-11-13
 ---
-
 # How to decide
 
 Source: [https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life](https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-convince-inform-decide-teams-life)
@@ -103,4 +104,3 @@ Source: [https://a16z.simplecast.com/episodes/how-to-decide-annie-duke-convey-co
   * You can't quit it but you can negate it. If so, think hard about it because it's tough to get out of there. If you can negate it then you can go faster.
   * Decision Stacking: For when you have to make a big bet. Find out things that you can do before, that help you gather decision, so that when you have to make the decision, your model of the world is better. Get a feel for the world. Low impact decisions to get better feel. Get a lot of directional information to de-risk your decision.
     * When you are 90% sure, find out what is the information that will cause you to flip the decision. If there's such information, find out if you can get it. If you can, get it. If you can't get it, then that's the state of the world, you should make that as the decision.
-

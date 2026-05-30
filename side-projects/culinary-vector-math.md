@@ -1,8 +1,9 @@
 ---
-description: Mapping a 300-dimensional galaxy of 1,790 ingredients using UMAP, Taste Anchors, and a highly optimized Rust WASM engine.
+title: "🚀 Journey into the 300-Dimensional Culinary Universe"
+description: >- 
+  Mapping a 300-dimensional galaxy of 1,790 ingredients using UMAP, taste anchors, and a Rust WASM engine, based on the arXiv:2605.22391 research paper.
 date: 2026-05-30
 ---
-
 # 🚀 Journey into the 300-Dimensional Culinary Universe
 
 Have you ever stared at a carrot and wondered, *"Is this closer to a parsnip or a coriander seed?"* 
