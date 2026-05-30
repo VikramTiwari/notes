@@ -1,7 +1,8 @@
 ---
+title: "Help me!"
 description: Things that I would love some help with
+date: 2023-11-13
 ---
-
 # Help me!
 
 * Build a healthy diet

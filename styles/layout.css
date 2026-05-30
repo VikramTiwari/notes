@@ -354,9 +354,23 @@
   transform: scale(1.1) !important;
 }
 
-/* Override default HonKit 'fa-align-justify' with a clean 3-line hamburger icon ('fa-bars') */
-.fa-align-justify::before {
-  content: "\f0c9" !important;
+/* Dynamic Sidebar Toggle Icon: changes between closed (hamburger) and open (close cross) states */
+.fa-align-justify {
+  display: inline-block !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.book:not(.with-summary) .fa-align-justify::before {
+  content: "\f0c9" !important; /* fa-bars (hamburger) when menu is closed */
+}
+
+.book.with-summary .fa-align-justify::before {
+  content: "\f00d" !important; /* fa-times (close cross) when menu is open */
+}
+
+/* Subtle spin on toggle hover for a premium interactive feel */
+.book-header .btn:hover .fa-align-justify {
+  transform: rotate(90deg) !important;
 }
 
 /* --- 🎛️ Calibration Arrows (Navigation) --- */

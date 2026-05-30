@@ -234,7 +234,7 @@ function scanDirectory(dir) {
             scanDirectory(fullPath);
         } else if (file.endsWith('.md')) {
             // Ignore system/summary files
-            if (file === 'SUMMARY.md' || file === 'help-me.md') return;
+            if (file === 'SUMMARY.md') return;
             processFile(fullPath);
         }
     });
