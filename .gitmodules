@@ -1,0 +1,6 @@
+[submodule "home"]
+	path = home
+	url = git@github.com:VikramTiwari/vikramtiwari.github.com.git
+[submodule "book-shelf"]
+	path = book-shelf
+	url = https://github.com/VikramTiwari/book-shelf
