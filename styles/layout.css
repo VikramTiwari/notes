@@ -345,10 +345,18 @@
 
 .btn {
   color: var(--text-secondary) !important;
+  background: transparent !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .btn:hover {
   color: var(--cobalt-blue) !important;
+  transform: scale(1.1) !important;
+}
+
+/* Override default HonKit 'fa-align-justify' with a clean 3-line hamburger icon ('fa-bars') */
+.fa-align-justify::before {
+  content: "\f0c9" !important;
 }
 
 /* --- 🎛️ Calibration Arrows (Navigation) --- */
