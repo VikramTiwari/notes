@@ -2,10 +2,6 @@
 
 * [Welcome](README.md)
 
-## All
-
-***
-
 * [Byte Bites](byte-bites/README.md)
   * [What happens in the mind's eye](byte-bites/what-happens-in-the-minds-eye.md)
   * [Be a thermostat, not a thermometer](byte-bites/be-a-thermostat-not-a-thermometer.md)
@@ -53,6 +49,7 @@
   * [Books](social/books.md)
   * [Explore](social/explore.md)
 * [Side Projects](side-projects/README.md)
+  * [Book Shelf 3D Engine](side-projects/book-shelf.md)
   * [Culinary Vector Math Engine](side-projects/culinary-vector-math.md)
   * [Notes Website Architecture](side-projects/notes-architecture.md)
 * [Help me!](help-me.md)

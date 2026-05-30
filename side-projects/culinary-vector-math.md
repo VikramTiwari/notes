@@ -37,9 +37,9 @@ flowchart LR
     A["Epicure Core Corpus (300-D)<br>1,790 Ingredients (dense vectors)"] -->|UMAP Non-Linear Projection| B["Dimensional Reduction Manifold<br>(Preserves Aromatic Proximity)"]
     B -->|"3D Render Loop (Canvas / WASM)"| C["🛸 Organic Constellations Emerge:<br>• Aromatic Herbs<br>• Citrus Esters<br>• Roasted Alliums<br>• Smoked Fats<br>• Sweet Sugars"]
     
-    style A fill:#f8fafc,stroke:#0369a1,stroke-width:2px,color:#0f172a
-    style B fill:#f8fafc,stroke:#0e7490,stroke-width:2px,color:#0f172a
-    style C fill:#f8fafc,stroke:#0f766e,stroke-width:2px,color:#0f172a
+    style A fill:#ffffff,stroke:#0b4f8c,stroke-width:2px,color:#020617
+    style B fill:#e2e8f0,stroke:#cbd5e1,stroke-width:2px,color:#020617
+    style C fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#020617
 ```
 
 Because UMAP preserves local relationships, beautiful, organic flavor constellations naturally emerge. You can zoom **20.0x** through a warm-parchment aesthetic galaxy, drifting from **Citrus Esters** (lemons, limes, lemongrass) over to **Smoked Fats** (smoked Gouda, bacon) and watch the dynamic tethers link them.
@@ -101,14 +101,14 @@ flowchart TD
         State["Browser Address Bar<br>(URL Search Params)"] <-->|Real-time State Sync| Core
     end
 
-    style CSV fill:#f8fafc,stroke:#64748b,stroke-width:2px,color:#0f172a
-    style JSON fill:#f8fafc,stroke:#0284c7,stroke-width:2px,color:#0f172a
-    style Core fill:#f8fafc,stroke:#4f46e5,stroke-width:2px,color:#0f172a
-    style WASM fill:#f8fafc,stroke:#ea580c,stroke-width:2px,color:#0f172a
-    style Canvas fill:#f8fafc,stroke:#0891b2,stroke-width:2px,color:#0f172a
-    style State fill:#f8fafc,stroke:#0d9488,stroke-width:2px,color:#0f172a
-    style Offline fill:#f8fafc,stroke:#cbd5e1,stroke-width:2px,color:#334155,stroke-dasharray: 5 5
-    style Browser fill:#f8fafc,stroke:#cbd5e1,stroke-width:2px,color:#334155,stroke-dasharray: 5 5
+    style CSV fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,color:#020617
+    style JSON fill:#ffffff,stroke:#a14400,stroke-width:2px,color:#020617
+    style Core fill:#ffffff,stroke:#0b4f8c,stroke-width:2px,color:#020617
+    style WASM fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#020617
+    style Canvas fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#020617
+    style State fill:#e2e8f0,stroke:#cbd5e1,stroke-width:2px,color:#020617
+    style Offline fill:none,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray:5 5
+    style Browser fill:none,stroke:#0b4f8c,stroke-width:1px,stroke-dasharray:5 5
 ```
 
 * **React 18 & TypeScript**: Handles state synchronization and UI HUD layout.
@@ -134,8 +134,10 @@ This means you can discover a wild pairing connection, click copy, and send it t
 
 The code is fully open-source, and all operations are wrapped in an easy-to-use developer `Makefile` (running data-generation via UMAP, compiling WASM, and launching the Vite dev server).
 
-Explore the interactive graph, select your favorite base ingredient, and discover what unexpected pairing matches it best:
+Explore the interactive graph directly below, or open it in a new window:
 
-👉 **[Launch The Flavor Explorer](https://culinary-universe.vikramtiwari.com/)**
+👉 **[Launch The Flavor Explorer in full screen](https://culinary-universe.vikramtiwari.com/)**
+
+<div class="demo-embed-container" data-src="https://culinary-universe.vikramtiwari.com/" data-label="ACTIVATE 3D FLAVOR EXPLORER"></div>
 
 *What's your favorite unexpected ingredient pairing? Select it, copy your URL parameters, and send them my way!* 🍳

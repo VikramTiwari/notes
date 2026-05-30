@@ -125,6 +125,38 @@
   box-shadow: inset 3px 0 8px rgba(2, 132, 199, 0.02);
 }
 
+/* --- 🗂️ Collapsible Sidebar Accordion --- */
+/* Sub-lists collapsing by default (top-level only open) */
+.book-summary ul.summary li ul.articles {
+  display: none !important;
+}
+
+/* Expand the active category or if a sub-item inside is active */
+.book-summary ul.summary li.active > ul.articles,
+.book-summary ul.summary li:has(li.active) > ul.articles {
+  display: block !important;
+}
+
+/* Hierarchical indentation styling for nested sub-lists */
+.book-summary ul.summary li ul.articles li a,
+.book-summary ul.summary li ul.articles li span {
+  padding-left: 38px !important;
+}
+
+.book-summary ul.summary li ul.articles li ul.articles li a,
+.book-summary ul.summary li ul.articles li ul.articles li span {
+  padding-left: 52px !important;
+}
+
+/* Maintain smooth hover transition rules for nested layouts */
+.book-summary ul.summary li ul.articles li a:hover {
+  padding-left: 42px !important;
+}
+
+.book-summary ul.summary li ul.articles li ul.articles li a:hover {
+  padding-left: 56px !important;
+}
+
 .book-summary ul.summary li.header {
   color: var(--text-primary) !important;
   font-family: 'Space Grotesk', sans-serif !important;
@@ -323,3 +355,36 @@
 .navigation {
   display: none !important;
 }
+
+/* --- 🌐 Sidebar Social Links HUD --- */
+#sidebar-social-container {
+  padding: 10px 24px 0 24px !important;
+  flex-shrink: 0 !important;
+}
+
+.sidebar-social-icons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 15px !important;
+  border-top: 1px dashed var(--border-light) !important;
+  padding-top: 15px !important;
+}
+
+.sidebar-social-icons a {
+  color: var(--text-dim) !important;
+  font-size: 18px !important; /* Larger font size to look stunning as raw icons */
+  padding: 4px 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  opacity: 0.65 !important;
+}
+
+.sidebar-social-icons a:hover {
+  color: var(--cobalt-blue) !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+

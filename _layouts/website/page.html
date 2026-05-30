@@ -2,6 +2,21 @@
 
 {% block head %}
     {{ super() }}
+    <!-- Dynamic Social Share SEO HUD (Open Graph & Twitter Cards) -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vikramtiwari.com/notes/{{ file.path|replace('.md', '.html') }}" />
+    <meta property="og:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+    <meta property="og:site_name" content="Vik's Notes" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@vikram_tiwari" />
+    <meta name="twitter:creator" content="@vikram_tiwari" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
+    <meta name="twitter:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEFZF9R883"></script>
     <script>
@@ -11,8 +26,7 @@
 
       gtag('config', 'G-KEFZF9R883');
     </script>
-    <!-- Dynamic HUD Copy Button & Mermaid.js Integration -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <!-- Dynamic HUD Copy Button & Lazy Mermaid.js Integration -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         // Helper to format absolute dates
@@ -89,25 +103,48 @@
             pre.appendChild(copyBtn);
           });
 
-          // 2. Convert raw Mermaid code blocks to renderable containers
+          // 2. Convert raw Mermaid code blocks and lazy-load Mermaid.js
           var mermaidBlocks = document.querySelectorAll("pre code.lang-mermaid");
-          mermaidBlocks.forEach(function(code) {
-            var pre = code.parentNode;
-            var div = document.createElement("div");
-            div.className = "mermaid";
-            div.textContent = code.textContent;
-            pre.parentNode.replaceChild(div, pre);
-          });
-
-          // 3. Initialize Mermaid rendering
-          if (typeof mermaid !== "undefined") {
-            mermaid.initialize({ 
-              startOnLoad: true, 
-              theme: 'neutral',
-              securityLevel: 'loose'
+          var hasMermaid = mermaidBlocks.length > 0 || document.querySelectorAll(".mermaid").length > 0;
+          
+          if (mermaidBlocks.length > 0) {
+            mermaidBlocks.forEach(function(code) {
+              var pre = code.parentNode;
+              var div = document.createElement("div");
+              div.className = "mermaid";
+              div.textContent = code.textContent;
+              pre.parentNode.replaceChild(div, pre);
             });
-            // Re-trigger rendering of dynamically loaded mermaid containers
-            mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+          }
+
+          if (hasMermaid) {
+            if (typeof mermaid === "undefined") {
+              var scriptId = "mermaid-lazy-script";
+              var existingScript = document.getElementById(scriptId);
+              if (!existingScript) {
+                var script = document.createElement("script");
+                script.id = scriptId;
+                script.src = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js";
+                script.async = true;
+                script.onload = function() {
+                  initializeMermaid();
+                };
+                document.head.appendChild(script);
+              }
+            } else {
+              initializeMermaid();
+            }
+          }
+
+          function initializeMermaid() {
+            if (typeof mermaid !== "undefined") {
+              mermaid.initialize({ 
+                startOnLoad: false, 
+                theme: 'neutral',
+                securityLevel: 'loose'
+              });
+              mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+            }
           }
 
           // 4. Format dynamic relative/absolute metadata dates
@@ -222,7 +259,84 @@
             }
           }
 
-          // 6. Persist Sidebar Scroll Position Across PJAX Transitions
+          // 6. Inject Social Icons above "Published with HonKit"
+          var dividerLi = document.querySelector(".book-summary ul.summary li.divider");
+          var gitbookLink = document.querySelector(".book-summary ul.summary li a.gitbook-link");
+          if (gitbookLink && !document.getElementById("sidebar-social-container")) {
+            var parentLi = gitbookLink.parentNode;
+            var summaryUl = parentLi.parentNode;
+            var targetLi = dividerLi || parentLi; // Fallback if no divider is found
+            
+            var socialLi = document.createElement("li");
+            socialLi.id = "sidebar-social-container";
+            socialLi.innerHTML = `
+              <div class="sidebar-social-icons">
+                <a href="https://linkedin.com/in/VikramTiwari" target="_blank" rel="noopener" title="My LinkedIn">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/vikramtiwari" target="_blank" rel="noopener" title="My GitHub">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://twitter.com/vikram_tiwari" target="_blank" rel="noopener" title="My X (Twitter)">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </div>
+            `;
+            summaryUl.insertBefore(socialLi, targetLi);
+          }
+
+          // 7. Dynamic Click-to-Load WebGL Embeds (similar to YouTube)
+          var embeds = document.querySelectorAll(".demo-embed-container");
+          embeds.forEach(function(container) {
+            if (container.hasAttribute("data-embed-initialized")) return;
+            
+            var src = container.getAttribute("data-src");
+            var label = container.getAttribute("data-label") || "ACTIVATE INTERACTIVE DEMO";
+            if (!src) return;
+
+            // Clear any static placeholder fallback if present
+            container.innerHTML = "";
+
+            // Create play overlay
+            var overlay = document.createElement("div");
+            overlay.className = "demo-embed-play-overlay";
+            overlay.innerHTML = `
+              <div class="demo-embed-play-btn">
+                <i class="fa fa-play"></i>
+              </div>
+              <div class="demo-embed-play-label">[ ${label} ]</div>
+            `;
+            container.appendChild(overlay);
+
+            // Bind click to activate
+            container.addEventListener("click", function() {
+              if (container.querySelector("iframe")) return; // Prevent double trigger
+              
+              // Fade out overlay
+              overlay.style.opacity = "0";
+              setTimeout(function() {
+                overlay.remove();
+              }, 400);
+
+              // Dynamically inject iframe
+              var iframe = document.createElement("iframe");
+              iframe.className = "demo-embed-iframe";
+              iframe.src = src;
+              iframe.setAttribute("allow", "fullscreen");
+              iframe.setAttribute("loading", "lazy");
+              iframe.setAttribute("importance", "low");
+              iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups allow-forms");
+              iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+              container.appendChild(iframe);
+              
+              // Remove pointer cursor after activation
+              container.style.cursor = "default";
+            });
+
+            container.setAttribute("data-embed-initialized", "true");
+          });
+
+          // 8. Persist Sidebar Scroll Position Across PJAX Transitions
           var sidebarNav = document.querySelector(".book-summary nav");
           if (sidebarNav) {
             // Restore scroll position
@@ -261,7 +375,7 @@
     </script>
 {% endblock %}
 
-{% block book_summary %}
+{% block book_sidebar %}
     <div class="book-summary-header">
         <a href="https://vikramtiwari.com" class="sidebar-back-btn" title="Back to vikramtiwari.com">
             <i class="fa fa-chevron-left"></i>

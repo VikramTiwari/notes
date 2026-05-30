@@ -14,7 +14,8 @@ A personal digital library catalog and shelf explorer that indexes my reading li
 
 * **Status**: 🟢 Live
 * **Tech Stack**: JavaScript, Vite, CSV parsing, Firebase Hosting
-* **Path**: `/books/`
+* **Live App**: [vikramtiwari.com/books](https://vikramtiwari.com/books)
+* **Detailed Writeup**: [3D WebGL Library & Carousel Architecture](book-shelf.md)
 
 ---
 

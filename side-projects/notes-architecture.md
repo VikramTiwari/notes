@@ -31,9 +31,9 @@ graph TD
 
     O -->|"3. firebase deploy"| F["Firebase CDN Edge"]
 
-    style Parent fill:#f0f9ff,stroke:#0b4f8c,stroke-width:2px,color:#0b4f8c
-    style Submodules fill:#e2e8f0,stroke:#cbd5e1,color:#020617
-    style F fill:#00ff87,stroke:#0b4f8c,color:#020617
+    style Parent fill:#ffffff,stroke:#a14400,stroke-width:2px,color:#020617
+    style Submodules fill:#e2e8f0,stroke:#cbd5e1,stroke-width:2px,color:#020617
+    style F fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#020617
 ```
 
 ---

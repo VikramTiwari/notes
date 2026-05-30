@@ -174,3 +174,96 @@ input:focus-visible,
   max-width: 100% !important;
   height: auto !important;
 }
+
+/* --- 📦 Interactive Web Application Iframe Embeds --- */
+.demo-embed-container {
+  position: relative !important;
+  width: 100% !important;
+  height: 650px !important;
+  margin: 35px 0 !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+  background: var(--bg-archival) !important; /* Cotton archival paper background */
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.demo-embed-container:hover {
+  box-shadow: 0 15px 40px rgba(11, 79, 140, 0.08) !important;
+  border-color: var(--cobalt-blue) !important;
+}
+
+.demo-embed-iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  background: #ffffff !important;
+}
+
+/* Beautiful clinical play overlay HUD */
+.demo-embed-play-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgba(245, 244, 239, 0.95) !important; /* Low transparency cotton paper background */
+  background-image: 
+    linear-gradient(var(--blueprint-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blueprint-line) 1px, transparent 1px) !important;
+  background-size: 20px 20px !important; /* Delicate blueprint graph lines inside the play space */
+  z-index: 10 !important;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Central glowing blueprint play button */
+.demo-embed-play-btn {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--cobalt-blue) !important;
+  background: #ffffff !important;
+  color: var(--cobalt-blue) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+  padding-left: 6px !important; /* Correct for play icon offset */
+  margin-bottom: 20px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(11, 79, 140, 0.08) !important;
+}
+
+.demo-embed-container:hover .demo-embed-play-btn {
+  transform: scale(1.1) !important;
+  background: var(--cobalt-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px var(--cobalt-glow) !important;
+}
+
+.demo-embed-play-label {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  color: var(--cobalt-blue) !important;
+  text-transform: uppercase !important;
+  border: 1px dashed var(--border-light) !important;
+  padding: 8px 16px !important;
+  background: #ffffff !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.demo-embed-container:hover .demo-embed-play-label {
+  color: var(--vintage-amber) !important;
+  border-color: var(--vintage-amber) !important;
+}
+
