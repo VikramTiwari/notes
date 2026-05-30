@@ -34,7 +34,7 @@
 body, html {
   background-color: var(--bg-archival) !important;
   color: var(--text-primary) !important;
-  font-family: 'Space Grotesk', -apple-system, sans-serif !important;
+  font-family: 'Space Grotesk', -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   
   /* Delicate engineering graphing paper background */

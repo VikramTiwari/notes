@@ -22,6 +22,7 @@
   "devDependencies": {
     "firebase-tools": "^15.1.0",
     "honkit": "^6.0.0",
+    "honkit-plugin-katex": "^1.1.7",
     "honkit-plugin-prism": "^2.5.4"
   }
 }

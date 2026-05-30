@@ -136,7 +136,7 @@ The code is fully open-source, and all operations are wrapped in an easy-to-use 
 
 Explore the interactive graph directly below, or open it in a new window:
 
-👉 **[Launch The Flavor Explorer in full screen](https://culinary-universe.vikramtiwari.com/)**
+👉 **[Launch The Flavor Explorer in new tab](https://culinary-universe.vikramtiwari.com/)**
 
 <div class="demo-embed-container" data-src="https://culinary-universe.vikramtiwari.com/" data-label="ACTIVATE 3D FLAVOR EXPLORER"></div>
 

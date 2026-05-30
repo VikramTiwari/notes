@@ -92,7 +92,7 @@ The catalog is fully synced to our automated deployment pipeline, rebuilding Vit
 
 Explore the active bookshelf directly below, spin the circular rack, or open the catalog in a dedicated fullscreen viewport:
 
-👉 **[Launch Book Shelf in full screen](https://vikramtiwari.com/books)**
+👉 **[Launch Book Shelf in new tab](https://vikramtiwari.com/books)**
 
 <div class="demo-embed-container" data-src="https://vikramtiwari.com/books" data-label="LAUNCH 3D BOOKSHELF CATALOG"></div>
 
