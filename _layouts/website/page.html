@@ -1,275 +1,279 @@
 {% extends template.self %}
 
 {% block head %}
-    {{ super() }}
-    <!-- Dynamic Social Share SEO HUD (Open Graph & Twitter Cards) -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vikramtiwari.com/notes/{{ file.path|replace('.md', '.html') }}" />
-    <meta property="og:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
-    <meta property="og:site_name" content="Vik's Notes" />
+{{ super() }}
+<!-- Dynamic Social Share SEO HUD (Open Graph & Twitter Cards) -->
+<meta property="og:title"
+  content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
+<meta property="og:description"
+  content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vikramtiwari.com/notes/{{ file.path|replace('.md', '.html') }}" />
+<meta property="og:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+<meta property="og:site_name" content="Vik's Notes" />
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@vikram_tiwari" />
-    <meta name="twitter:creator" content="@vikram_tiwari" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
-    <meta name="twitter:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@vikram_tiwari" />
+<meta name="twitter:creator" content="@vikram_tiwari" />
+<meta name="twitter:title"
+  content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
+<meta name="twitter:description"
+  content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
+<meta name="twitter:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEFZF9R883"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEFZF9R883"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-      gtag('config', 'G-KEFZF9R883');
-    </script>
-    <!-- Dynamic HUD Copy Button & Lazy Mermaid.js Integration -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        // Helper to format absolute dates
-        function formatAbsoluteDate(date, includeTime) {
-          var yyyy = date.getFullYear();
-          var mm = String(date.getMonth() + 1).padStart(2, '0');
-          var dd = String(date.getDate()).padStart(2, '0');
-          if (includeTime) {
-            var hh = String(date.getHours()).padStart(2, '0');
-            var min = String(date.getMinutes()).padStart(2, '0');
-            return yyyy + "-" + mm + "-" + dd + " " + hh + ":" + min;
-          }
-          return yyyy + "-" + mm + "-" + dd;
-        }
+  gtag('config', 'G-KEFZF9R883');
+</script>
+<!-- Dynamic HUD Copy Button & Lazy Mermaid.js Integration -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Helper to format absolute dates
+    function formatAbsoluteDate(date, includeTime) {
+      var yyyy = date.getFullYear();
+      var mm = String(date.getMonth() + 1).padStart(2, '0');
+      var dd = String(date.getDate()).padStart(2, '0');
+      if (includeTime) {
+        var hh = String(date.getHours()).padStart(2, '0');
+        var min = String(date.getMinutes()).padStart(2, '0');
+        return yyyy + "-" + mm + "-" + dd + " " + hh + ":" + min;
+      }
+      return yyyy + "-" + mm + "-" + dd;
+    }
 
-        // Helper to calculate relative time
-        function getRelativeTimeString(date) {
-          var now = new Date();
-          var diffMs = now.getTime() - date.getTime();
-          if (diffMs < 0) return "just now";
-          
-          var diffSeconds = Math.floor(diffMs / 1000);
-          var diffMinutes = Math.floor(diffSeconds / 60);
-          var diffHours = Math.floor(diffMinutes / 60);
-          var diffDays = Math.floor(diffHours / 24);
-          var diffWeeks = Math.floor(diffDays / 7);
-          var diffMonths = Math.floor(diffDays / 30);
-          var diffYears = Math.floor(diffDays / 365);
+    // Helper to calculate relative time
+    function getRelativeTimeString(date) {
+      var now = new Date();
+      var diffMs = now.getTime() - date.getTime();
+      if (diffMs < 0) return "just now";
 
-          if (diffSeconds < 60) {
-            return "just now";
-          } else if (diffMinutes < 60) {
-            return diffMinutes === 1 ? "1 minute ago" : diffMinutes + " minutes ago";
-          } else if (diffHours < 24) {
-            return diffHours === 1 ? "1 hour ago" : diffHours + " hours ago";
-          } else if (diffDays < 7) {
-            if (diffDays === 0) return "today";
-            if (diffDays === 1) return "yesterday";
-            return diffDays + " days ago";
-          } else if (diffWeeks < 4) {
-            return diffWeeks === 1 ? "1 week ago" : diffWeeks + " weeks ago";
-          } else if (diffMonths < 12) {
-            return diffMonths === 1 ? "1 month ago" : diffMonths + " months ago";
-          } else {
-            return diffYears === 1 ? "1 year ago" : diffYears + " years ago";
-          }
-        }
+      var diffSeconds = Math.floor(diffMs / 1000);
+      var diffMinutes = Math.floor(diffSeconds / 60);
+      var diffHours = Math.floor(diffMinutes / 60);
+      var diffDays = Math.floor(diffHours / 24);
+      var diffWeeks = Math.floor(diffDays / 7);
+      var diffMonths = Math.floor(diffDays / 30);
+      var diffYears = Math.floor(diffDays / 365);
 
-        function initializePage() {
-          // 1. Copy Buttons for Standard Code Blocks
-          var preBlocks = document.querySelectorAll(".markdown-section pre");
-          preBlocks.forEach(function(pre) {
-            if (pre.querySelector("code.lang-mermaid")) return; // Skip mermaid blocks
-            if (pre.querySelector(".copy-code-btn")) return; // Skip if already added
-            
-            var copyBtn = document.createElement("button");
-            copyBtn.className = "copy-code-btn";
-            copyBtn.innerHTML = "COPY";
-            
-            copyBtn.addEventListener("click", function() {
-              var code = pre.querySelector("code");
-              var text = code ? code.innerText : pre.innerText;
-              
-              navigator.clipboard.writeText(text).then(function() {
-                copyBtn.innerHTML = "COPIED!";
-                copyBtn.classList.add("copied");
-                setTimeout(function() {
-                  copyBtn.innerHTML = "COPY";
-                  copyBtn.classList.remove("copied");
-                }, 2000);
-              });
-            });
-            
-            pre.appendChild(copyBtn);
+      if (diffSeconds < 60) {
+        return "just now";
+      } else if (diffMinutes < 60) {
+        return diffMinutes === 1 ? "1 minute ago" : diffMinutes + " minutes ago";
+      } else if (diffHours < 24) {
+        return diffHours === 1 ? "1 hour ago" : diffHours + " hours ago";
+      } else if (diffDays < 7) {
+        if (diffDays === 0) return "today";
+        if (diffDays === 1) return "yesterday";
+        return diffDays + " days ago";
+      } else if (diffWeeks < 4) {
+        return diffWeeks === 1 ? "1 week ago" : diffWeeks + " weeks ago";
+      } else if (diffMonths < 12) {
+        return diffMonths === 1 ? "1 month ago" : diffMonths + " months ago";
+      } else {
+        return diffYears === 1 ? "1 year ago" : diffYears + " years ago";
+      }
+    }
+
+    function initializePage() {
+      // 1. Copy Buttons for Standard Code Blocks
+      var preBlocks = document.querySelectorAll(".markdown-section pre");
+      preBlocks.forEach(function (pre) {
+        if (pre.querySelector("code.lang-mermaid")) return; // Skip mermaid blocks
+        if (pre.querySelector(".copy-code-btn")) return; // Skip if already added
+
+        var copyBtn = document.createElement("button");
+        copyBtn.className = "copy-code-btn";
+        copyBtn.innerHTML = "COPY";
+
+        copyBtn.addEventListener("click", function () {
+          var code = pre.querySelector("code");
+          var text = code ? code.innerText : pre.innerText;
+
+          navigator.clipboard.writeText(text).then(function () {
+            copyBtn.innerHTML = "COPIED!";
+            copyBtn.classList.add("copied");
+            setTimeout(function () {
+              copyBtn.innerHTML = "COPY";
+              copyBtn.classList.remove("copied");
+            }, 2000);
           });
+        });
 
-          // 2. Convert raw Mermaid code blocks and lazy-load Mermaid.js
-          var mermaidBlocks = document.querySelectorAll("pre code.lang-mermaid");
-          var hasMermaid = mermaidBlocks.length > 0 || document.querySelectorAll(".mermaid").length > 0;
-          
-          if (mermaidBlocks.length > 0) {
-            mermaidBlocks.forEach(function(code) {
-              var pre = code.parentNode;
-              var div = document.createElement("div");
-              div.className = "mermaid";
-              div.textContent = code.textContent;
-              pre.parentNode.replaceChild(div, pre);
-            });
-          }
+        pre.appendChild(copyBtn);
+      });
 
-          if (hasMermaid) {
-            if (typeof mermaid === "undefined") {
-              var scriptId = "mermaid-lazy-script";
-              var existingScript = document.getElementById(scriptId);
-              if (!existingScript) {
-                var script = document.createElement("script");
-                script.id = scriptId;
-                script.src = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js";
-                script.async = true;
-                script.onload = function() {
-                  initializeMermaid();
-                };
-                document.head.appendChild(script);
-              }
-            } else {
+      // 2. Convert raw Mermaid code blocks and lazy-load Mermaid.js
+      var mermaidBlocks = document.querySelectorAll("pre code.lang-mermaid");
+      var hasMermaid = mermaidBlocks.length > 0 || document.querySelectorAll(".mermaid").length > 0;
+
+      if (mermaidBlocks.length > 0) {
+        mermaidBlocks.forEach(function (code) {
+          var pre = code.parentNode;
+          var div = document.createElement("div");
+          div.className = "mermaid";
+          div.textContent = code.textContent;
+          pre.parentNode.replaceChild(div, pre);
+        });
+      }
+
+      if (hasMermaid) {
+        if (typeof mermaid === "undefined") {
+          var scriptId = "mermaid-lazy-script";
+          var existingScript = document.getElementById(scriptId);
+          if (!existingScript) {
+            var script = document.createElement("script");
+            script.id = scriptId;
+            script.src = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js";
+            script.async = true;
+            script.onload = function () {
               initializeMermaid();
-            }
+            };
+            document.head.appendChild(script);
           }
+        } else {
+          initializeMermaid();
+        }
+      }
 
-          function initializeMermaid() {
-            if (typeof mermaid !== "undefined") {
-              mermaid.initialize({ 
-                startOnLoad: false, 
-                theme: 'neutral',
-                securityLevel: 'loose'
-              });
-              mermaid.init(undefined, document.querySelectorAll(".mermaid"));
-            }
-          }
+      function initializeMermaid() {
+        if (typeof mermaid !== "undefined") {
+          mermaid.initialize({
+            startOnLoad: false,
+            theme: 'neutral',
+            securityLevel: 'loose'
+          });
+          mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+        }
+      }
 
-          // 4. Format dynamic relative/absolute metadata dates
-          var clickables = document.querySelectorAll(".page-meta-clickable");
-          clickables.forEach(function(el) {
-            if (el.hasAttribute("data-dates-initialized")) return; // Skip if already done
-            
-            var rawVal = el.getAttribute("data-date") || el.getAttribute("data-mtime");
-            if (!rawVal) return;
+      // 4. Format dynamic relative/absolute metadata dates
+      var clickables = document.querySelectorAll(".page-meta-clickable");
+      clickables.forEach(function (el) {
+        if (el.hasAttribute("data-dates-initialized")) return; // Skip if already done
 
-            var date = new Date(rawVal);
-            if (isNaN(date.getTime())) return;
+        var rawVal = el.getAttribute("data-date") || el.getAttribute("data-mtime");
+        if (!rawVal) return;
 
-            var isMtime = el.hasAttribute("data-mtime");
-            var prefix = isMtime ? "LAST UPDATED // " : "PUBLISHED // ";
+        var date = new Date(rawVal);
+        if (isNaN(date.getTime())) return;
 
-            var relativeStr = prefix + getRelativeTimeString(date);
-            var absoluteStr = prefix + formatAbsoluteDate(date, isMtime);
+        var isMtime = el.hasAttribute("data-mtime");
+        var prefix = isMtime ? "LAST UPDATED // " : "PUBLISHED // ";
 
-            // Render relative by default
+        var relativeStr = prefix + getRelativeTimeString(date);
+        var absoluteStr = prefix + formatAbsoluteDate(date, isMtime);
+
+        // Render relative by default
+        el.textContent = relativeStr;
+        el.title = "Click to show raw timestamp";
+        el.setAttribute("data-dates-initialized", "true");
+
+        // Toggle state on click
+        var showingRelative = true;
+        el.addEventListener("click", function () {
+          if (showingRelative) {
+            el.textContent = absoluteStr;
+            el.title = "Click to show relative time";
+          } else {
             el.textContent = relativeStr;
             el.title = "Click to show raw timestamp";
-            el.setAttribute("data-dates-initialized", "true");
+          }
+          showingRelative = !showingRelative;
+        });
+      });
 
-            // Toggle state on click
-            var showingRelative = true;
-            el.addEventListener("click", function() {
-              if (showingRelative) {
-                el.textContent = absoluteStr;
-                el.title = "Click to show relative time";
-              } else {
-                el.textContent = relativeStr;
-                el.title = "Click to show raw timestamp";
-              }
-              showingRelative = !showingRelative;
-            });
-          });
+      // 5. Header Title Search Click Interceptor
+      var headerTitleLink = document.querySelector(".book-header h1 a");
+      var headerSearch = document.querySelector(".header-search-bar");
+      var headerMetaBar = document.querySelector(".header-meta-bar");
+      var headerH1 = document.querySelector(".book-header h1");
+      var headerSearchInput = document.getElementById("header-search-input");
+      var headerSearchClose = document.querySelector(".header-search-close");
 
-          // 5. Header Title Search Click Interceptor
-          var headerTitleLink = document.querySelector(".book-header h1 a");
-          var headerSearch = document.querySelector(".header-search-bar");
-          var headerMetaBar = document.querySelector(".header-meta-bar");
-          var headerH1 = document.querySelector(".book-header h1");
-          var headerSearchInput = document.getElementById("header-search-input");
-          var headerSearchClose = document.querySelector(".header-search-close");
+      if (headerTitleLink && headerSearch && headerH1 && headerSearchInput && headerSearchClose) {
+        // Intercept click on the header title
+        headerTitleLink.addEventListener("click", function (e) {
+          e.preventDefault(); // Stop redirection to home
+          e.stopPropagation();
 
-          if (headerTitleLink && headerSearch && headerH1 && headerSearchInput && headerSearchClose) {
-            // Intercept click on the header title
-            headerTitleLink.addEventListener("click", function(e) {
-              e.preventDefault(); // Stop redirection to home
-              e.stopPropagation();
+          // Hide title only, keeping dynamic published/updated metadata fully visible
+          headerH1.style.setProperty("display", "none", "important");
 
-              // Hide title only, keeping dynamic published/updated metadata fully visible
-              headerH1.style.setProperty("display", "none", "important");
+          // Show search bar and focus input
+          headerSearch.style.setProperty("display", "flex", "important");
+          headerSearchInput.focus();
+        });
 
-              // Show search bar and focus input
-              headerSearch.style.setProperty("display", "flex", "important");
-              headerSearchInput.focus();
-            });
+        // Close search on close button click
+        headerSearchClose.addEventListener("click", function (e) {
+          e.stopPropagation();
+          closeHeaderSearch();
+        });
 
-            // Close search on close button click
-            headerSearchClose.addEventListener("click", function(e) {
-              e.stopPropagation();
-              closeHeaderSearch();
-            });
+        // Close search on Escape key press
+        headerSearchInput.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeHeaderSearch();
+          }
+        });
 
-            // Close search on Escape key press
-            headerSearchInput.addEventListener("keydown", function(e) {
-              if (e.key === "Escape") {
-                closeHeaderSearch();
-              }
-            });
+        // Close search on click out (blur) if the input is empty
+        headerSearchInput.addEventListener("blur", function () {
+          if (headerSearchInput.value.trim() === "") {
+            closeHeaderSearch();
+          }
+        });
 
-            // Close search on click out (blur) if the input is empty
-            headerSearchInput.addEventListener("blur", function() {
-              if (headerSearchInput.value.trim() === "") {
-                closeHeaderSearch();
-              }
-            });
+        // Sync typing to sidebar search input
+        headerSearchInput.addEventListener("input", function () {
+          var query = headerSearchInput.value;
+          var sidebarInput = document.querySelector("#book-search-input input");
+          if (sidebarInput) {
+            sidebarInput.value = query;
+            // Dispatch input events so the native search plugin handles it
+            var inputEvent = new Event("input", { bubbles: true });
+            var changeEvent = new Event("change", { bubbles: true });
+            var keyupEvent = new KeyboardEvent("keyup", { bubbles: true, key: "Enter" });
+            sidebarInput.dispatchEvent(inputEvent);
+            sidebarInput.dispatchEvent(changeEvent);
+            sidebarInput.dispatchEvent(keyupEvent);
+          }
+        });
 
-            // Sync typing to sidebar search input
-            headerSearchInput.addEventListener("input", function() {
-              var query = headerSearchInput.value;
-              var sidebarInput = document.querySelector("#book-search-input input");
-              if (sidebarInput) {
-                sidebarInput.value = query;
-                // Dispatch input events so the native search plugin handles it
-                var inputEvent = new Event("input", { bubbles: true });
-                var changeEvent = new Event("change", { bubbles: true });
-                var keyupEvent = new KeyboardEvent("keyup", { bubbles: true, key: "Enter" });
-                sidebarInput.dispatchEvent(inputEvent);
-                sidebarInput.dispatchEvent(changeEvent);
-                sidebarInput.dispatchEvent(keyupEvent);
-              }
-            });
-
-            function closeHeaderSearch() {
-              // Clear inputs
-              headerSearchInput.value = "";
-              var sidebarInput = document.querySelector("#book-search-input input");
-              if (sidebarInput) {
-                sidebarInput.value = "";
-                var inputEvent = new Event("input", { bubbles: true });
-                sidebarInput.dispatchEvent(inputEvent);
-              }
-
-              // Hide search bar
-              headerSearch.style.setProperty("display", "none", "important");
-
-              // Restore title by clearing custom inline displays, metadata was never hidden
-              headerH1.style.display = "";
-            }
+        function closeHeaderSearch() {
+          // Clear inputs
+          headerSearchInput.value = "";
+          var sidebarInput = document.querySelector("#book-search-input input");
+          if (sidebarInput) {
+            sidebarInput.value = "";
+            var inputEvent = new Event("input", { bubbles: true });
+            sidebarInput.dispatchEvent(inputEvent);
           }
 
-          // 6. Inject Social Icons above "Published with HonKit"
-          var dividerLi = document.querySelector(".book-summary ul.summary li.divider");
-          var gitbookLink = document.querySelector(".book-summary ul.summary li a.gitbook-link");
-          if (gitbookLink && !document.getElementById("sidebar-social-container")) {
-            var parentLi = gitbookLink.parentNode;
-            var summaryUl = parentLi.parentNode;
-            var targetLi = dividerLi || parentLi; // Fallback if no divider is found
-            
-            var socialLi = document.createElement("li");
-            socialLi.id = "sidebar-social-container";
-            socialLi.innerHTML = `
+          // Hide search bar
+          headerSearch.style.setProperty("display", "none", "important");
+
+          // Restore title by clearing custom inline displays, metadata was never hidden
+          headerH1.style.display = "";
+        }
+      }
+
+      // 6. Inject Social Icons above "Published with HonKit"
+      var dividerLi = document.querySelector(".book-summary ul.summary li.divider");
+      var gitbookLink = document.querySelector(".book-summary ul.summary li a.gitbook-link");
+      if (gitbookLink && !document.getElementById("sidebar-social-container")) {
+        var parentLi = gitbookLink.parentNode;
+        var summaryUl = parentLi.parentNode;
+        var targetLi = dividerLi || parentLi; // Fallback if no divider is found
+
+        var socialLi = document.createElement("li");
+        socialLi.id = "sidebar-social-container";
+        socialLi.innerHTML = `
               <div class="sidebar-social-icons">
                 <a href="https://linkedin.com/in/VikramTiwari" target="_blank" rel="noopener" title="My LinkedIn">
                   <i class="fa fa-linkedin"></i>
@@ -282,258 +286,260 @@
                 </a>
               </div>
             `;
-            summaryUl.insertBefore(socialLi, targetLi);
-          }
+        summaryUl.insertBefore(socialLi, targetLi);
+      }
 
-          // 7. Dynamic Click-to-Load WebGL Embeds (similar to YouTube)
-          var embeds = document.querySelectorAll(".demo-embed-container");
-          embeds.forEach(function(container) {
-            if (container.hasAttribute("data-embed-initialized")) return;
-            
-            var src = container.getAttribute("data-src");
-            var label = container.getAttribute("data-label") || "ACTIVE INTERACTIVE DEMO";
-            if (!src) return;
+      // 7. Dynamic Click-to-Load WebGL Embeds (similar to YouTube)
+      var embeds = document.querySelectorAll(".demo-embed-container");
+      embeds.forEach(function (container) {
+        if (container.hasAttribute("data-embed-initialized")) return;
 
-            container.innerHTML = "";
+        var src = container.getAttribute("data-src");
+        var label = container.getAttribute("data-label") || "ACTIVE INTERACTIVE DEMO";
+        if (!src) return;
 
-            // Create play overlay
-            var overlay = document.createElement("div");
-            overlay.className = "demo-embed-play-overlay";
-            
-            // Build the dual-button panel (Launch is primary, Play is secondary)
-            overlay.innerHTML = `
+        container.innerHTML = "";
+
+        // Create play overlay
+        var overlay = document.createElement("div");
+        overlay.className = "demo-embed-play-overlay";
+
+        // Build the dual-button panel (Launch is primary, Play is secondary)
+        overlay.innerHTML = `
               <div class="demo-embed-overlay-content">
                 <div class="demo-embed-btn-group">
                   <a href="${src}" target="_blank" rel="noopener" class="demo-embed-btn primary-btn">
                     <i class="fa fa-external-link"></i> Launch in New Tab
                   </a>
-                  <button type="button" class="demo-embed-btn secondary-btn">
-                    <i class="fa fa-play"></i> Play Here
-                  </button>
                 </div>
                 <div class="demo-embed-play-label">[ ${label} ]</div>
               </div>
             `;
-            container.appendChild(overlay);
+        container.appendChild(overlay);
 
-            var isLoaded = false;
-            var isActivated = false;
-            var iframe = null;
+        var isLoaded = false;
+        var isActivated = false;
+        var iframe = null;
 
-            // Helper to load the iframe silently in the background
-            function loadIframeSilently() {
-              if (iframe) return;
-              
-              iframe = document.createElement("iframe");
-              iframe.className = "demo-embed-iframe";
-              iframe.src = src;
-              iframe.style.position = "absolute";
-              iframe.style.top = "0";
-              iframe.style.left = "0";
-              iframe.style.width = "100%";
-              iframe.style.height = "100%";
-              iframe.style.border = "none";
-              iframe.style.zIndex = "1";
-              iframe.style.opacity = "0";
-              iframe.style.pointerEvents = "none"; // Disable interaction while overlay is up
-              iframe.style.transition = "opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
-              iframe.setAttribute("allow", "fullscreen");
-              iframe.setAttribute("loading", "lazy");
-              iframe.setAttribute("importance", "low");
-              iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups allow-forms");
-              iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+        // Helper to load the iframe silently in the background
+        function loadIframeSilently() {
+          if (iframe) return;
 
-              // Append iframe behind the overlay
-              container.insertBefore(iframe, overlay);
+          iframe = document.createElement("iframe");
+          iframe.className = "demo-embed-iframe";
+          iframe.src = src;
+          iframe.style.position = "absolute";
+          iframe.style.top = "0";
+          iframe.style.left = "0";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.border = "none";
+          iframe.style.zIndex = "1";
+          iframe.style.opacity = "0";
+          iframe.style.pointerEvents = "none"; // Disable interaction while overlay is up
+          iframe.style.transition = "opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+          iframe.setAttribute("allow", "fullscreen");
+          iframe.setAttribute("loading", "lazy");
+          iframe.setAttribute("importance", "low");
+          iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups allow-forms");
+          iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
 
-              iframe.onload = function() {
-                isLoaded = true;
-                if (!isActivated) {
-                  // Fade in the iframe partially in the background
-                  iframe.style.opacity = "0.75";
-                  // Make the overlay background semi-transparent so the live 3D canvas is visible
-                  overlay.classList.add("semi-transparent");
-                }
-              };
+          // Append iframe behind the overlay
+          container.insertBefore(iframe, overlay);
+
+          iframe.onload = function () {
+            isLoaded = true;
+            if (!isActivated) {
+              // Fade in the iframe partially in the background
+              iframe.style.opacity = "0.75";
+              // Make the overlay background semi-transparent so the live 3D canvas is visible
+              overlay.classList.add("semi-transparent");
             }
+          };
+        }
 
-            // Function to fully activate the inline play experience
-            function activateIframe() {
-              if (isActivated) return;
-              isActivated = true;
-              
-              // Clear any idle timer
-              if (idleTimer) clearTimeout(idleTimer);
+        // Function to fully activate the inline play experience
+        function activateIframe() {
+          if (isActivated) return;
+          isActivated = true;
 
-              // If iframe isn't created yet, create and mount it
-              if (!iframe) {
-                loadIframeSilently();
-              }
+          // Clear any idle timer
+          if (idleTimer) clearTimeout(idleTimer);
 
-              // Fade out the overlay controls smoothly
-              overlay.style.opacity = "0";
-              overlay.style.pointerEvents = "none";
-              
-              // Make iframe fully opaque and interactive
-              if (iframe) {
-                iframe.style.opacity = "1";
-                iframe.style.pointerEvents = "auto";
-              }
+          // If iframe isn't created yet, create and mount it
+          if (!iframe) {
+            loadIframeSilently();
+          }
 
-              setTimeout(function() {
-                overlay.remove();
-              }, 400);
-              
-              container.style.cursor = "default";
-            }
+          // Fade out the overlay controls smoothly
+          overlay.style.opacity = "0";
+          overlay.style.pointerEvents = "none";
 
-            // Bind interactions to the buttons
-            var launchBtn = overlay.querySelector(".primary-btn");
-            var playBtn = overlay.querySelector(".secondary-btn");
+          // Make iframe fully opaque and interactive
+          if (iframe) {
+            iframe.style.opacity = "1";
+            iframe.style.pointerEvents = "auto";
+          }
 
-            launchBtn.addEventListener("click", function(e) {
-              e.stopPropagation(); // Only open in new tab, do not load here
-            });
+          setTimeout(function () {
+            overlay.remove();
+          }, 400);
 
-            playBtn.addEventListener("click", function(e) {
-              e.stopPropagation();
-              activateIframe();
-            });
+          container.style.cursor = "default";
+        }
 
-            // Fallback: clicking the general backdrop area also starts inline play
-            overlay.addEventListener("click", function(e) {
-              activateIframe();
-            });
+        // Bind interactions to the buttons
+        var launchBtn = overlay.querySelector(".primary-btn");
+        var playBtn = overlay.querySelector(".secondary-btn");
 
-            // --- ⏱️ Smart Idle Timer for Background Pre-loading ---
-            var idleTimer = null;
-            function startIdleTimer() {
-              if (idleTimer) clearTimeout(idleTimer);
-              idleTimer = setTimeout(function() {
-                if (!isActivated) {
-                  loadIframeSilently();
-                }
-              }, 4000); // 4 seconds of idle time
-            }
-
-            // Reset idle timer on page interactions to conserve thread capacity while actively reading
-            function resetIdleTimer() {
-              if (!isActivated && !iframe) {
-                startIdleTimer();
-              }
-            }
-
-            window.addEventListener("scroll", resetIdleTimer, { passive: true });
-            window.addEventListener("mousemove", resetIdleTimer, { passive: true });
-            window.addEventListener("keydown", resetIdleTimer, { passive: true });
-
-            // Start the initial idle timer
-            startIdleTimer();
-
-            container.setAttribute("data-embed-initialized", "true");
+        if (launchBtn) {
+          launchBtn.addEventListener("click", function (e) {
+            e.stopPropagation(); // Only open in new tab, do not load here
           });
+        }
 
-          // 8. Persist Sidebar Scroll Position Across PJAX Transitions
-          var sidebarNav = document.querySelector(".book-summary nav");
-          if (sidebarNav) {
-            // Restore scroll position
-            var savedScrollTop = sessionStorage.getItem("sidebarScrollTop");
-            if (savedScrollTop !== null) {
-              var targetScroll = parseFloat(savedScrollTop);
-              sidebarNav.scrollTop = targetScroll;
-              // Re-check scroll on the next animation frame to prevent timing layout resets
-              requestAnimationFrame(function() {
-                if (sidebarNav) sidebarNav.scrollTop = targetScroll;
-              });
+        if (playBtn) {
+          playBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            activateIframe();
+          });
+        }
+
+        // Fallback: clicking the general backdrop area also starts inline play
+        overlay.addEventListener("click", function (e) {
+          activateIframe();
+        });
+
+        // --- ⏱️ Smart Idle Timer for Background Pre-loading ---
+        var idleTimer = null;
+        function startIdleTimer() {
+          if (idleTimer) clearTimeout(idleTimer);
+          idleTimer = setTimeout(function () {
+            if (!isActivated) {
+              loadIframeSilently();
             }
+          }, 4000); // 4 seconds of idle time
+        }
 
-            // Save scroll position on scroll with a short debounce
-            var scrollTimeout;
-            sidebarNav.addEventListener("scroll", function() {
-              clearTimeout(scrollTimeout);
-              scrollTimeout = setTimeout(function() {
-                sessionStorage.setItem("sidebarScrollTop", sidebarNav.scrollTop);
-              }, 50);
-            });
+        // Reset idle timer on page interactions to conserve thread capacity while actively reading
+        function resetIdleTimer() {
+          if (!isActivated && !iframe) {
+            startIdleTimer();
           }
         }
 
-        // Run once on DOM load
-        initializePage();
+        window.addEventListener("scroll", resetIdleTimer, { passive: true });
+        window.addEventListener("mousemove", resetIdleTimer, { passive: true });
+        window.addEventListener("keydown", resetIdleTimer, { passive: true });
 
-        // Register callback in GitBook pushState event bus to re-run on PJAX navigation
-        var gitbook = window.gitbook || [];
-        gitbook.push(function() {
-          gitbook.events.bind("page.change", function() {
-            initializePage();
-          });
-        });
+        // Start the initial idle timer
+        startIdleTimer();
+
+        container.setAttribute("data-embed-initialized", "true");
       });
-    </script>
+
+      // 8. Persist Sidebar Scroll Position Across PJAX Transitions
+      var sidebarNav = document.querySelector(".book-summary nav");
+      if (sidebarNav) {
+        // Restore scroll position
+        var savedScrollTop = sessionStorage.getItem("sidebarScrollTop");
+        if (savedScrollTop !== null) {
+          var targetScroll = parseFloat(savedScrollTop);
+          sidebarNav.scrollTop = targetScroll;
+          // Re-check scroll on the next animation frame to prevent timing layout resets
+          requestAnimationFrame(function () {
+            if (sidebarNav) sidebarNav.scrollTop = targetScroll;
+          });
+        }
+
+        // Save scroll position on scroll with a short debounce
+        var scrollTimeout;
+        sidebarNav.addEventListener("scroll", function () {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(function () {
+            sessionStorage.setItem("sidebarScrollTop", sidebarNav.scrollTop);
+          }, 50);
+        });
+      }
+    }
+
+    // Run once on DOM load
+    initializePage();
+
+    // Register callback in GitBook pushState event bus to re-run on PJAX navigation
+    var gitbook = window.gitbook || [];
+    gitbook.push(function () {
+      gitbook.events.bind("page.change", function () {
+        initializePage();
+      });
+    });
+  });
+</script>
 {% endblock %}
 
 {% block book_sidebar %}
-    <div class="book-summary-header">
-        <a href="https://vikramtiwari.com" class="sidebar-back-btn" title="Back to vikramtiwari.com">
-            <i class="fa fa-chevron-left"></i>
-        </a>
-        <span class="sidebar-brand-title">Vik's Notes</span>
-    </div>
-    {{ super() }}
+<div class="book-summary-header">
+  <a href="https://vikramtiwari.com" class="sidebar-back-btn" title="Back to vikramtiwari.com">
+    <i class="fa fa-chevron-left"></i>
+  </a>
+  <span class="sidebar-brand-title">Vik's Notes</span>
+</div>
+{{ super() }}
 {% endblock %}
 
 {% block book_inner %}
-    <div class="book-header" role="navigation">
-        <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="{{ "/"|resolveFile }}" >{{ page.title }}</a>
-        </h1>
-        
-        <!-- Premium Header Search HUD -->
-        <div class="header-search-bar" style="display: none;">
-            <i class="fa fa-search header-search-icon"></i>
-            <input type="text" id="header-search-input" placeholder="Type to search notes..." autocomplete="off" />
-            <button class="header-search-close" title="Close search">&times;</button>
-        </div>
+<div class="book-header" role="navigation">
+  <h1>
+    <i class="fa fa-circle-o-notch fa-spin"></i>
+    <a href="{{ " /"|resolveFile }}">{{ page.title }}</a>
+  </h1>
 
-        <div class="header-meta-bar">
-            {% if page.date %}
-                <div class="header-meta-item page-meta-clickable header-meta-left" data-date="{{ page.date }}">
-                    PUBLISHED // {{ page.date }}
-                </div>
-            {% else %}
-                <div class="header-meta-item header-meta-left">
-                    SYSTEM NOTE
-                </div>
-            {% endif %}
-            <div class="header-meta-item page-meta-clickable header-meta-right" data-mtime="{{ file.mtime }}">
-                LAST UPDATED // {{ file.mtime }}
-            </div>
-        </div>
-    </div>
+  <!-- Premium Header Search HUD -->
+  <div class="header-search-bar" style="display: none;">
+    <i class="fa fa-search header-search-icon"></i>
+    <input type="text" id="header-search-input" placeholder="Type to search notes..." autocomplete="off" />
+    <button class="header-search-close" title="Close search">&times;</button>
+  </div>
 
-    <div class="page-wrapper" tabindex="-1" role="main">
-        <div class="page-inner">
-            <div id="book-search-results">
-                <div class="search-noresults">
-                    {% block search_results %}
-                        <section class="normal markdown-section">
-                        {% block page %}
-                        {{ page.content|safe }}
-                        {% endblock %}
-                        </section>
-                    {% endblock %}
-                </div>
-                <div class="search-results">
-                    <div class="has-results">
-                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-                        <ul class="search-results-list"></ul>
-                    </div>
-                    <div class="no-results">
-                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="header-meta-bar">
+    {% if page.date %}
+    <div class="header-meta-item page-meta-clickable header-meta-left" data-date="{{ page.date }}">
+      PUBLISHED // {{ page.date }}
     </div>
+    {% else %}
+    <div class="header-meta-item header-meta-left">
+      SYSTEM NOTE
+    </div>
+    {% endif %}
+    <div class="header-meta-item page-meta-clickable header-meta-right" data-mtime="{{ file.mtime }}">
+      LAST UPDATED // {{ file.mtime }}
+    </div>
+  </div>
+</div>
+
+<div class="page-wrapper" tabindex="-1" role="main">
+  <div class="page-inner">
+    <div id="book-search-results">
+      <div class="search-noresults">
+        {% block search_results %}
+        <section class="normal markdown-section">
+          {% block page %}
+          {{ page.content|safe }}
+          {% endblock %}
+        </section>
+        {% endblock %}
+      </div>
+      <div class="search-results">
+        <div class="has-results">
+          <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span
+              class='search-query'></span>"</h1>
+          <ul class="search-results-list"></ul>
+        </div>
+        <div class="no-results">
+          <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

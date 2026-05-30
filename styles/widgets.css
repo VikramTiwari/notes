@@ -114,39 +114,64 @@
 }
 
 /* --- 🎨 Custom Code Highlighting (Professional Mad Scientist Console Palette) --- */
-.token.comment, .hljs-comment, .pl-c {
-  color: #576f8e !important; /* soft clinical slate comment */
+.token.comment,
+.hljs-comment,
+.pl-c {
+  color: #576f8e !important;
+  /* soft clinical slate comment */
   font-style: italic !important;
 }
 
-.token.keyword, .hljs-keyword, .pl-k {
-  color: #00ff87 !important; /* Volt green for instructions */
+.token.keyword,
+.hljs-keyword,
+.pl-k {
+  color: #00ff87 !important;
+  /* Volt green for instructions */
   font-weight: 600 !important;
 }
 
-.token.string, .hljs-string, .pl-s {
-  color: #fbbf24 !important; /* amber/gold for strings */
+.token.string,
+.hljs-string,
+.pl-s {
+  color: #fbbf24 !important;
+  /* amber/gold for strings */
 }
 
-.token.number, .hljs-number, .pl-c1, .token.boolean, .token.regex {
-  color: #ff007f !important; /* neon pink/magenta for values/literals */
+.token.number,
+.hljs-number,
+.pl-c1,
+.token.boolean,
+.token.regex {
+  color: #ff007f !important;
+  /* neon pink/magenta for values/literals */
 }
 
-.token.function, .hljs-function, .pl-en, .token.class-name {
-  color: #38bdf8 !important; /* glowing sky blue for definitions */
+.token.function,
+.hljs-function,
+.pl-en,
+.token.class-name {
+  color: #38bdf8 !important;
+  /* glowing sky blue for definitions */
 }
 
-.token.operator, .token.punctuation, .hljs-punctuation {
-  color: #8fa0ba !important; /* secondary log color */
+.token.operator,
+.token.punctuation,
+.hljs-punctuation {
+  color: #8fa0ba !important;
+  /* secondary log color */
 }
 
-.token.selector, .token.attr-name, .hljs-attr, .pl-v {
-  color: #a855f7 !important; /* glowing electric purple for attributes */
+.token.selector,
+.token.attr-name,
+.hljs-attr,
+.pl-v {
+  color: #a855f7 !important;
+  /* glowing electric purple for attributes */
 }
 
 /* --- ♿ Accessibility (a11y) & Interactive Focus Indicators --- */
-a:focus-visible, 
-button:focus-visible, 
+a:focus-visible,
+button:focus-visible,
 input:focus-visible,
 [role="button"]:focus-visible {
   outline: 3px solid var(--cobalt-blue) !important;
@@ -192,7 +217,8 @@ input:focus-visible,
   border-radius: 12px !important;
   overflow: hidden !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
-  background: var(--bg-archival) !important; /* Cotton archival paper background */
+  background: var(--bg-archival) !important;
+  /* Cotton archival paper background */
   cursor: pointer !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -220,11 +246,13 @@ input:focus-visible,
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  background-color: rgba(245, 244, 239, 0.96) !important; /* Cotton archival paper background */
-  background-image: 
+  background-color: rgba(245, 244, 239, 0.96) !important;
+  /* Cotton archival paper background */
+  background-image:
     linear-gradient(var(--blueprint-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--blueprint-line) 1px, transparent 1px) !important;
-  background-size: 20px 20px !important; /* Delicate blueprint graph lines inside the play space */
+  background-size: 20px 20px !important;
+  /* Delicate blueprint graph lines inside the play space */
   z-index: 10 !important;
   transition: background-color 0.8s ease, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -284,20 +312,6 @@ input:focus-visible,
   box-shadow: 0 6px 18px rgba(161, 68, 0, 0.25) !important;
 }
 
-/* Play Here (Secondary - Light/White bordered) */
-.demo-embed-btn.secondary-btn {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border: 1px dashed var(--border-light) !important;
-  color: var(--cobalt-blue) !important;
-}
-
-.demo-embed-btn.secondary-btn:hover {
-  background: var(--bg-archival) !important;
-  border-color: var(--cobalt-blue) !important;
-  border-style: solid !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px var(--cobalt-glow) !important;
-}
 
 .demo-embed-play-label {
   font-family: 'Space Grotesk', sans-serif !important;
@@ -318,4 +332,3 @@ input:focus-visible,
   color: var(--vintage-amber) !important;
   border-color: var(--vintage-amber) !important;
 }
-
