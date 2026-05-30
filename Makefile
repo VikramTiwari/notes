@@ -9,6 +9,7 @@ clean:
 	rm -rf _book
 
 # Build all components locally (Notes, Home page, and Book Shelf)
+# Reuses cached book-shelf/dist build if present to dramatically speed up notes iteration
 build: clean
 	@echo "🧬 Injecting Git-based publication dates..."
 	node scripts/inject-git-dates.js
@@ -17,13 +18,35 @@ build: clean
 	@echo "🏠 Copying Home landing page..."
 	mkdir -p _book
 	rsync -av --exclude='.git' home/ _book/
-	@echo "📚 Building Book Shelf Vite application..."
-	cd book-shelf && npm install && npx vite build --base=/books/
+	@echo "📚 Preparing Book Shelf application..."
+	@if [ -d "book-shelf/dist" ]; then \
+		echo "✅ Reusing cached book-shelf/dist build assets..."; \
+	else \
+		echo "⚙️ book-shelf/dist not found. Compiling Vite sub-app from scratch..."; \
+		cd book-shelf && npm install && npx vite build --base=/books/; \
+	fi
 	mkdir -p _book/books
 	cp -r book-shelf/dist/* _book/books/
 	@echo "🗺️ Generating Sitemap..."
 	node scripts/generate-sitemap.js
 	@echo "✅ Build completed successfully!"
+
+# Force a completely clean build including book-shelf Vite compilation
+build-force: clean
+	@echo "🧬 Injecting Git-based publication dates..."
+	node scripts/inject-git-dates.js
+	@echo "🏗️ Building HonKit notes..."
+	npx honkit build ./ _book/notes
+	@echo "🏠 Copying Home landing page..."
+	mkdir -p _book
+	rsync -av --exclude='.git' home/ _book/
+	@echo "⚙️ Forcing Vite compilation for Book Shelf..."
+	cd book-shelf && npm install && npx vite build --base=/books/
+	mkdir -p _book/books
+	cp -r book-shelf/dist/* _book/books/
+	@echo "🗺️ Generating Sitemap..."
+	node scripts/generate-sitemap.js
+	@echo "✅ Full build completed successfully!"
 
 # Serve the site locally using Firebase tools to mirror production routing
 serve:

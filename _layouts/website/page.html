@@ -2,7 +2,18 @@
 
 {% block head %}
 {{ super() }}
-<!-- Dynamic Social Share SEO HUD (Open Graph & Twitter Cards) -->
+<!-- High-Performance Preconnect & DNS Prefetch hooks -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="https://github.com" />
+<link rel="dns-prefetch" href="https://linkedin.com" />
+<link rel="dns-prefetch" href="https://twitter.com" />
+
+<!-- Optimizing Font Delivery (Space Grotesk & Fira Code) -->
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Dynamic Social Social Share SEO HUD (Open Graph & Twitter Cards) -->
 <meta property="og:title"
   content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
 <meta property="og:description"
@@ -31,11 +42,11 @@
   gtag('config', 'G-KEFZF9R883');
 </script>
 <!-- Dynamic HUD, Search overlays, Mermaid and modular script blocks -->
-<script src="{{ "styles/website-dates.js"|resolveFile }}"></script>
-<script src="{{ "styles/website-mermaid.js"|resolveFile }}"></script>
-<script src="{{ "styles/website-search.js"|resolveFile }}"></script>
-<script src="{{ "styles/website-embeds.js"|resolveFile }}"></script>
-<script src="{{ "styles/website-core.js"|resolveFile }}"></script>
+<script src="{{ "styles/website-dates.js"|resolveFile }}" defer></script>
+<script src="{{ "styles/website-mermaid.js"|resolveFile }}" defer></script>
+<script src="{{ "styles/website-search.js"|resolveFile }}" defer></script>
+<script src="{{ "styles/website-embeds.js"|resolveFile }}" defer></script>
+<script src="{{ "styles/website-core.js"|resolveFile }}" defer></script>
 {% endblock %}
 
 {% block book_sidebar %}
