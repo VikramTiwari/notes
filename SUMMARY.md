@@ -52,4 +52,6 @@
 * [Social](social/README.md)
   * [Books](social/books.md)
   * [Explore](social/explore.md)
+* [Side Projects](side-projects/README.md)
+  * [Culinary Vector Math Engine](side-projects/culinary-vector-math.md)
 * [Help me!](help-me.md)
