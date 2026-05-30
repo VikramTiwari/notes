@@ -2,8 +2,17 @@
   "title": "Welcome to Vik's notes",
   "plugins": [
     "-sharing",
-    "-fontsettings"
+    "-fontsettings",
+    "prism",
+    "-highlight"
   ],
+  "pluginsConfig": {
+    "prism": {
+      "ignore": [
+        "mermaid"
+      ]
+    }
+  },
   "styles": {
     "website": "styles/website.css"
   }
