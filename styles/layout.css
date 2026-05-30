@@ -9,20 +9,42 @@
   overflow: hidden !important; /* Locks overall scrolling, keeping header & search static */
 }
 
-/* Custom header for the console */
-.book-summary::before {
-  content: "⚡ [LAB LOG: NOTES.VIKRAMTIWARI.COM] ⚡" !important;
-  display: block;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 9px;
-  font-weight: 600;
-  color: var(--cobalt-blue);
-  text-align: center;
-  padding: 15px 10px 5px 10px;
-  letter-spacing: 0.12em;
-  opacity: 0.9;
-  border-bottom: 1px dashed var(--border-light);
+/* Sidebar brand header with clickable back button */
+.book-summary-header {
+  display: flex !important;
+  align-items: center !important;
+  padding: 15px 20px !important;
+  border-bottom: 1px dashed var(--border-light) !important;
   flex-shrink: 0 !important;
+  background: var(--bg-sidebar) !important;
+}
+
+.sidebar-back-btn {
+  color: var(--text-secondary) !important;
+  font-size: 13px !important;
+  margin-right: 12px !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--border-light) !important;
+  background: #ffffff !important;
+}
+
+.sidebar-back-btn:hover {
+  color: var(--cobalt-blue) !important;
+  border-color: var(--cobalt-blue) !important;
+  box-shadow: 0 0 8px rgba(11, 79, 140, 0.08) !important;
+  text-decoration: none !important;
+}
+
+.sidebar-brand-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--cobalt-blue) !important;
 }
 
 /* Search Box: Terminal input style */
@@ -215,6 +237,9 @@
 
 /* --- 🎚️ Header HUD --- */
 .book-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important; /* Ensure it floats stickily over all paragraphs/ Mermaid maps */
   background: var(--bg-archival) !important;
   border-bottom: 1px solid var(--border-light) !important;
   color: var(--text-primary) !important;

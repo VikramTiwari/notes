@@ -9,6 +9,15 @@ Here is a collection of side projects that I've built, ranging from data enginee
 
 ---
 
+### 📚 [Book Shelf](https://vikramtiwari.com/books)
+A personal digital library catalog and shelf explorer that indexes my reading list, tracking physical and digital books with structured data.
+
+* **Status**: 🟢 Live
+* **Tech Stack**: JavaScript, Vite, CSV parsing, Firebase Hosting
+* **Path**: `/books/`
+
+---
+
 ### 🍳 [Culinary Vector Math Engine](https://culinary-universe.vikramtiwari.com/)
 An interactive pairings visualizer that uses high-dimensional vector embeddings to analyze ingredient relationships. It applies cosine similarity over culinary data to discover unexpected and scientifically-backed food pairings.
 
@@ -20,9 +29,9 @@ An interactive pairings visualizer that uses high-dimensional vector embeddings 
 
 ---
 
-### 📚 [Book Shelf](https://vikramtiwari.com/books)
-A personal digital library catalog and shelf explorer that indexes my reading list, tracking physical and digital books with structured data.
+### 📓 [notes.vikramtiwari.com](https://notes.vikramtiwari.com/)
+A personal clinical logbook, knowledge graph, and search engine powered by HonKit, Git commit auditing, submodules, and high-contrast styling variables.
 
 * **Status**: 🟢 Live
-* **Tech Stack**: JavaScript, Vite, CSV parsing, Firebase Hosting
-* **Path**: `/books/`
+* **Tech Stack**: JavaScript, HonKit, CSS3 Variables, Makefile Automation
+* **Detailed Writeup**: [Notes Website Architecture & Build Engineering](notes-architecture.md)

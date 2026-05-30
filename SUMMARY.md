@@ -54,4 +54,5 @@
   * [Explore](social/explore.md)
 * [Side Projects](side-projects/README.md)
   * [Culinary Vector Math Engine](side-projects/culinary-vector-math.md)
+  * [Notes Website Architecture](side-projects/notes-architecture.md)
 * [Help me!](help-me.md)

@@ -261,6 +261,16 @@
     </script>
 {% endblock %}
 
+{% block book_summary %}
+    <div class="book-summary-header">
+        <a href="https://vikramtiwari.com" class="sidebar-back-btn" title="Back to vikramtiwari.com">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <span class="sidebar-brand-title">Vik's Notes</span>
+    </div>
+    {{ super() }}
+{% endblock %}
+
 {% block book_inner %}
     <div class="book-header" role="navigation">
         <h1>
@@ -293,13 +303,26 @@
 
     <div class="page-wrapper" tabindex="-1" role="main">
         <div class="page-inner">
-            {% block search_results %}
-                <section class="normal markdown-section">
-                {% block page %}
-                {{ page.content|safe }}
-                {% endblock %}
-                </section>
-            {% endblock %}
+            <div id="book-search-results">
+                <div class="search-noresults">
+                    {% block search_results %}
+                        <section class="normal markdown-section">
+                        {% block page %}
+                        {{ page.content|safe }}
+                        {% endblock %}
+                        </section>
+                    {% endblock %}
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

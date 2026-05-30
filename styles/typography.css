@@ -18,6 +18,11 @@
   color: var(--text-primary) !important;
 }
 
+/* Hide redundant duplicate title at the top of note body */
+.markdown-section h1:first-of-type {
+  display: none !important;
+}
+
 .markdown-section h2 {
   font-size: 1.5em !important;
   border-bottom: 1px dashed var(--border-light) !important;
