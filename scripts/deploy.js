@@ -21,21 +21,7 @@ process.chdir(ROOT_DIR);
 
 console.log('Starting deployment process...');
 
-// 1. Update Home Repo
-console.log('\n--- Updating Home Repo ---');
-if (dirExists('home/.git')) {
-    run('cd home && git pull origin master');
-} else {
-    run('git clone git@github.com:VikramTiwari/vikramtiwari.github.com.git home');
-}
-
-// 2. Update Book Shelf Repo
-console.log('\n--- Updating Book Shelf Repo ---');
-if (dirExists('book-shelf/.git')) {
-    run('cd book-shelf && git fetch origin && git reset --hard origin/main');
-} else {
-    run('git clone https://github.com/VikramTiwari/book-shelf book-shelf');
-}
+// Submodules (home and book-shelf) are managed directly by git and updated via Makefile.
 
 // 3. Build Docs (HonKit)
 console.log('\n--- Building Docs ---');

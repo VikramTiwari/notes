@@ -1,4 +1,4 @@
-.PHONY: clean build serve dev deploy all
+.PHONY: clean build serve dev deploy submodule-init sync all
 
 # Default target
 all: dev
@@ -31,7 +31,43 @@ serve:
 # Build and serve in a single command
 dev: build serve
 
-# Run production build and deploy to Firebase
-deploy:
+# Initialize and pull submodules recursively
+submodule-init:
+	@echo "📦 Initializing submodules..."
+	git submodule update --init --recursive
+
+# Automatically stage, commit, and push any changes in submodules, then update references
+sync:
+	@echo "🔄 Checking for changes in home..."
+	@cd home && \
+	if [ -n "$$(git status --porcelain)" ]; then \
+		echo "💾 Staging and committing changes in home..."; \
+		git add -A && \
+		git commit -m "sync: automatic update" && \
+		git push origin master; \
+	else \
+		echo "✅ home is clean."; \
+	fi
+	@echo "🔄 Checking for changes in book-shelf..."
+	@cd book-shelf && \
+	if [ -n "$$(git status --porcelain)" ]; then \
+		echo "💾 Staging and committing changes in book-shelf..."; \
+		git add -A && \
+		git commit -m "sync: automatic update" && \
+		git push origin main; \
+	else \
+		echo "✅ book-shelf is clean."; \
+	fi
+	@echo "🔄 Checking for updated submodule references in notes..."
+	@if [ -n "$$(git status --porcelain home book-shelf)" ]; then \
+		echo "💾 Staging and committing updated submodule references in notes..."; \
+		git add home book-shelf && \
+		git commit -m "chore: update submodule pointers"; \
+	else \
+		echo "✅ Notes submodule pointers are in sync."; \
+	fi
+
+# Run production build and deploy to Firebase (syncs automatically first!)
+deploy: sync
 	@echo "🚀 Starting full production deployment..."
 	node scripts/deploy.js
