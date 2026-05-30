@@ -1,4 +1,4 @@
-.PHONY: clean build serve dev all
+.PHONY: clean build serve dev deploy all
 
 # Default target
 all: dev
@@ -30,3 +30,8 @@ serve:
 
 # Build and serve in a single command
 dev: build serve
+
+# Run production build and deploy to Firebase
+deploy:
+	@echo "🚀 Starting full production deployment..."
+	node scripts/deploy.js
