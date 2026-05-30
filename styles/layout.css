@@ -184,6 +184,17 @@
   margin: 15px 0 !important;
 }
 
+/* Hide HonKit brand link and its container */
+.book-summary ul.summary li a.gitbook-link,
+.book-summary ul.summary li:has(> a.gitbook-link) {
+  display: none !important;
+}
+
+/* Hide trailing divider above the hidden brand link */
+.book-summary ul.summary li.divider:last-of-type {
+  display: none !important;
+}
+
 /* --- 🔬 Main Page: Floating Scientific Board --- */
 .book-body {
   background: transparent !important;
