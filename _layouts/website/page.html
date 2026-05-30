@@ -25,17 +25,17 @@
   content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://vikramtiwari.com/notes/{{ file.path|replace('.md', '.html') }}" />
-<meta property="og:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+<meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}https://vikramtiwari.com/assets/og-notes-preview.png{% endif %}" />
 <meta property="og:site_name" content="Vik's Notes" />
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@vikram_tiwari" />
 <meta name="twitter:creator" content="@vikram_tiwari" />
 <meta name="twitter:title"
   content="{% if page.title %}{{ page.title }} | Vik's Notes{% else %}Vik's Notes | Vikram Tiwari{% endif %}" />
 <meta name="twitter:description"
   content="{% if page.description %}{{ page.description }}{% else %}A clinical logbook of software engineering topographies, WebGL 3D data engines, and deep systems research logs authored by Vikram Tiwari.{% endif %}" />
-<meta name="twitter:image" content="https://vikramtiwari.com/assets/vikram.jpg" />
+<meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}https://vikramtiwari.com/assets/og-notes-preview.png{% endif %}" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEFZF9R883"></script>
