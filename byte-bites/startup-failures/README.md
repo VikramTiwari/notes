@@ -42,6 +42,9 @@ Here is a structured index of **60+ pure software Y Combinator startups that fai
 * **[🤝 The Nonprofit Economics Trap](nonprofit-economics.md)**: Attempting to build a venture-scale SaaS company targeting nonprofits or political campaigns with underfunded budgets and slow procurement cycles.
 * **[🤖 The Commoditized AI Trap](commoditized-ai.md)**: Building an independent AI application that gets out-competed and commoditized by platform incumbents with native distribution and model access.
 * **[🌀 The Pivot Death Spiral Trap](pivot-death-spiral.md)**: Abandoning a stable, profitable core software utility to chase highly competitive, trend-driven consumer markets, alienating your core base.
+* **[🧠 The User Psychology Trap](user-psychology-trap.md)**: Designing a software utility around a trending UI pattern that fails because it fundamentally misunderstands the real-world motivations of its users.
+* **[📣 The Attention Economy Wipeout](attention-economy.md)**: Competing in a zero-sum game for user attention against massive social platforms that already control the dominant content-consumption graphs.
+* **[✉️ The Consumer Email Graveyard](consumer-email-graveyard.md)**: Building consumer-facing desktop or mobile email client software, which suffers from massive protocol-sync complexity, high server costs, and free client expectations.
 
 ---
 
