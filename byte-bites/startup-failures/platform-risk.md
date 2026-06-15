@@ -10,31 +10,27 @@ Building a business entirely dependent on another platform's APIs or search algo
 ---
 
 ## Parse (YC S11)
-* **What they built**: A Backend-as-a-Service (BaaS) that allowed mobile app developers to build databases and push notifications with a few lines of code.
-* **The Failure**: It was acquired by Facebook in 2013 for &#36;85M. However, Facebook later realized that hosting cloud backend infrastructure for third-party developers did not align with their core ad-selling business.
-* **The Outcome**: Facebook shut down Parse in 2016, causing chaos in the mobile development community.
-
+* **What they built**: A Backend-as-a-Service (BaaS) for mobile developers. Before Parse, if you wanted to build an iOS app, you had to write your own server, database, and push notification infrastructure. Parse provided a pure software SDK that handled all of this with a few lines of code.
+* **The Failure**: The product was a massive success, beloved by hundreds of thousands of developers. The "failure" here wasn't the software—it was the business strategy of the acquirer. Facebook bought Parse in 2013 for a reported &#36;85 million. For a while, it grew under Facebook's umbrella. However, Facebook eventually realized that hosting infrastructure for random third-party apps didn't align with their core business model (selling ads).
+* **The Outcome**: In 2016, Facebook shockingly announced they were shutting Parse down. It caused chaos in the developer community as startups scrambled to rewrite their entire backend architectures. It remains the ultimate warning about building your software on top of another company's proprietary platform.
 ---
 
 ## Socialcam (YC W12)
-* **What they built**: A mobile video-sharing app with filters that achieved viral growth to tens of millions of users in months.
-* **The Failure**: Their growth relied on a Facebook Open Graph API loophole that auto-posted watched videos to users' Facebook timelines. Once Facebook changed the algorithm to block this spam, Socialcam's traffic fell off a cliff.
-* **The Outcome**: Quickly sold to Autodesk in 2012 for &#36;60M, who ultimately retired the consumer app.
-
+* **What they built**: A mobile video sharing app that made it incredibly easy to apply filters to videos and share them online.
+* **The Failure**: Socialcam achieved astronomical growth, reaching tens of millions of users in a matter of months. However, their growth was entirely dependent on a "hack" of Facebook's Open Graph API. Socialcam's software was engineered so that simply watching a video on their platform would automatically post it to your Facebook wall without asking. This caused an aggressive viral loop. But when Facebook realized users were annoyed by the spam, they changed their algorithm overnight. Socialcam's distribution channel was instantly severed, and their traffic fell off a cliff.
+* **The Outcome**: Realizing the viral loop was dead, the founders quickly sold the company to Autodesk for &#36;60M in 2012. Autodesk struggled to figure out what a 3D modeling company should do with a consumer video app, and eventually shut the software down completely.
 ---
 
 ## Tutorspree (YC W11)
-* **What they built**: A marketplace matching parents and students with local, vetted tutors.
-* **The Failure**: They depended entirely on SEO for user acquisition. In 2013, Google updated its search algorithm, wiping out Tutorspree's rankings overnight. They also suffered from disintermediation (tutors and clients taking transactions offline).
-* **The Outcome**: Shut down in September 2013 and returned remaining capital to investors.
-
+* **What they built**: Often pitched as "Airbnb for tutoring," Tutorspree was a pure software marketplace that matched parents and students with local, vetted tutors.
+* **The Failure**: They grew incredibly fast, but their growth was built on a fragile foundation: they were entirely dependent on Google search traffic. They had mastered SEO to get their marketplace pages ranking #1 for "tutors in [City]." In 2013, Google rolled out a massive algorithm update that wiped out Tutorspree's rankings overnight. Furthermore, they suffered from the "disintermediation" problem common to service marketplaces: once they introduced a tutor to a student, the two parties would often just transact in cash offline to avoid Tutorspree's 50% platform fee.
+* **The Outcome**: The founders realized they were fundamentally an SEO arbitrage business with a leaky bucket. In a rare display of discipline, instead of burning their remaining venture capital trying to force a pivot, they shut the company down in September 2013 and returned their remaining funds to their investors. One of the founders, Aaron Harris, later became a YC partner.
 ---
 
 ## Kimono Labs (YC W14)
-* **What they built**: A popular developer tool that allowed users to turn any website into a structured API feed using a browser extension.
-* **The Failure**: Despite serving over 125,000 developers, the platform was acquired by data-mining giant Palantir, which wanted the technology solely for internal use.
-* **The Outcome**: Palantir instantly shut down the public API hosting service, breaking thousands of developer apps overnight.
-
+* **What they built**: A pure software developer tool that allowed anyone to turn a website into a structured API without writing code. You simply highlighted elements on a webpage via a Chrome extension, and Kimono's servers would scrape it and output a clean, constantly updated API feed.
+* **The Failure**: The software was incredibly popular, amassing over 125,000 developers who relied on it to power their own apps. However, relying on a free, venture-backed utility for your core infrastructure is incredibly dangerous. In 2016, the massive data-mining company Palantir acquired Kimono Labs. Palantir didn't care about the public API business; they solely wanted the underlying scraping technology and the engineering team to use internally.
+* **The Outcome**: Upon acquisition, Palantir immediately announced they were shutting down Kimono's public cloud service. It caused a massive uproar in the developer community as thousands of third-party apps broke overnight, reinforcing a harsh startup rule: never build your business on a free API you don't control.
 ---
 
 ## Yotta (YC W20)

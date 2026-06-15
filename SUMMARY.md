@@ -30,7 +30,6 @@
     * [Generative AI Traps](byte-bites/startup-failures/generative-ai-traps.md)
     * [Broke Target Markets](byte-bites/startup-failures/broke-target-markets.md)
     * [Too Early & Pre-Infrastructure](byte-bites/startup-failures/pre-infrastructure.md)
-    * [Unactionable Data](byte-bites/startup-failures/unactionable-data.md)
     * [Disintermediation & Quality](byte-bites/startup-failures/disintermediation.md)
     * [Acqui-killing & Neutralization](byte-bites/startup-failures/acqui-killing.md)
     * [Monolithic Framework Lock-In](byte-bites/startup-failures/monolithic-framework.md)

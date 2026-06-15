@@ -10,17 +10,15 @@ Obsessing over building a mathematically perfect or elegant system while neglect
 ---
 
 ## RethinkDB (YC W10)
-* **What they built**: A real-time NoSQL database designed to actively push updated query results to web applications.
-* **The Failure**: The founders focused on building an elegant, mathematically consistent architecture for over three years. Meanwhile, MongoDB shipped a highly flawed but fast and easy-to-use database, capturing all the developer mindshare and market momentum.
-* **The Outcome**: Raised &#36;12M but shut down in 2016. The database code was subsequently open-sourced to the community.
-
+* **What they built**: An open-source NoSQL database built from the ground up for the real-time web. It was designed to actively push updated query results to applications in real-time, rather than forcing the app to constantly poll the database for changes.
+* **The Failure**: They fell into the classic engineering trap: prioritizing technical perfection over time-to-market. RethinkDB obsessed over building an elegant, mathematically correct, and highly consistent architecture. Meanwhile, their main competitor, MongoDB, shipped a highly flawed but blisteringly fast and easy-to-use database. Developers wanted speed and "good enough" features immediately. By the time RethinkDB's perfect architecture was ready, they were three years late to the market and MongoDB had already won the mindshare. Furthermore, they discovered that monetizing open-source developer tools is brutally difficult.
+* **The Outcome**: After raising over &#36;12M and failing to find a sustainable enterprise revenue model, they shut down the company in 2016. The project was eventually transitioned into a community-driven open-source project.
 ---
 
 ## Devver (YC S08)
-* **What they built**: A cloud-based enterprise tool designed to accelerate Ruby test suites by offloading test execution to the cloud.
-* **The Failure**: The founders fell into the developer trap of writing code instead of talking to customers. They spent months on server scalability without validating pricing models or talking to developers.
-* **The Outcome**: Ran out of cash and shut down in 2010.
-
+* **What they built**: A cloud-based enterprise tool designed to accelerate test suites for Ruby developers. Instead of a developer sitting idle while code tests ran locally on their machine, Devver's software offloaded the heavy processing to the cloud.
+* **The Failure**: The founders fell into the classic developer trap: writing code instead of talking to customers. They spent months agonizing over server architecture, backend scalability, and technical perfection without actually validating the business model. In a highly self-aware post-mortem, the founders admitted they "focused on engineering first and customers second." They built a technically beautiful solution, but completely neglected sales, pricing models, and user feedback.
+* **The Outcome**: Because they prioritized writing code over talking to the market, they ran out of cash before they could find product-market fit. They officially shut down the service in 2010.
 ---
 
 ### 💡 Key Takeaway

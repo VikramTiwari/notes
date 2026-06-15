@@ -10,38 +10,33 @@ If scaling users drives server bills higher than ad or subscription revenue can 
 ---
 
 ## Vidme (YC W14)
-* **What they built**: A pure software video hosting platform and community, often pitched as a hybrid between YouTube and Reddit. It allowed creators to easily upload and monetize video content without facing extreme algorithmic suppression.
-* **The Failure**: Vidme grew significantly, amassing millions of monthly active users. However, they ran into the brutal laws of physics in software: hosting and delivering high-definition video is the most expensive infrastructure problem on the internet. They were caught in an impossible financial squeeze. They couldn't generate enough ad revenue to cover the astronomical cloud server costs for video transcoding, and they couldn't convince enough users to pay for premium subscriptions when YouTube offered infinite free video.
-* **The Outcome**: Unable to secure the massive, continuous venture funding required to sustain a standalone video ecosystem against Google's deep pockets, they suspended operations in 2017. It serves as a reminder that consumer video is mathematically hostile to independent startups.
-
+* **What they built**: Vidme launched as "Imgur for video"—a lightweight, pure software platform where users could upload and share short videos anonymously without creating an account or navigating YouTube's heavy interface.
+* **The Failure**: They grew massively, reaching millions of monthly active users. However, video hosting is the most brutal pure software business in the world. Unlike text or images, processing and serving video requires astronomical server and bandwidth costs. To survive, Vidme needed to build a highly profitable ad network or a massive subscription business. They simply couldn't monetize their users fast enough to outpace their ballooning Amazon Web Services (AWS) bills.
+* **The Outcome**: In 2017, after attempting to pivot to a paid creator-first model, they ran out of runway and suspended operations. It stands as a classic warning that in consumer software, explosive growth can literally bankrupt a company if the unit economics of the infrastructure are inherently negative.
 ---
 
 ## Locket (YC W14)
-* **What they built**: An Android app that took over the smartphone lock screen to display ads, paying users a tiny amount of cash every time they unlocked their phone.
-* **The Failure**: The ad revenue generated per swipe was consistently lower than the user payouts and server costs required to run the infrastructure. The more users they acquired, the faster they bled cash.
-* **The Outcome**: Abandoned the lock-screen model, pivoted several times, and eventually sold remaining assets to Wish in 2015.
-
+* **What they built**: A pure software Android app that took over your smartphone's lock screen to display advertisements. In exchange for looking at an ad every time you unlocked your phone, the app paid you real money.
+* **The Failure**: Locket achieved explosive user growth because, quite literally, they were handing out free money. However, their core business was an arbitrage play that broke down entirely. The revenue they generated from advertisers per "swipe" was consistently lower than the payouts they owed the users and the server costs required to run the infrastructure. The more users they acquired, the faster they bled cash.
+* **The Outcome**: Realizing the fundamental math of the business was permanently inverted, they pivoted several times before abandoning the lock-screen model entirely. The founder (Yunha Kim) eventually sold the remaining assets to Wish in 2015 and went on to successfully found the meditation app Simple Habit.
 ---
 
 ## Anywhere.FM (YC S07)
-* **What they built**: A web media player that allowed users to upload their entire MP3 collection to stream it from any browser.
-* **The Failure**: Built in 2007 when AWS was in its infancy. Hosting and streaming massive amounts of audio files was highly expensive, and they faced severe threat of piracy copyright strikes.
-* **The Outcome**: Acqui-hired by Imeem within months of launch; the software was shut down. (Imeem itself was later crushed by server costs and sold to MySpace).
-
+* **What they built**: Long before Spotify dominated streaming, Anywhere.FM built a brilliant pure software web application that allowed you to upload your entire MP3 collection to their servers and stream it from any browser in the world.
+* **The Failure**: They solved the software problem perfectly, but the underlying infrastructure of the internet in 2007 couldn't support the business model. Amazon Web Services (AWS) was still in its infancy, making the cost of hosting, storing, and streaming massive amounts of user-uploaded audio files astronomically expensive for a free consumer app. Plus, navigating the looming threat of music piracy and copyright strikes without a massive legal team was a ticking time bomb.
+* **The Outcome**: Just months after launching, they were acqui-hired by another early music startup called Imeem, and the Anywhere.FM software was shut down. (Ironically, Imeem's server costs also crushed them shortly after, and they were sold for scrap to MySpace).
 ---
 
 ## Spool (YC S11)
-* **What they built**: A mobile app that allowed users to bookmark videos on desktops and cache them to smartphones for offline viewing (like "Instapaper for video").
-* **The Failure**: In 2011, transcoding high-res video files on backend servers to fit different mobile screens resulted in massive AWS bills, while pushing heavy files over 3G networks proved technically unstable.
-* **The Outcome**: Acqui-hired by Facebook in 2012; the standalone app was immediately shut down.
-
+* **What they built**: Often pitched as "Instapaper for video," Spool was a pure software mobile app that allowed you to bookmark videos on your desktop and automatically cache them to your smartphone so you could watch them later without an internet connection (or without burning through your data plan).
+* **The Failure**: The app was beloved, but they were fighting a losing battle against the mobile infrastructure of 2011. Transcoding massive video files on the backend to fit different mobile screens required astronomical AWS server costs. Furthermore, trying to seamlessly push heavy video files over clunky 3G networks to early-generation smartphones resulted in constant technical debt and buggy software performance. The core business simply couldn't monetize fast enough to cover the massive processing overhead.
+* **The Outcome**: Recognizing the standalone app couldn't survive the unit economics of mobile video hosting, they were acqui-hired by Facebook in 2012. Facebook primarily wanted the engineering team to help build out their own mobile infrastructure, and the Spool software was permanently shut down.
 ---
 
 ## Kifi (YC S14)
-* **What they built**: A collaborative knowledge management browser extension that indexed everything remote teams read and share.
-* **The Failure**: Bookmarking and link-sharing are utility features that users expect to get for free. The server overhead of deep-indexing millions of web pages for a free user base completely outpaced their revenue.
-* **The Outcome**: Acqui-hired by Google in 2016 to work on Google Spaces; the Kifi service was retired.
-
+* **What they built**: A pure software knowledge management tool. It was a highly sophisticated browser extension that analyzed everything you read online, created deep-searchable bookmarks, and allowed remote teams to share complex knowledge graphs.
+* **The Failure**: They fell into the classic "vitamins vs. painkillers" trap in B2B software. Users genuinely loved the tool, but they didn't love it enough to pay enterprise SaaS rates for it. Bookmarking and link-sharing are utility features that employees expect to get for free (via browser defaults or Slack). Meanwhile, the server costs for deep-indexing millions of web pages for a predominantly free user base completely outpaced their revenue.
+* **The Outcome**: After struggling to find a viable, venture-scale business model for a standalone bookmarking tool, they were acqui-hired by Google in 2016. Google bought the team to work on a messaging app called Google Spaces, and the Kifi software—along with all user knowledge graphs—was deleted.
 ---
 
 ### 💡 Key Takeaway

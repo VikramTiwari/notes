@@ -10,9 +10,13 @@ Building a directory of listings is hard to monetize if you do not control the a
 ---
 
 ## Lanyrd (YC W11)
-* **What they built**: A social conference directory displaying which tech events and conferences users' contacts were attending.
-* **The Failure**: They built a massive community directory, but the real money in conferences is ticketing. Because they did not run the ticket transactions, they couldn't capture the financial value of their traffic.
-* **The Outcome**: Acquired by Eventbrite in 2013 to absorb the directory data; the standalone site was retired.
+* **What they built**: A pure software "social conference directory." By logging in with Twitter, Lanyrd automatically cross-referenced your network to show you which professional conferences and tech events your friends and colleagues were attending, while also crowdsourcing slide decks and videos from the speakers.
+* **The Failure**: Lanyrd was beloved by the tech community. The software worked perfectly, and they built a massive, highly engaged user base of conference-goers. However, they were a discovery layer trying to monetize in the live events industry. The actual money in the events space is in processing ticket transactions, not in providing a social directory. Because they didn't control the ticketing infrastructure, they couldn't capture the massive financial value of the community they had aggregated.
+* **The Outcome**: Unable to find a highly profitable standalone business model for event discovery, they were acquired by Eventbrite in 2013 primarily for their engineering talent and data ecosystem. Eventbrite eventually integrated the directory features into their own ticketing platform and quietly sunset the standalone Lanyrd website.
+## FlightCaster (YC S09)
+* **What they built**: An ML engine predicting flight delays hours before airlines announced them.
+* **The Failure**: The data was unactionable. Even if the algorithm knew a flight would be delayed, gate agents wouldn't allow passengers to rebook tickets until the airline officially declared the delay in their systems.
+* **The Outcome**: Acqui-hired by Next Jump in 2011; the standalone app was retired.
 
 ---
 

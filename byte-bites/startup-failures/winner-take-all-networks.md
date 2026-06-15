@@ -10,10 +10,9 @@ In consumer social applications, once a competitor achieves a dominant network l
 ---
 
 ## Picplz (YC S10)
-* **What they built**: A mobile photo-sharing app with retro filters, launching as the primary rival to Instagram in 2010.
-* **The Failure**: Social apps are winner-take-all. Instagram moved faster, built a slicker UI, and achieved viral network loops. Once a user's friends migrated to Instagram, Picplz had zero utility.
-* **The Outcome**: Shut down in 2012 and deleted all user photos.
-
+* **What they built**: A pure software mobile photo-sharing app with retro filters. It launched in 2010 and was widely considered the primary rival to another early photo app: Instagram.
+* **The Failure**: Consumer social apps are winner-take-all markets driven entirely by network effects. While Picplz had great software and raised &#36;5 million from top-tier VC Andreessen Horowitz, Instagram simply moved faster, built a smoother UI, and achieved viral velocity. Once a user's entire friend group was on Instagram, there was absolutely zero reason to maintain a secondary photo-sharing network.
+* **The Outcome**: Realizing they had irrevocably lost the network-effects war to a juggernaut, the founders decided to cut their losses. They officially shut down the app and permanently deleted all user photos in 2012—just months after Facebook bought Instagram for &#36;1 billion.
 ---
 
 ### 💡 Key Takeaway

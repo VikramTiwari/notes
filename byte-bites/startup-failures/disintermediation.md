@@ -10,10 +10,9 @@ Marketplaces that connect service providers with consumers must solve quality co
 ---
 
 ## Homejoy (YC W10)
-* **What they built**: An on-demand marketplace connecting homeowners with independent house cleaners (the "Uber for cleaning").
-* **The Failure**: They masked poor retention with cheap Groupon discounts. If a cleaner was bad, the customer left. If a cleaner was excellent, the homeowner and cleaner would exchange phone numbers and transact directly, cutting out Homejoy's fees.
-* **The Outcome**: Shut down in 2015 after being hit with gig-worker misclassification lawsuits.
-
+* **What they built**: A pure software marketplace designed to be the "Uber for home cleaning." It matched independent cleaners with homeowners through a seamless web and mobile interface.
+* **The Failure**: Homejoy mastered user acquisition but completely failed at user retention. To maintain the astronomical growth metrics required by their &#36;65 million in venture funding, they aggressively relied on Groupon deals and steep discounts. However, the software couldn't solve the real-world friction of quality control. If a cleaner was terrible, the user never booked again. If the cleaner was great, the homeowner and the cleaner would simply exchange phone numbers and bypass the app entirely to avoid Homejoy's platform fees.
+* **The Outcome**: The underlying unit economics were fundamentally broken by an abysmal 25% month-over-month retention rate. When faced with a massive class-action lawsuit over misclassifying their gig-workers as independent contractors, the company abruptly shut down in 2015.
 ---
 
 ### 💡 Key Takeaway

@@ -10,10 +10,9 @@ Building a single execution utility is highly vulnerable to large, comprehensive
 ---
 
 ## Saleswhale (YC S16)
-* **What they built**: An AI sales assistant that automatically emailed and qualified cold enterprise leads.
-* **The Failure**: A feature, not a platform. Lead data platforms like 6sense and ZoomInfo built native automated email follow-up features directly into their large contact databases, neutralizing Saleswhale.
-* **The Outcome**: Acquired by 6sense in 2022 to absorb the email qualification tech.
-
+* **What they built**: A pure software AI sales assistant. It was designed to automatically follow up with cold enterprise leads via email, qualify them using natural language processing, and then hand the warm leads over to human sales reps.
+* **The Failure**: Saleswhale built a genuinely fantastic software tool, but they suffered from a fatal structural issue in B2B SaaS: they built a feature, not a platform. Their "last-mile execution" (sending the emails) was highly dependent on the upstream data layer (identifying the leads). Massive revenue intelligence platforms like 6sense and ZoomInfo realized that automated follow-ups were just a natural extension of their existing databases. Once the larger incumbents built the exact same AI follow-up features natively into their massive platforms, Saleswhale lost its competitive moat.
+* **The Outcome**: Realizing they couldn't survive as a standalone software execution layer against comprehensive data platforms, they were acquired by 6sense in 2022. 6sense essentially absorbed the technology, proving that if your software only solves a tiny fraction of a larger workflow, you will eventually be eaten by the platform that owns the whole workflow.
 ---
 
 ## Tribe (YC W16)
