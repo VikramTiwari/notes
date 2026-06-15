@@ -10,9 +10,9 @@ Selling software specifically to early-stage startups means selling to customers
 ---
 
 ## Sorted (YC W23)
-* **What they built**: A pure SaaS management tool designed to automatically track software licenses, manage user access, and cancel unused subscriptions within an organization. Startups.RIP
-* **The Failure**: They built a B2B product for a market segment that simply refuses to pay for it: early-stage startups. Startups are notoriously protective of their cash flow and have a high tolerance for just using manual spreadsheets to track their handful of software licenses. Meanwhile, the mid-market and enterprise companies—who actually experience the pain of massive "SaaS sprawl" and have the budget to pay for a tool to fix it—were already being served by better-capitalized incumbents. Startups.RIP
-* **The Outcome**: Caught between a target market with no money and a lucrative enterprise market they couldn't penetrate, the company failed to find product-market fit and became inactive shortly after their YC batch. Startups.RIP
+* **What they built**: A pure software, automated SaaS management platform. It promised to instantly plug into a company's backend and automatically track, manage, and eliminate unused third-party software licenses without relying on messy spreadsheets or employee surveys.
+* **The Failure**: They built a highly frictionless tool that was perfect for tiny startups, but they immediately hit a fatal structural wall. Small startups don't have enough "software sprawl" to justify paying a premium for a dedicated management tool. Conversely, the massive mid-market and enterprise companies that did have massive software bloat required complex, highly secure integrations and legacy compliance features that the tiny, early-stage Sorted team mathematically could not build fast enough.
+* **The Outcome**: Squeezed in the "valley of death" between small businesses that wouldn't pay and enterprise buyers they couldn't serve, they failed to find product-market fit. Unable to catch up to heavily capitalized incumbents in the SaaS management space, the founders quietly threw in the towel. The company domain is now entirely inactive, serving as a rapid casualty of a misaligned target market.
 ---
 
 ### 💡 Key Takeaway

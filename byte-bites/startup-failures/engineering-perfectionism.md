@@ -9,16 +9,16 @@ Obsessing over building a mathematically perfect or elegant system while neglect
 
 ---
 
-## RethinkDB (YC W10)
-* **What they built**: An open-source NoSQL database built from the ground up for the real-time web. It was designed to actively push updated query results to applications in real-time, rather than forcing the app to constantly poll the database for changes.
-* **The Failure**: They fell into the classic engineering trap: prioritizing technical perfection over time-to-market. RethinkDB obsessed over building an elegant, mathematically correct, and highly consistent architecture. Meanwhile, their main competitor, MongoDB, shipped a highly flawed but blisteringly fast and easy-to-use database. Developers wanted speed and "good enough" features immediately. By the time RethinkDB's perfect architecture was ready, they were three years late to the market and MongoDB had already won the mindshare. Furthermore, they discovered that monetizing open-source developer tools is brutally difficult.
-* **The Outcome**: After raising over &#36;12M and failing to find a sustainable enterprise revenue model, they shut down the company in 2016. The project was eventually transitioned into a community-driven open-source project.
+## Devver (YC S08)
+* **What they built**: A pure B2B software infrastructure tool for developers. Long before modern cloud-native CI/CD pipelines became standard, Devver built a complex cloud-based testing environment specifically for Ruby on Rails developers, aiming to offload heavy, time-consuming local code tests to remote servers.
+* **The Failure**: The founders famously published a post-mortem admitting their fatal flaw: they fell in love with the code, not the customer. They spent an entire year heads-down in a basement, writing highly complex backend infrastructure without ever actually talking to developers about pricing or pain points. When they finally launched, they discovered a brutal unit-economic reality. While developers liked the idea of faster testing, they fundamentally refused to pay a monthly SaaS fee high enough to cover Devver's massive AWS server costs.
+* **The Outcome**: Because they built a technically beautiful product for a market that mathematically couldn't sustain their cloud infrastructure overhead, they ran out of runway. They officially shut down the service in 2010, cementing the classic startup lesson: customer validation must always happen before software engineering.
 ---
 
-## Devver (YC S08)
-* **What they built**: A cloud-based enterprise tool designed to accelerate test suites for Ruby developers. Instead of a developer sitting idle while code tests ran locally on their machine, Devver's software offloaded the heavy processing to the cloud.
-* **The Failure**: The founders fell into the classic developer trap: writing code instead of talking to customers. They spent months agonizing over server architecture, backend scalability, and technical perfection without actually validating the business model. In a highly self-aware post-mortem, the founders admitted they "focused on engineering first and customers second." They built a technically beautiful solution, but completely neglected sales, pricing models, and user feedback.
-* **The Outcome**: Because they prioritized writing code over talking to the market, they ran out of cash before they could find product-market fit. They officially shut down the service in 2010.
+## RethinkDB (YC W10)
+* **What they built**: A profoundly sophisticated, pure software open-source database built from the ground up to instantly push real-time data updates to live applications.
+* **The Failure**: RethinkDB built an absolute engineering marvel that developers deeply loved, but they were crushed by the brutal economics of the "open-core" infrastructure market. To get widespread developer adoption, they had to give their core software away for completely free. When they tried to make money by selling premium enterprise features or support contracts, they realized that most companies were perfectly content just using the free version. Furthermore, they were heavily outmaneuvered by cloud giants like Amazon Web Services (AWS), who simply take free open-source code, host it themselves, and capture all the revenue by renting the hosting back to developers.
+* **The Outcome**: You cannot sustain a venture-backed company on GitHub stars alone. Despite raising over &#36;12 million and building a technically superior product, they couldn't convince enough companies to pay for what they were already giving away. They ran out of money and officially shut down as a company in 2016, though the code itself was open-sourced and handed over to the Linux Foundation.
 ---
 
 ### 💡 Key Takeaway

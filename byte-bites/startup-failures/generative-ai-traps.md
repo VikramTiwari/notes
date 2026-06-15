@@ -10,9 +10,9 @@ LLM wrappers are easy to prototype, but building reliable, production-ready ente
 ---
 
 ## CodeParrot (YC W23)
-* **What they built**: An AI-powered developer tool designed to turn Figma designs and screenshots directly into production-ready React and Flutter code. Entrepreneur India
-* **The Failure**: They got caught in what the founder explicitly described as "pivot hell." Building code-generation tools with LLMs is deceptively easy to prototype but incredibly difficult to make reliable for enterprise. As the founder noted in his post-mortem, "Good prompts get you 90% there, but good evals are what really matter." They struggled to bridge the gap between a cool demo and a tool developers would actually pay for, peaking at just &#36;1,500 in monthly recurring revenue. Entrepreneur India
-* **The Outcome**: Unable to achieve sustainable growth or raise a subsequent round after Demo Day, they officially shut down operations, highlighting how difficult it is to commercialize generative AI even with YC backing. Entrepreneur India
+* **What they built**: A pure software developer tool powered by Large Language Models (LLMs). It was an ambitious VS Code extension designed to magically convert static Figma designs and visual screenshots directly into production-ready React and HTML code.
+* **The Failure**: They raised a &#36;500,000 seed round and achieved early technical traction, but they found themselves trapped in what the founder famously described as "pivot hell." The generative AI space was moving so aggressively that maintaining a defensible software moat was incredibly difficult. Despite releasing multiple iterations and fighting intensely for users, they only managed to reach roughly &#36;1,500 in Monthly Recurring Revenue (MRR)—which was mathematically insufficient to raise follow-on funding in a tightening venture market.
+* **The Outcome**: Facing a rapidly dwindling runway and realizing that their current growth velocity couldn't sustain a venture-scale business, the founders made a highly mature, albeit painful, decision. Instead of burning their remaining cash on increasingly desperate, aimless experiments, they laid off their engineers and completely shut down the company in 2024.
 ---
 
 ### 💡 Key Takeaway

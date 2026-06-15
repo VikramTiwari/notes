@@ -13,7 +13,6 @@ Building consumer-facing desktop or mobile email client software, which suffers 
 * **What they built**: Originally launched as "InboxApp," they built a pure software, highly extensible desktop email client using early web technologies (Electron). It was designed to be the ultimate, customizable power-user email interface for Mac and Windows.
 * **The Failure**: The software was beloved by developers, but building a B2C desktop email client is a notorious startup graveyard. The engineering required to reliably sync millions of emails across different protocols (Gmail, Exchange, IMAP) without draining the user's laptop battery or consuming massive amounts of RAM is staggering. Furthermore, consumers have been trained for decades that email clients should be completely free, making it nearly impossible to cover the massive cloud infrastructure costs required to run the sync engines.
 * **The Outcome**: In a brilliant and ruthless display of startup survival, the founders realized the consumer app was a financial black hole. They completely killed the beloved email client and pivoted entirely to B2B software, packaging their backend syncing engine into a paid API for other developers. That API business (Nylas) went on to become a massive, highly successful company, proving that sometimes you have to kill your own software to save the business.
-
 ---
 
 ### 💡 Key Takeaway
