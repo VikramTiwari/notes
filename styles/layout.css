@@ -13,7 +13,9 @@
 .book-summary-header {
   display: flex !important;
   align-items: center !important;
-  padding: 15px 20px !important;
+  padding: 0 20px !important;
+  height: 50px !important;
+  box-sizing: border-box !important;
   border-bottom: 1px dashed var(--border-light) !important;
   flex-shrink: 0 !important;
   background: var(--bg-sidebar) !important;
