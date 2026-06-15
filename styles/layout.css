@@ -137,6 +137,43 @@
   display: block !important;
 }
 
+/* Visual indicator for items with subpages */
+.book-summary ul.summary li:has(> ul.articles) > a,
+.book-summary ul.summary li:has(> ul.articles) > span {
+  position: relative !important;
+  padding-right: 36px !important;
+}
+
+.book-summary ul.summary li:has(> ul.articles) > a::after,
+.book-summary ul.summary li:has(> ul.articles) > span::after {
+  content: "\f105" !important; /* FontAwesome angle-right */
+  font-family: FontAwesome !important;
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 14px !important;
+  color: var(--text-dim) !important;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease, opacity 0.2s ease !important;
+  opacity: 0.6 !important;
+  pointer-events: none !important;
+}
+
+.book-summary ul.summary li:has(> ul.articles):hover > a::after,
+.book-summary ul.summary li:has(> ul.articles):hover > span::after {
+  color: var(--cobalt-blue) !important;
+  opacity: 0.9 !important;
+}
+
+.book-summary ul.summary li:has(> ul.articles).active > a::after,
+.book-summary ul.summary li:has(> ul.articles).active > span::after,
+.book-summary ul.summary li:has(> ul.articles):has(li.active) > a::after,
+.book-summary ul.summary li:has(> ul.articles):has(li.active) > span::after {
+  transform: translateY(-50%) rotate(90deg) !important;
+  color: var(--cobalt-blue) !important;
+  opacity: 1 !important;
+}
+
 /* Hierarchical indentation styling for nested sub-lists */
 .book-summary ul.summary li ul.articles li a,
 .book-summary ul.summary li ul.articles li span {
