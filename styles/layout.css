@@ -421,6 +421,67 @@
   transform: rotate(90deg) !important;
 }
 
+/* Desktop: Convert the sidebar toggle button into a premium floating pill on the vertical divider */
+@media screen and (min-width: 769px) {
+  .book-header a.btn.pull-left {
+    position: fixed !important;
+    top: 85px !important;
+    left: var(--sidebar-width) !important;
+    transform: translateX(-50%) !important;
+    z-index: 9999 !important;
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 50% !important;
+    background: #ffffff !important;
+    border: 1px solid var(--border-light) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+    transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s, border-color 0.2s !important;
+    cursor: pointer !important;
+  }
+
+  .book-header a.btn.pull-left:hover {
+    background: var(--cobalt-blue) !important;
+    border-color: var(--cobalt-blue) !important;
+    color: #ffffff !important;
+    transform: translateX(-50%) scale(1.1) !important;
+  }
+
+  .book-header a.btn.pull-left:hover .fa-align-justify {
+    color: #ffffff !important;
+    transform: none !important;
+  }
+
+  /* Position when sidebar is closed */
+  .book:not(.with-summary) .book-header a.btn.pull-left {
+    left: 20px !important;
+  }
+
+  .book:not(.with-summary) .book-header a.btn.pull-left:hover {
+    transform: translateX(-50%) scale(1.1) !important;
+  }
+
+  .book-header a.btn.pull-left .fa-align-justify {
+    font-size: 13px !important;
+    color: var(--text-secondary) !important;
+    transition: color 0.2s !important;
+  }
+
+  /* Force angle-left/right icons and override hamburger/close icons */
+  .book.with-summary .book-header a.btn.pull-left .fa-align-justify::before {
+    content: "\f104" !important; /* fa-angle-left */
+    font-family: FontAwesome !important;
+  }
+
+  .book:not(.with-summary) .book-header a.btn.pull-left .fa-align-justify::before {
+    content: "\f105" !important; /* fa-angle-right */
+    font-family: FontAwesome !important;
+  }
+}
+
 /* --- 🎛️ Calibration Arrows (Navigation) --- */
 .navigation {
   display: none !important;
