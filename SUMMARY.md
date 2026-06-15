@@ -44,6 +44,7 @@
     * [Infrequent Engagement Squeeze](byte-bites/startup-failures/infrequent-engagement.md)
     * [Niche Market Mirage](byte-bites/startup-failures/niche-market-mirage.md)
     * [Temporary Technological Fear](byte-bites/startup-failures/temporary-fear-trap.md)
+    * [Hardware Consolidation](byte-bites/startup-failures/hardware-consolidation.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)

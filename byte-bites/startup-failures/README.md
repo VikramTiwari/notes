@@ -37,6 +37,7 @@ Here is a structured index of **60+ pure software Y Combinator startups that fai
 * **[⏰ Infrequent Engagement Squeeze](infrequent-engagement.md)**: For consumer utilities, if users only need your software a few times a year, it is difficult to build retention and grow organically.
 * **[🌐 Niche Market Mirage & TAM Trap](niche-market-mirage.md)**: Building a highly beloved software tool for a total addressable market (TAM) that is mathematically too small to sustain a venture-backed valuation.
 * **[🔒 Temporary Technological Fear & Commoditized Infrastructure](temporary-fear-trap.md)**: Building a software solution addressing a temporary industry anxiety or technical gap that incumbents later neutralize natively.
+* **[⚙️ Hardware Consolidation Trap](hardware-consolidation.md)**: Building an operating system or software layer for a hardware ecosystem that consolidates under a closed, vertically-integrated monopoly.
 
 ---
 
