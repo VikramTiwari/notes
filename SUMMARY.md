@@ -52,4 +52,5 @@
   * [Book Shelf 3D Engine](side-projects/book-shelf.md)
   * [Culinary Vector Math Engine](side-projects/culinary-vector-math.md)
   * [Notes Website Architecture](side-projects/notes-architecture.md)
+  * [3D Pinball Space Cadet](side-projects/space-cadet-pinball.md)
 * [Help me!](help-me.md)

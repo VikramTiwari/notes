@@ -18,7 +18,8 @@ const EXCLUDES = [
     'home', 
     'book-shelf', 
     'dist',
-    'public' // in case there's one in root
+    'public', // in case there's one in root
+    'draft'
 ];
 
 // Helper to get formatted date YYYY-MM-DD

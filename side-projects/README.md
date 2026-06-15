@@ -36,3 +36,22 @@ A personal clinical logbook, knowledge graph, and search engine powered by HonKi
 * **Status**: 🟢 Live
 * **Tech Stack**: JavaScript, HonKit, CSS3 Variables, Makefile Automation
 * **Detailed Writeup**: [Notes Website Architecture & Build Engineering](notes-architecture.md)
+
+---
+
+### 🧠 [Personal Knowledge Base](#)
+A decentralized, privacy-first personal knowledge management system leveraging local-first CRDTs and on-device semantic vector search.
+
+* **Status**: 🟡 Coming Soon
+* **Tech Stack**: TypeScript, Yjs (CRDTs), IndexedDB, Transformers.js (WebGPU), Three.js
+* **Detailed Writeup**: [Engineering a Local-First Personal Knowledge Base](#)
+
+---
+
+### 🕹️ [3D Pinball Space Cadet](https://pinball.vikramtiwari.com)
+A web-native port of the classic Windows 3D Pinball: Space Cadet, compiled from C++ decompilation to WebAssembly via Emscripten and styled with a nostalgic Windows 95 user interface.
+
+* **Status**: 🟢 Live
+* **Tech Stack**: C++, WebAssembly, Emscripten, SDL2, Retro Win95 CSS, Firebase Hosting
+* **Live App**: [pinball.vikramtiwari.com](https://pinball.vikramtiwari.com)
+* **Detailed Writeup**: [3D Pinball Space Cadet Porting & Compilation](space-cadet-pinball.md)

@@ -11,7 +11,8 @@ const EXCLUDES = [
     '.gitbook', 
     'scripts', 
     'home', 
-    'book-shelf'
+    'book-shelf',
+    'draft'
 ];
 
 function getGitCreationDate(filePath) {
