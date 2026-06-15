@@ -17,9 +17,9 @@ Throwing large amounts of venture capital at a business model with unproven unit
 ---
 
 ## Atrium (YC W18)
-* **What they built**: A tech-enabled law firm that pivoted into a B2B legal document management SaaS for startups.
-* **The Failure**: They raised &#36;75M on a unicorn legal disruption narrative. When they pivoted to pure software, they had the massive cash burn and expectations of a rocket-ship startup but only standard, slow-moving legal CRM revenues.
-* **The Outcome**: Shut down in 2020 and returned remaining capital to investors.
+* **What they built**: Pitched as a revolutionary software platform designed to completely automate legal services and fundraising paperwork for startups.
+* **The Failure**: They fell into a brutal margin trap. Legal work is fundamentally bespoke and requires intense human judgment. Atrium tried to operate as both a high-margin software company and a traditional law firm. This gave them the massive engineering payroll of a Silicon Valley tech startup, but the slow, unscalable profit margins of a human services firm. When they finally realized the economics were broken, they fired their in-house lawyers to pivot to pure B2B SaaS, but the software alone simply wasn't valuable enough to clients without the human lawyers attached to it.
+* **The Outcome**: Despite raising over &#36;75 million (and being led by Justin Kan, a highly successful multi-time founder), they couldn't fix the underlying unit economics. The company officially shut down operations and returned its remaining capital to investors in 2020.
 
 ---
 

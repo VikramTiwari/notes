@@ -17,9 +17,9 @@ Building a wrapper or tool that relies on upstream data, or entering a market wh
 ---
 
 ## Balanced (YC W11)
-* **What they built**: A payments routing API designed specifically for two-sided marketplaces (like crowdfunding and P2P platforms) to split payments.
-* **The Failure**: Behemoth Stripe launched Stripe Connect, a native feature doing exactly what Balanced did but integrated into Stripe's massive global payment infrastructure.
-* **The Outcome**: The founders gracefully shut down in 2015 rather than burn remaining cash, even building migration tools to transition customers to Stripe.
+* **What they built**: A pure software API for processing payments, specifically designed for two-sided marketplaces (like crowdfunding platforms and gig-economy apps) where money needs to be routed from a buyer, to a platform, and then to a seller.
+* **The Failure**: Balanced was actually a fantastic product that processed hundreds of millions of dollars, but they were competing in a winner-take-all infrastructure market. When Stripe launched **Stripe Connect**—a native API built specifically to handle complex marketplace routing—Balanced simply couldn't keep up. Stripe had infinitely more engineering resources, massive global reach, and a bottomless war chest of venture funding.
+* **The Outcome**: Realizing they couldn't survive an arms race against a generational tech giant, the founders made the highly respectable decision to gracefully shut down in 2015. Instead of leaving their users stranded, they partnered with Stripe to seamlessly migrate all their existing customers over, proving that sometimes you just get out-built.
 
 ---
 

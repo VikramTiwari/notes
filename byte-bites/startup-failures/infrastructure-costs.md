@@ -10,9 +10,9 @@ If scaling users drives server bills higher than ad or subscription revenue can 
 ---
 
 ## Vidme (YC W14)
-* **What they built**: The "Imgur of video"—a lightweight platform where users could upload and share short videos anonymously without creating accounts.
-* **The Failure**: Video processing and bandwidth costs are astronomical. They grew to millions of users but couldn't monetize fast enough through ads or subscriptions to keep pace with ballooning AWS bills.
-* **The Outcome**: Shut down operations in 2017 after trying to pivot to a paid creator model.
+* **What they built**: A pure software video hosting platform and community, often pitched as a hybrid between YouTube and Reddit. It allowed creators to easily upload and monetize video content without facing extreme algorithmic suppression.
+* **The Failure**: Vidme grew significantly, amassing millions of monthly active users. However, they ran into the brutal laws of physics in software: hosting and delivering high-definition video is the most expensive infrastructure problem on the internet. They were caught in an impossible financial squeeze. They couldn't generate enough ad revenue to cover the astronomical cloud server costs for video transcoding, and they couldn't convince enough users to pay for premium subscriptions when YouTube offered infinite free video.
+* **The Outcome**: Unable to secure the massive, continuous venture funding required to sustain a standalone video ecosystem against Google's deep pockets, they suspended operations in 2017. It serves as a reminder that consumer video is mathematically hostile to independent startups.
 
 ---
 
