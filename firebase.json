@@ -14,7 +14,25 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(js|css|png|jpg|jpeg|gif|ico|webp|svg|woff|woff2|ttf|otf)",
+        "source": "**/*.@(png|jpg|jpeg|gif|ico|webp|svg|woff|woff2|ttf|otf)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/books/assets/**/*.@(js|css)",
         "headers": [
           {
             "key": "Cache-Control",
