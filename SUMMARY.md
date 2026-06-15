@@ -48,6 +48,7 @@
     * [The Power User Trap](byte-bites/startup-failures/power-user-trap.md)
     * [The Nonprofit Economics Trap](byte-bites/startup-failures/nonprofit-economics.md)
     * [The Commoditized AI Trap](byte-bites/startup-failures/commoditized-ai.md)
+    * [The Pivot Death Spiral Trap](byte-bites/startup-failures/pivot-death-spiral.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)

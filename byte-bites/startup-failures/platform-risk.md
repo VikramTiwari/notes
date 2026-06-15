@@ -37,5 +37,12 @@ Building a business entirely dependent on another platform's APIs or search algo
 
 ---
 
+## Yotta (YC W20)
+* **What they built**: A gamified, pure software fintech app. It was a beautifully designed front-end application that encouraged users to save money by offering prize-linked savings accounts (essentially acting as a no-loss lottery for your bank deposits).
+* **The Failure**: Yotta didn't actually hold any customer money; they were just a pure software UI. They completely relied on the API middleware of *another* YC company (Synapse) to route their users' funds to the actual banks. When Synapse's ledgers imploded and they went bankrupt in 2024, the partner banks froze everything. Yotta's front-end software worked perfectly, but their connection to the backend banking infrastructure was permanently severed.
+* **The Outcome**: Because their API provider collapsed, Yotta's users were suddenly locked out of millions of dollars of their own life savings. It effectively destroyed Yotta's business and reputation overnight. It stands as the ultimate horror story of software platform dependency: your code can be flawless, but if your API provider dies, you die with them.
+
+---
+
 ### 💡 Key Takeaway
 For startups in this category, the core challenge is not the code but the surrounding market dynamics. Ensure you validate this bottleneck before scaling.

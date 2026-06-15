@@ -37,5 +37,12 @@ Fintech software carrying cash transactions requires navigating massive customer
 
 ---
 
+## Synapse (YC W15)
+* **What they built**: A pure software Banking-as-a-Service (BaaS) API. They wrote the middleware code that allowed any tech startup to instantly offer banking services (like issuing debit cards or opening checking accounts) by routing the startup's user data into traditional, highly regulated legacy banks.
+* **The Failure**: The software successfully processed millions of transactions, but the backend ledger logic—the exact code responsible for tracking which dollar belonged to which user across the different banks—was fatally flawed. As the company scaled rapidly, their internal software ledgers fell completely out of sync with the actual cash sitting in the partner banks' vaults. In fintech infrastructure, if your database tables don't perfectly match the bank's actual holdings, the business dies.
+* **The Outcome**: The "ledger discrepancies" resulted in a massive, systemic collapse. Synapse abruptly filed for Chapter 11 bankruptcy in 2024, revealing that an estimated **&#36;85 million to &#36;100 million** in end-user funds were missing or completely unaccounted for in the software system.
+
+---
+
 ### 💡 Key Takeaway
 For startups in this category, the core challenge is not the code but the surrounding market dynamics. Ensure you validate this bottleneck before scaling.
