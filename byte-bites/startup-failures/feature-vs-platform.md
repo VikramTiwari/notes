@@ -22,5 +22,11 @@ Building a single execution utility is highly vulnerable to large, comprehensive
 
 ---
 
+## Pixelapse (YC W12)
+* **What they built**: A profoundly elegant, pure software visual version-control system. Often described as "GitHub for designers," it allowed UI/UX teams to collaboratively track pixel-by-pixel changes to heavy design files, compare visual iterations, and seamlessly roll back to previous versions of a mockup.
+* **The Failure**: They successfully built an incredible workflow tool that top design teams loved, but they built a tool that fundamentally belonged natively inside a larger file-sharing ecosystem. In 2015, Dropbox acquired the company. Dropbox was trying to aggressively expand beyond basic cloud storage into collaborative workspaces and viewed Pixelapse's version-control code as a missing native feature for their enterprise offering.
+* **The Outcome**: Dropbox had absolutely no intention of running a standalone, third-party app for designers. They bought the company to strip-mine the core syncing technology. Pixelapse was given a sunset date shortly after the acquisition, and the standalone software was permanently shut down to force users into the native Dropbox ecosystem.
+---
+
 ### 💡 Key Takeaway
 For startups in this category, the core challenge is not the code but the surrounding market dynamics. Ensure you validate this bottleneck before scaling.

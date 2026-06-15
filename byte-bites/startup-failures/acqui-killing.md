@@ -51,5 +51,11 @@ Getting acquired by a giant corporation is often the death sentence for the soft
 
 ---
 
+## FutureAdvisor (YC S10)
+* **What they built**: A pure software, B2C (Business-to-Consumer) robo-advisor. The algorithm analyzed a retail investor's existing brokerage accounts and automatically executed trades to optimize their portfolio for tax-loss harvesting and ideal asset allocation, charging a much lower fee than traditional human financial advisors.
+* **The Failure**: FutureAdvisor achieved significant early traction, managing hundreds of millions of dollars. In 2015, they were acquired by the massive asset manager BlackRock for over &#36;150 million. However, the failure was entirely post-acquisition. BlackRock fundamentally didn't want to run a consumer-facing retail app that competed directly with the financial advisors who sold BlackRock's mutual funds. Instead, they forced FutureAdvisor to do a hard pivot into a B2B white-label software, selling the algorithm directly to legacy banks.
+* **The Outcome**: The B2B robo-advisory market turned out to be a low-margin, highly commoditized grind. After eight years of struggling to make the B2B pivot profitable, BlackRock announced in 2023 that they were completely exiting the retail robo-advisory business. They sold off the remaining underlying technology and permanently retired the FutureAdvisor platform.
+---
+
 ### 💡 Key Takeaway
 For startups in this category, the core challenge is not the code but the surrounding market dynamics. Ensure you validate this bottleneck before scaling.

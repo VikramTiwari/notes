@@ -43,12 +43,7 @@ If your software solves a problem that OS creators (Apple, Google, Microsoft) ca
 * **What they built**: A pure no-code software platform for creating Amazon Alexa skills. When the Amazon Echo launched, the tech industry assumed "Voice Apps" were going to be the next iOS App Store. Storyline allowed anyone to drag and drop logic flows to build complex, interactive voice applications without knowing how to code.
 * **The Failure**: Storyline successfully built a great software tool and captured the market of voice developers. The problem was that the underlying market was an illusion. Consumers used smart speakers to set timers, play Spotify, and check the weather—they didn't want to play complex interactive voice games or navigate voice-based productivity apps. Because consumers didn't care, developers couldn't monetize their Alexa skills. And because developers couldn't make money, they eventually stopped paying Storyline for the software to build them.
 * **The Outcome**: Realizing that the "Voice App Store" was a mirage and Amazon wasn't providing a path for third-party developers to build real businesses, Storyline (which later rebranded to Invocable) ran out of runway and quietly shut down its software.
----
 
-## Pixelapse (YC W12)
-* **What they built**: "GitHub for designers." A pure software version control system that tracked visual changes, layered revisions, and allowed for collaborative feedback on dense, offline design files (like Adobe Illustrator or Sketch files). Startups.RIP
-* **The Failure**: They built a beautiful, highly functional tool that solved a very real problem. The failure was that standalone collaborative versioning isn't a sustainable company—it's a feature of a larger ecosystem. While Pixelapse was trying to sync offline design files to the cloud, Figma launched. Figma fundamentally changed the paradigm by making the design software itself cloud-native, rendering third-party syncing and versioning tools completely obsolete.
-* **The Outcome**: Recognizing that the offline-file era of design was ending, they sold the company to Dropbox in 2015. Dropbox bought them solely to integrate visual feedback features into their own storage systems, and the standalone Pixelapse software was permanently shut down.
 ---
 
 ## Apportable (YC W11)
