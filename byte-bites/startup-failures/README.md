@@ -38,6 +38,9 @@ Here is a structured index of **60+ pure software Y Combinator startups that fai
 * **[🌐 Niche Market Mirage & TAM Trap](niche-market-mirage.md)**: Building a highly beloved software tool for a total addressable market (TAM) that is mathematically too small to sustain a venture-backed valuation.
 * **[🔒 Temporary Technological Fear & Commoditized Infrastructure](temporary-fear-trap.md)**: Building a software solution addressing a temporary industry anxiety or technical gap that incumbents later neutralize natively.
 * **[⚙️ Hardware Consolidation Trap](hardware-consolidation.md)**: Building an operating system or software layer for a hardware ecosystem that consolidates under a closed, vertically-integrated monopoly.
+* **[👑 The Power User Trap](power-user-trap.md)**: Building a software utility beloved by a small niche of power users that fails to find broad, mainstream, or enterprise-wide adoption.
+* **[🤝 The Nonprofit Economics Trap](nonprofit-economics.md)**: Attempting to build a venture-scale SaaS company targeting nonprofits or political campaigns with underfunded budgets and slow procurement cycles.
+* **[🤖 The Commoditized AI Trap](commoditized-ai.md)**: Building an independent AI application that gets out-competed and commoditized by platform incumbents with native distribution and model access.
 
 ---
 
