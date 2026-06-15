@@ -10,9 +10,9 @@ Building a viral app with high engagement is not the same as building a business
 ---
 
 ## Posterous (YC S08)
-* **What they built**: A dead-simple blogging platform where users could email text, photos, or videos to a specific address to instantly publish posts.
-* **The Failure**: They grew to millions of blogs but had no path to revenue. They got squeezed from both sides: users wanting customization moved to WordPress, and users wanting short updates moved to Twitter and Tumblr.
-* **The Outcome**: Acquired by Twitter in 2012 in an acqui-hire and permanently shut down.
+* **What they built**: A profoundly frictionless pure software blogging platform. Long before major social media networks perfected media sharing, Posterous allowed users to simply email photos, audio, or text to a specific address, and the software would automatically format it into a beautiful, live blog post.
+* **The Failure**: They built an incredible product that gained massive traction (even tech elites like Steve Rubel famously moved their entire blogs to it). However, they fell into the classic Web 2.0 trap: prioritizing raw user growth while entirely ignoring monetization. They provided a heavy, infrastructure-intensive service for free. Furthermore, as Twitter and Instagram grew, the fundamental need for a standalone "lifestreaming" blog vanished. Users shifted to native social feeds, and Posterous's growth stalled because they hadn't built a sustainable business model underneath the tool.
+* **The Outcome**: Running out of cash and momentum, they were acqui-hired by Twitter in 2012 for roughly &#36;15 million. Twitter bought them purely for the engineering team, and the Posterous software was officially shut down in 2013, forcing millions of users to export their data.
 
 ---
 

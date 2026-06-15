@@ -10,9 +10,9 @@ If your software solves a problem that OS creators (Apple, Google, Microsoft) ca
 ---
 
 ## Bump (YC S09)
-* **What they built**: A viral app allowing two users to physically "bump" their smartphones together to transfer contacts and files.
-* **The Failure**: It was a single feature masquerading as a standalone business. Once Apple built AirDrop natively into iOS, the need to download a third-party app to share files evaporated.
-* **The Outcome**: Sold to Google in 2013 for &#36;30M-&#36;60M. Google acquired the engineering team and killed the Bump app a few months later.
+* **What they built**: A brilliantly designed pure software mobile app that solved contact sharing. You simply opened the app, physically "bumped" your smartphone against someone else's, and the software used location data and the phone's accelerometer to magically sync your contact cards or photos over the cloud.
+* **The Failure**: Bump was an absolute sensation, racking up over **100 million downloads**. However, they suffered from two fatal software issues. First, frequency of use: people simply don't exchange contacts often enough to sustain daily active usage, meaning monetization via ads or subscriptions was virtually impossible. Second, they built an app that fundamentally should have been an operating system feature. When Apple released **AirDrop** in 2013, natively baking frictionless file sharing directly into iOS, Bump's entire standalone software utility evaporated overnight.
+* **The Outcome**: Knowing their standalone app was dead in the water against native OS features, they sold to Google in 2013 for around &#36;30 million. Less than three months after the acquisition, Google completely shut down the Bump app to absorb the underlying data-transfer technology.
 
 ---
 
@@ -38,9 +38,9 @@ If your software solves a problem that OS creators (Apple, Google, Microsoft) ca
 ---
 
 ## Xobni (YC S06)
-* **What they built**: An email search and indexing plugin for Microsoft Outlook desktop client.
-* **The Failure**: They were heavily anchored to Microsoft's desktop client. As the business world shifted to web-based email (Gmail) and mobile, Xobni's plugin became irrelevant.
-* **The Outcome**: Acquired by Yahoo in a fire sale in 2013 and shut down.
+* **What they built**: The ultimate pure software plugin for Microsoft Outlook. Xobni (which is "inbox" spelled backwards) analyzed your desktop email habits and built blazing-fast, incredibly rich social profiles and search functions directly into the Outlook sidebar.
+* **The Failure**: At its peak, Xobni was generating millions in revenue and was so beloved that Bill Gates personally praised it. However, they were entirely tethered to a dying paradigm: desktop email clients. As the tech world aggressively shifted toward cloud-based email (like Gmail) and mobile devices, Xobni's heavy, desktop-bound Outlook plugin became a relic. They tried frantically to rebuild the software for mobile and web, but the engineering debt of porting a complex desktop architecture to the cloud was too high, and they missed the platform shift entirely.
+* **The Outcome**: After burning through over &#36;40 million in venture capital trying to catch up to the mobile era, they were acquired by Yahoo in a fire sale in 2013. Yahoo integrated some of the contact-syncing tech into their own struggling email client and permanently shut down the standalone Xobni software.
 
 ---
 
