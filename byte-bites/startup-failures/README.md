@@ -45,6 +45,9 @@ Here is a structured index of **60+ pure software Y Combinator startups that fai
 * **[🧠 The User Psychology Trap](user-psychology-trap.md)**: Designing a software utility around a trending UI pattern that fails because it fundamentally misunderstands the real-world motivations of its users.
 * **[📣 The Attention Economy Wipeout](attention-economy.md)**: Competing in a zero-sum game for user attention against massive social platforms that already control the dominant content-consumption graphs.
 * **[✉️ The Consumer Email Graveyard](consumer-email-graveyard.md)**: Building consumer-facing desktop or mobile email client software, which suffers from massive protocol-sync complexity, high server costs, and free client expectations.
+* **[🧙‍♂️ The Wizard of Oz Trap](wizard-of-oz-trap.md)**: Faking software automation with backend human labor ("fake it till you make it") which fails to scale and leads to compounding errors and operational collapse.
+* **[🧳 The SaaS Consolidation Trap](saas-consolidation.md)**: Building a niche internal enterprise tool that is vulnerable to corporate budget cuts and tech stack consolidation onto massive, existing platforms.
+* **[🤝 The Co-Founder Split Wipeout](co-founder-split.md)**: High-pressure founder disputes and roadmap disagreements that collapse early-stage startups regardless of product-market fit or technical capability.
 
 ---
 
