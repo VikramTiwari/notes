@@ -42,6 +42,8 @@
     * [Winner-Take-All Networks](byte-bites/startup-failures/winner-take-all-networks.md)
     * [Breaking Developer Trust](byte-bites/startup-failures/breaking-developer-trust.md)
     * [Infrequent Engagement Squeeze](byte-bites/startup-failures/infrequent-engagement.md)
+    * [Niche Market Mirage](byte-bites/startup-failures/niche-market-mirage.md)
+    * [Temporary Technological Fear](byte-bites/startup-failures/temporary-fear-trap.md)
 * [Notes](notes/README.md)
   * [Programming - General](notes/programming-general/README.md)
     * [A short guide to hard problems](notes/programming-general/a-short-guide-to-hard-problems.md)

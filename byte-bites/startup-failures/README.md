@@ -35,6 +35,8 @@ Here is a structured index of **60+ pure software Y Combinator startups that fai
 * **[🥊 Winner-Take-All Network Effects](winner-take-all-networks.md)**: In consumer social applications, once a competitor achieves a dominant network loop, secondary networks instantly lose their utility.
 * **[🔐 Breaking Developer Trust](breaking-developer-trust.md)**: Developer tooling requires absolute transparency; attempting to growth-hack developers with hidden tracking will destroy the brand instantly.
 * **[⏰ Infrequent Engagement Squeeze](infrequent-engagement.md)**: For consumer utilities, if users only need your software a few times a year, it is difficult to build retention and grow organically.
+* **[🌐 Niche Market Mirage & TAM Trap](niche-market-mirage.md)**: Building a highly beloved software tool for a total addressable market (TAM) that is mathematically too small to sustain a venture-backed valuation.
+* **[🔒 Temporary Technological Fear & Commoditized Infrastructure](temporary-fear-trap.md)**: Building a software solution addressing a temporary industry anxiety or technical gap that incumbents later neutralize natively.
 
 ---
 
