@@ -7,7 +7,7 @@ date: 2026-06-15
 
 While hardware startups frequently shut down due to physical complexity or manufacturing delays, pure software startups fail for different, deeply structural reasons. The code usually works perfectly—but the business collapses due to competition, timing, platform risks, unit economics, compliance, or distribution monopolies.
 
-Here is a structured index of **60+ pure software Y Combinator startups that failed**, organized by their distinct failure modes:
+Here is a structured index of **136 pure software Y Combinator startups that failed**, organized by their distinct failure modes:
 
 ## Failure Categories
 
