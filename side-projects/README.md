@@ -30,6 +30,16 @@ An interactive pairings visualizer that uses high-dimensional vector embeddings 
 
 ---
 
+### 📺 [MeTube](https://metube.vikramtiwari.com)
+A premium, distraction-free movie and video curation gallery featuring optimized client-side Firestore caching, a dynamic autocomplete search, custom shareable playlists, local-first watch history, and a dev-only seeder tool.
+
+* **Status**: 🟢 Live
+* **Tech Stack**: Vanilla JS, CSS3, Cloud Firestore, Firebase Hosting, Vite
+* **Live App**: [metube.vikramtiwari.com](https://metube.vikramtiwari.com)
+* **Detailed Writeup**: [Distraction-Free Video Gallery & Seeder Architecture](metube.md)
+
+---
+
 ### 📓 [notes.vikramtiwari.com](https://notes.vikramtiwari.com/)
 A personal clinical logbook, knowledge graph, and search engine powered by HonKit, Git commit auditing, submodules, and high-contrast styling variables.
 
