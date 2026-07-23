@@ -91,4 +91,6 @@ date: 2023-11-13
   * The first step before modifying an aspect of a system is to understand it. Observe it in full. Note how it interconnects with other aspects, including ones that might not be linked to you personally. Learn how it works, and then propose your change.
 * [Startup Failures](startup-failures/README.md)
   * A structured breakdown of 60+ pure software Y Combinator startups that failed, categorized by their distinct failure modes and architectural/business traps.
+* [Patterns](patterns.md)
+  * Common architectural, mental, and system design patterns for problem solving.
 
