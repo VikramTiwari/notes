@@ -17,7 +17,7 @@
   * [Experts vs Imitators](byte-bites/experts-vs-imitators.md)
   * [Giving feedback](byte-bites/giving-feedback.md)
   * [Technical Documentation Authoring](byte-bites/technical-documentation-authoring.md)
-  * [Patterns](byte-bites/patterns.md)
+  * [Architectural Patterns](byte-bites/patterns.md)
   * [Startup Failures](byte-bites/startup-failures/README.md)
     * [Big Tech Squeeze](byte-bites/startup-failures/big-tech-squeeze.md)
     * [Infrastructure Costs](byte-bites/startup-failures/infrastructure-costs.md)

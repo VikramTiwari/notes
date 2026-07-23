@@ -1,10 +1,10 @@
 ---
-title: "Patterns"
+title: "Architectural Patterns (A Pattern Language)"
 description: >-
   A comprehensive, illustrated guide to Christopher Alexander's 253 patterns from A Pattern Language, featuring detailed explanations, original Twitter threads, and architectural diagrams from @apatterntolearn and Clayton Dorge.
 date: 2026-07-23
 ---
-# Patterns
+# Architectural Patterns (A Pattern Language)
 
 A comprehensive collection of 253 patterns from Christopher Alexander's landmark work *A Pattern Language* (Towns, Buildings, Construction), compiled from [Clayton Dorge](https://claytondorge.com/patterns-list) and [@apatterntolearn](https://twitter.com/apatterntolearn). Each entry provides the primary summary from Clayton Dorge's index, enriched with Twitter thread notes and visual diagrams.
 
@@ -1915,10 +1915,7 @@ ge-to-collect-little
 
 ## Data Extraction Helper
 
-<details>
-<summary><strong>Click to expand Browser Console Data Extraction Script</strong></summary>
-
-For reference, the following Browser DevTools Console snippet was used to collect tweet URLs, text breakdowns, and image media links directly from the `@apatterntolearn` Twitter feed while preserving tweets across virtual DOM scrolling:
+The following Browser DevTools Console snippet was used to collect tweet URLs, text breakdowns, and image media links directly from the `@apatterntolearn` Twitter feed while preserving tweets across virtual DOM scrolling:
 
 ```javascript
 // Auto-accumulating Twitter/X Data Extractor Script
@@ -1943,5 +1940,3 @@ harvest();
 // After scrolling down to load tweets, execute in console:
 // copy(Array.from(window.collectedTweets.values()))
 ```
-
-</details>
