@@ -113,12 +113,19 @@
   box-shadow: 0 0 10px var(--neon-volt-glow) !important;
 }
 
-/* --- 🎨 Custom Code Highlighting (Professional Mad Scientist Console Palette) --- */
+/* --- 🎨 Custom Code Highlighting (Professional Console Palette) --- */
+.markdown-section pre code span,
+.markdown-section pre code .token,
+.token {
+  background: transparent !important;
+  background-color: transparent !important;
+  text-shadow: none !important;
+}
+
 .token.comment,
 .hljs-comment,
 .pl-c {
-  color: #576f8e !important;
-  /* soft clinical slate comment */
+  color: #64748b !important;
   font-style: italic !important;
 }
 
@@ -126,7 +133,6 @@
 .hljs-keyword,
 .pl-k {
   color: #00ff87 !important;
-  /* Volt green for instructions */
   font-weight: 600 !important;
 }
 
@@ -134,7 +140,6 @@
 .hljs-string,
 .pl-s {
   color: #fbbf24 !important;
-  /* amber/gold for strings */
 }
 
 .token.number,
@@ -143,7 +148,6 @@
 .token.boolean,
 .token.regex {
   color: #ff007f !important;
-  /* neon pink/magenta for values/literals */
 }
 
 .token.function,
@@ -151,14 +155,25 @@
 .pl-en,
 .token.class-name {
   color: #38bdf8 !important;
-  /* glowing sky blue for definitions */
 }
 
-.token.operator,
+.token.operator {
+  background: transparent !important;
+  color: #38bdf8 !important;
+  font-weight: 600 !important;
+}
+
 .token.punctuation,
 .hljs-punctuation {
-  color: #8fa0ba !important;
-  /* secondary log color */
+  background: transparent !important;
+  color: #94a3b8 !important;
+}
+
+.token.variable,
+.token.property,
+.token.constant {
+  background: transparent !important;
+  color: #e2e8f0 !important;
 }
 
 .token.selector,
@@ -166,7 +181,6 @@
 .hljs-attr,
 .pl-v {
   color: #a855f7 !important;
-  /* glowing electric purple for attributes */
 }
 
 /* --- ♿ Accessibility (a11y) & Interactive Focus Indicators --- */
