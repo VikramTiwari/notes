@@ -118,6 +118,32 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+  
+    // 6. Handle Hash Scroll for Pattern Links on Page Load & PJAX
+    function scrollToHashTarget() {
+      var hash = window.location.hash;
+      if (!hash) return;
+
+      var target = document.querySelector(hash);
+      if (!target) {
+        var match = hash.match(/\d+/);
+        if (match) {
+          var num = match[0];
+          target = document.querySelector('a[href="#p' + num + '"]') ||
+                   document.querySelector('#p' + num) ||
+                   document.querySelector('#pattern-' + num);
+        }
+      }
+
+      if (target) {
+        setTimeout(function () {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 200);
+      }
+    }
+
+    scrollToHashTarget();
+
   initializePage();
 
   // Register callback in GitBook pushState event bus to re-run on PJAX navigation
