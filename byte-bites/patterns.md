@@ -10,13 +10,13 @@ A comprehensive collection of 253 patterns from Christopher Alexander's landmark
 
 ### Pattern Groups Overview
 
-1. 🏘️ **[Towns (Patterns 1 – 94)](#group-1-towns-patterns-1---94)**  
+1. 🏘️ **[Group 1: Towns (Patterns 1 – 94)](#group-1-towns-patterns-1---94)**  
    *What must be built gradually piece by piece with small individual acts in order to fit within larger global patterns.*
 
-2. 🏢 **[Buildings (Patterns 95 – 204)](#group-2-buildings-patterns-95---204)**  
+2. 🏢 **[Group 2: Buildings (Patterns 95 – 204)](#group-2-buildings-patterns-95---204)**  
    *What is under the control of individuals or small groups, capable of building entire patterns at once. These patterns give actual 3D shape to buildings.*
 
-3. 🛠️ **[Construction (Patterns 205 – 253)](#group-3-construction-patterns-205---253)**  
+3. 🛠️ **[Group 3: Construction (Patterns 205 – 253)](#group-3-construction-patterns-205---253)**  
    *How to make a building, room, or space in detail so that larger patterns are encompassed from conception.*
 
 ## Group 1: Towns (Patterns 1 - 94)
@@ -496,6 +496,12 @@ The human body wears down when it's not used. A natural way to get people using 
 ### [73. Adventure Playground](https://x.com/apatterntolearn/status/1369334918631878665)
 
 Play is crucial, especially for children; providing:
+- a chance to be together
+- use their bodies
+- build muscles
+- test new skills
+- stretch their imagination.
+Set up a space full of raw materials where children can build their own playgrounds.
 
 ---
 
@@ -514,6 +520,9 @@ A nuclear family doesn't work. It's important that a household has ~ a dozen peo
 ### [76. House for a Small Family](https://twitter.com/apatterntolearn/status/1370422082278879233?s=20&t=gOdlo-25wzgTyfbYBiFi-A)
 
 To balance the clean and quiet of adult needs with the toys and disarray of children, a small house needs three distinct areas.
+1. Couple's realm
+2. Children's realm
+3. Common area connected to both (1) and (2)
 
 ---
 
@@ -637,7 +646,7 @@ Communities feel safe when you can lay down to rest in public places that are co
 
 ## Group 2: Buildings (Patterns 95 - 204)
 
-*Patterns governing the design and architecture of individual buildings and building complexes.*
+*What is under the control of individuals or small groups, capable of building entire patterns at once. These patterns give actual 3D shape to buildings.*
 
 ### [95. Building Complex](https://twitter.com/apatterntolearn/status/1377654739916234762?s=20&t=GsMpKg5svBqBLdhh3O0uMQ)
 
@@ -676,6 +685,8 @@ Large buildings should be laid out to pass through different areas (realms), eac
 ### [100. Pedestrian Street](https://twitter.com/apatterntolearn/status/1379466679336361984?s=20&t=GsMpKg5svBqBLdhh3O0uMQ)
 
 People "rubbing shoulders" in public forms an important social glue. Build streets with:
+1. No cars, except for deliveries and essential cars.
+2. Buildings along the street where most circulation happens outside (few indoors staircases, lobbies, etc.)
 
 ---
 
@@ -1052,6 +1063,112 @@ The process of waiting creates uncertainties and you can't enjoy the time becaus
 ### [151. Small Meeting Rooms](https://twitter.com/apatterntolearn/status/1398673236087431174?s=20&t=rSfrYRkB31Vnj_JuODAT5A)
 
 The larger meetings are, the less people will get out of them. Make the majority of meetings spaces small, for 12 people or less. Ideally, in the most public areas scattered around the workspace.
+153. Rooms to Rent
+The need for space in a building grows and shrinks with time. Create part of the building to be rentable if unused. It will need a private entrance and direct access to a bathroom that will not require passing through the main areas.
+154. Teenager’s Cottage
+A teenager’s space in the home needs to reflect their desired independence, otherwise they will feel locked in conflict with the rest of the family. Keep it attached to the house but ideally far away from the master bedroom and with a private entrance
+155. Old Age Cottage
+Old people face a conflict. Life pushes them to be independent (kids move away, neighborhood changes, friends and loved ones die) while they naturally become more dependent on others. Provide a small cottage nearby for them, placed at ground level.
+156. Settled Work
+Settled work is the activity that becomes an extension of the person. This kind of work that develops gradually over a lifetime. Provide space for a workplace that can grow slowly to accommodate a weekend hobby at first then eventually a complete workshop.
+157. Home Workshop
+Make a place in the home where work beyond hobbies can be done. A home workshop becomes more important, the more decentralized work is. Allow it to be partially seen from the street so people can see in and interact.
+158. Open Stairs
+Apartments on the upper floors of a building need direct stair access to the street. This keeps the spaces connected to the world around, open, and free-flowing. Keep the stairs roofed or unroofed depending on climate.
+159. Light on Two Sides of Every Room
+People will gravitate to rooms with natural light on two sides. Light from two sides limits the glare on others’ faces, allowing people to understand each other better through clear facial expressions and hand motions.
+160. Building Edge
+Create building edges to have a use on their own. Make them places that invite people to stop, sit, lean, or cover from the weather.
+161. Sunny Place
+Develop the area immediately outside of a building on the south side into a place for people to bask in it. Create an important room, place to work, or to play here so that it draws people towards using it regularly. Try to shelter the area from the wind.
+162. North Face
+The North sides of buildings will be dark and gloomy for most of the year. On these sides, make a cascade so that the little sun on that side is not blocked even more. Use these sides for things that don't need the sun, such as car shelter or storage.
+163. Outdoor Room
+Include a partly closed outdoor room for outdoor needs not met by a garden. Build a space for people to eat, sit in formal clothes, drink, talk, and be still, yet outside. Use different elements (trellis, foliage on walls, columns, etc) to form a room.
+164. Street Windows
+Buildings along busy streets should have windows to look out onto the street. Ideal street windows are on the second and third floors. Higher up makes them “a view” and at ground level they may have to be covered up for privacy.
+165. Opening to the Street
+Seeing action encourages more action. Open up a space on the street side and include some part of the activity on the far side of the pedestrian path. People passing by will walk through it and see inside.
+166. Gallery Surround
+Build balconies and terraces at the edges of buildings. These will help buildings to feel intertwined with both the people walking out onto them and those looking at them from outside.
+167. Six-Foot Balcony
+Balconies and porches less than six feet deep are hardly used. Ideally make them half-enclosed and recessed into the building slightly too.
+168. Connection to the Earth
+Deliberately place paths, terraces, and steps around the edge of a building to connect it to the natural landscape surrounding it. Make the boundary of building and earth ambiguous.
+169. Terraced Slope
+Use terraces along contour lines to control erosion and soil health. Sloping land creates uneven rainwater flow and is affected by erosion more which can kill the soil. Buildings can cross terrace lines.
+170. Fruit Trees
+Plant small orchards of fruit trees on common land along paths and streets where groups may gather. Preserving them is minimal work if tackled as a community and the trees tend to produce more than one house can consume.
+171. Tree Places
+Plant trees to form enclosures, avenues, squares, and groves. When trees form places that respond to nearby buildings they become areas that people will use. This will allow the trees to receive the care they need from people and grow naturally.
+172. Garden Growing Wild
+Grow bushes, flowers, and trees as they would occur in nature. Don’t include barriers, bare dirt, formal flower beds, and polished paths. Keep a quality of wilderness, tamed, still wild and in harmony with the nearby buildings and people who move in it
+173. Garden Wall
+Protect the interior of a quiet garden from the sounds of passing traffic. The smaller the garden space is the more definite the enclosure should be.
+174. Trellised Walk
+Building a trellis can protect a path or provide more intimacy. Use these to shape outdoor spaces by placing them on either side of a garden.
+175. Greenhouse
+The easiest way to harness solar energy is the most obvious, to trap heat in a greenhouse and use it for growing flowers and vegetables. Build a greenhouse on your home so that it's a room and a part of the garden; accessible from inside and outside.
+176. Garden Seat
+Choose a place in the garden to be a quiet place with a comfortable seat and direct sun. This allows a person to be in touch with nature free of distractions. Pick the place that will provide an intense feeling of solitude.
+177. Vegetable Garden
+Every family growing vegetables is a fundamental part of human life. We need to recognize this as more than a hobby for enthusiasts. Place the garden in a central, sunny place to its household. Fence it in and have a small space for storing tools nearby.
+178. Compost
+Our current processes for getting rid of waste rob the land around our buildings from the nutrients they need. Place toilets over a dry composting chamber where organic garbage is also collected. Eventually, use the combined material for fertilizer.
+179. Alcoves
+For a group to gather together well, there must also be the chance for individuals to be alone. Create small places at the edges of common rooms; large enough for a desk or for 2 people to sit, chat, and play.
+180. Window Place
+Create at least one window place In any room where you enjoy spending time during the day. Everyone loves window seats, bay windows, big windows with low sills and comfortable chairs nearby. These “places” are necessary to feel comfortable and at ease.
+181. The Fire
+There is no substitute for fire. It provides a natural focus and allows people to think, talk, and dream. Place it so that even adjacent rooms can glimpse the fire.
+182. Eating Atmosphere
+Some rooms allow people to eat leisurely and comfortably while others force quickness and a desire to leave Place a heavy table in the center of an eating space, large enough for a group. Place light directly above and enclose the space with walls.
+183. Workplace Enclosure
+People work effectively when their workspace finds the balance between too enclosed and too exposed.
+184. Cooking Layout
+Cooking is uncomfortable if the kitchen counter is either too short or too long.
+Here
+are 3 critically functional relationships to consider.
+185. Sitting Circle
+Seating arrangements can become animated and alive or they can be sterile and avoided. Place seats in a loose circle formation with paths and activities around so people naturally are pulled to them when they want to sit. Include a few too many seats.
+186. Communal Sleeping
+Arrange a sleeping area for children and adults to sleep in the same place at least as an occasional alternative. Near the fireplace with guests or special occasions would be an example.
+187. Marriage Bed
+Build this as an intimate anchor point for a couple's life. Make it slightly enclosed, low ceiling or canopy, room shaped to the bed, with many windows. For it to have the right feeling, do not buy one until the couple has been through some hard times.
+188. Bed Alcove
+Place beds in alcoves off rooms with other non-sleeping functions. The bed will become a private haven. Bedrooms make no sense. The bed makes the spaces around it awkward, pushing dressing, working, sitting, etc. all to the corners and side spaces left.
+189. Dressing Rooms
+Dressing, undressing, and storing clothes are self-contained and need a space which has no other function. Make a space between their bed and bathroom that is for dressing. It should be large enough to stretch your arms and move around.
+190. Ceiling Height Variety
+Various heights throughout buildings allow intimacy to be felt relatively b/w spaces. Make ceilings high in rooms for larger gatherings (10-12 ft), lower in rooms for small gatherings (7-9 ft), and very low in alcoves for 1 or 2 people 6-7 ft).
+191. The Shape of Indoor Space
+Make indoor spaces rough rectangles, with roughly straight walls and nearly symmetrical vaulted ceilings. Perfectly square rooms only make sense if people are too preoccupied with systems and rigid desires.
+192. Windows Overlooking Life
+People need to refresh themselves by looking at a world different than the one they are in. Have windows to look out to activities in the streets or quiet gardens. Rooms without a view can act like a prison if a person has to stay in them.
+193. Half-Open Wall
+Rooms that are too closed prevent a natural flow and transition. If they are too open, necessary differentiation between spaces is missing. Find the right balance between extremes using columns, half-open walls, indoor windows, sliding doors, etc.
+194. Interior Windows
+Windows can be used to connect indoor spaces. Put in windows between rooms which tend to be unusually dark causing them to be dead and rarely used.
+195. Staircase Volume
+Staircases should make a complete structural bay, two stories high. They may be L-shaped, U-shaped, or C-shaped. They may be narrow and steep or wide and shallow.
+196. Corner Doors
+A room will never allow people to be comfortable if movement through the room destroys what’s happening there. Only in large rooms do doors make sense in the middle of a wall. Most rooms should have the doors near the corners.
+197. Thick Walls
+Deep walls can contain shelves, cabinets, special lights, built in seats, nooks, window reveals, etc. Homes become personal when each family can leave its mark on the walls. Build walls with structural material allowing them to be carved, yet still strong.
+198. Closets Between Rooms
+Storage is usually an afterthought. Place closets on interior walls where they can help with acoustic insulation between rooms. They can help frame doors and passages creating transition spaces. Do not place them on exterior walls!
+199. Sunny Counter
+A kitchen needs the sun more than other rooms. Place the counter near big windows so sunlight can flood in during the morning and afternoon. Dark kitchens are depressing.
+200. Open Shelves
+Shelves that are too deep waste valuable space. Make them shallow enough so that things can be placed one deep, nothing hiding behind anything else.
+201. Waist-High Shelf
+Build waist-high shelves around the main rooms. These act as a place to set down and store objects which are handled during daily traffic. Make them long, 9-15 inches deep, with shelves or storage underneath.
+202. Built-in Seats
+Built-in seats make a space feel comfortable and luxurious. To make sure they will work, test the area before building them. Place an arm chair in the intended area for a few days and change it's position until you find what you enjoy best.
+203. Child Caves
+Build small caves for children in wherever they play (house, neighborhood, school, etc.). Tuck them in natural spaces left over like under stairs. Keep the ceiling height low and the entrance tiny.
+204. Secret Place
+People want to live with a secret place in their homes; a place used in special ways, and only revealed at special times. Make a small place in the home that is nearly impossible to discover unless you’ve been shown where it is.
 
 ---
 
@@ -1292,6 +1409,8 @@ People work effectively when their workspace finds the balance between too enclo
 ### [184. Cooking Layout](https://x.com/apatterntolearn/status/1410994423559720964)
 
 Cooking is uncomfortable if the kitchen counter is either too short or too long.
+Here
+are 3 critically functional relationships to consider.
 
 ![Pattern 184 Diagram](https://pbs.twimg.com/media/E4xuroJXEAIVU4R.jpg)
 
@@ -1431,7 +1550,7 @@ People want to live with a secret place in their homes; a place used in special 
 
 ## Group 3: Construction (Patterns 205 - 253)
 
-*Patterns governing physical construction, materials, social structures, and interior spaces.*
+*How to make a building, room, or space in detail so that larger patterns are encompassed from conception.*
 
 ### [205. Structure Follows Social Spaces](https://twitter.com/apatterntolearn/status/1418604568808550404?s=20&t=5MDwBmqCpHpDNXW1LEctiA)
 
@@ -1720,12 +1839,29 @@ People are different sizes and sit in different ways. When furnishing an area av
 ### [252. Pools of Light](https://twitter.com/apatterntolearn/status/1446508434451435520?s=20&t=WRLlBiA-F_t0fjNZBQIFKw)
 
 Place lights low, and apart to form designated areas which encompass chairs and tables. Light outdoors is almost never even. Uniform lighting makes people feel disoriented. *
+you can't have pools of light w/out the darker places in between
+.
 
 ---
 
 ### [253. Things From Your Life](https://x.com/apatterntolearn/status/1917996166987309270)
 
 Decor is most beautiful when it comes from your life. Things you care for will tell your story. When we decorate spaces with only interior design trends in mind, we forget our instinct for the things we actually want to have around us.
+Headquarters.
+Columbia, Missouri
+clayton.dorge@gmail.com
+Hours
+Mon All Day
+Tue All Day
+Wed All Day
+Thu All Day
+Fri All Day
+Sat All Day
+Sun All Day
+Writing.
+Reading.
+Message me.
+Twitter.
 
 ---
 
