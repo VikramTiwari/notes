@@ -1,12 +1,12 @@
 ---
 title: "Architectural Patterns (A Pattern Language)"
 description: >-
-  A comprehensive, illustrated guide to Christopher Alexander's 253 patterns from A Pattern Language, featuring detailed explanations, original Twitter threads, and architectural diagrams from @apatterntolearn and Clayton Dorge.
+  A comprehensive, illustrated guide to Christopher Alexander's 253 architectural patterns from A Pattern Language, featuring summaries from Clayton Dorge, original Twitter links, and architectural diagrams.
 date: 2026-07-23
 ---
 # Architectural Patterns (A Pattern Language)
 
-A comprehensive collection of 253 patterns from Christopher Alexander's landmark work *A Pattern Language* (Towns, Buildings, Construction), compiled from [Clayton Dorge](https://claytondorge.com/patterns-list) and [@apatterntolearn](https://twitter.com/apatterntolearn). Each entry provides the primary summary from Clayton Dorge's index, enriched with Twitter thread notes and visual diagrams.
+A comprehensive collection of 253 patterns from Christopher Alexander's landmark work *A Pattern Language* (Towns, Buildings, Construction), compiled from [Clayton Dorge](https://claytondorge.com/patterns-list) and [@apatterntolearn](https://twitter.com/apatterntolearn). Each pattern features its primary architectural rule and original visual diagrams where available.
 
 ## Towns (Patterns 1 - 94)
 
@@ -16,19 +16,11 @@ A comprehensive collection of 253 patterns from Christopher Alexander's landmark
 
 Metropolitan regions will not come to balance until each one is small and autonomous enough to to be an independent sphere of culture.
 
-*Additional Context:* Metropolitan areas can't find balance until they're small and autonomous enough to become genuine cultures.
-
-Each region needs its own natural boundaries, economy, and self-governance.
-
 ---
 
 ### [2. The Distribution of Towns](https://x.com/apatterntolearn/status/2015509979814666325)
 
 If the pop. of a region is weighted too far toward small villages, modern civilization can never emerge; If the pop. is weighted too far toward big cities, the earth will go to ruin b/c the pop. isn’t where it needs to be, to take care of it.
-
-*Additional Context:* A region fails if its population tips too far in either direction.
-
-Too many small villages and modern civilization can't emerge. Too many big cities and the land goes untended and people aren't where they need to be to care for it.
 
 ![Pattern 2 Diagram](https://pbs.twimg.com/media/G_heiPEXMAAyHCb.jpg)
 
@@ -38,17 +30,11 @@ Too many small villages and modern civilization can't emerge. Too many big citie
 
 Continuous sprawling urbanization destroys life, and makes cities unbearable. But the sheer size of cities is also valuable and potent.
 
-*Additional Context:* Continuous sprawl destroys life and makes cities unbearable. But the sheer size of cities is also valuable.
-
-The balance: interlocking fingers of city and country, each no more than a mile wide, so that every person is never more than a few minutes from
-
 ---
 
 ### [4. Agricultural Valleys](https://x.com/apatterntolearn/status/2015988851076960281)
 
 Keep town and city development along the hilltops and hillsides. In the valleys, be a steward of the land and embrace basic ecological responsibilities.
-
-*Additional Context:* The best agricultural land is limited. Once destroyed, it takes centuries to recover. Keep development along hilltops and hillsides. Preserve the valleys, the richest land, for farming and ecological stewardship.
 
 ![Pattern 4 Diagram](https://pbs.twimg.com/media/G_o7JevXIAA7dkO.jpg)
 
@@ -58,8 +44,6 @@ Keep town and city development along the hilltops and hillsides. In the valleys,
 
 Where city and country meet, place country roads at least a mile apart, so they enclose squares of countryside and farmland. Keep the housing in rows or clusters along the roads, with the working land behind them.
 
-*Additional Context:* At the edge of city and country, space roads at least a mile apart to enclose squares of farmland. Cluster housing along these roads, with working land behind.
-
 ![Pattern 5 Diagram](https://pbs.twimg.com/media/G_o7l1pXkAAWoBn.jpg)
 
 ---
@@ -67,8 +51,6 @@ Where city and country meet, place country roads at least a mile apart, so they 
 ### [6. Country Towns](https://x.com/apatterntolearn/status/2016201033299751209)
 
 A collection of smaller country towns support the larger towns and cities of the region. Each smaller town should build a base of local industry to be self-sustainable. They can’t just be dorms for people who work in other places.
-
-*Additional Context:* Smaller towns support the larger cities of a region. But they can't survive as dorms for people who work elsewhere. Each town needs a base of local industry to sustain itself.
 
 ![Pattern 6 Diagram](https://pbs.twimg.com/media/G_o79ZyWcAEj6f2.jpg)
 
@@ -78,19 +60,11 @@ A collection of smaller country towns support the larger towns and cities of the
 
 The large open areas between towns are needed to maintain balance of the region. Farms, when treated as private property, rob the people of their natural biological heritage - the countryside they came from.
 
-*Additional Context:* The open land between towns is essential to a region's balance.
-
-But when farms are treated only as private property, people lose access to their biological heritage, the countryside they came from.
-
 ---
 
 ### [8. Mosaic of Subcultures](https://x.com/apatterntolearn/status/2016534732331180106)
 
 A great variety of human groups and subcultures co-existing is crucial for a city to live. Create a mosaic of small and different subcultures, each with its own space, and the power to create its own distinct life style.
-
-*Additional Context:* A city needs variety to live; many human groups and subcultures coexisting.
-
-Create a mosaic of small, distinct communities, each with its own space and the power to shape its own way of life.
 
 ![Pattern 8 Diagram](https://pbs.twimg.com/media/Eqz2s_hXUAECU97.jpg)
 
@@ -100,12 +74,6 @@ Create a mosaic of small, distinct communities, each with its own space and the 
 
 Work and Living zones should be distributed among each other; avoid concentrated zones of either. People can meet for lunch, children can be aware, and workers can run home easily. Separation reinforces that work is a toil, and only family life is “living.”
 
-*Additional Context:* Scatter workplaces among homes and avoid concentrated zones of either.
-
-When work and life are close, people meet for lunch, children see what adults do, and workers can slip home easily. 
-
-Separation reinforces the idea that work is toil and only home is
-
 ![Pattern 9 Diagram](https://pbs.twimg.com/media/Eqz25grXcAA-ny4.jpg)
 
 ---
@@ -114,19 +82,11 @@ Separation reinforces the idea that work is toil and only home is
 
 The magic in the specialization of human effort happens where it’s most concentrated. Only the lucky or rich enough get to live with easy access to it. Put the magic within reach of everyone in a metro area.
 
-*Additional Context:* The magic of a city lives in its concentration; specialized effort, culture, opportunity. But only the lucky or rich get easy access to it.
-
-Put the magic within reach of everyone. Urban sprawl steals it.
-
 ---
 
 ### [11. Local Transport Areas](https://x.com/apatterntolearn/status/2017249176661209398)
 
 Short local trips should be slow and inconvenient for cars, encouraging alternate forms of transport (foot, bike, mopeds, etc.). Cars are great for long trips but draw people 10x further away from each other and their environment, harming social life.
-
-*Additional Context:* Cars are fine for long trips, but they pull people 10x further from each other and their surroundings, eroding social life.
-
-Make short local trips slow and inconvenient for cars. Favor feet, bikes, and small vehicles instead.
 
 ---
 
@@ -134,19 +94,11 @@ Make short local trips slow and inconvenient for cars. Favor feet, bikes, and sm
 
 Individuals lose their effective voice in communities larger than 10k people. Organize government to give local control in groups of 5k-10k. Use natural or historical boundaries as often as possible to mark these communities.
 
-*Additional Context:* People lose their voice in communities larger than 10,000.
-
-Organize governance around groups of 5,000 to 10,000, using natural or historical boundaries wherever possible.
-
 ---
 
 ### [13. Subculture Boundary](https://x.com/apatterntolearn/status/2017388608852746478)
 
 Different cultures should live directly next to each other (#8), but they have their own character. Physical boundaries must separate the cultures (natural or man-made) to live at their full potential. Include shared meeting spaces that touch both.
-
-*Additional Context:* Distinct cultures should live next to each other, but each needs room to develop its own character.
-
-Physical boundaries, natural or man-made, let each culture thrive. Include shared spaces along these edges where both sides meet.
 
 ---
 
@@ -154,29 +106,17 @@ Physical boundaries, natural or man-made, let each culture thrive. Include share
 
 People need to belong to a distinct area in the city they can identify. Encourage local groups to organize themselves and form these neighborhoods. Major roads through a neighborhood wild destroy it.
 
-*Additional Context:* People need to belong to a distinct area they can identify with.
-
-Encourage local groups to organize and define their own neighborhoods. Major roads cut through will destroy them.
-
 ---
 
 ### [15. Neighborhood Boundary](https://x.com/apatterntolearn/status/2017706201329635806)
 
 Form a boundary by cutting the normal number of streets in half or closing down streets to through traffic. If the boundary is too weak the neighborhood will lose its own character.
 
-*Additional Context:* Form boundaries by halving the number of streets or closing them to through traffic.
-
-If the boundary is too weak, the neighborhood loses its character.
-
 ---
 
 ### [16. Web of Public Transportation](https://x.com/apatterntolearn/status/2018340380325130512)
 
 Each public transportation mode must be well connected, which happens if the agencies in charge have incentives to integrate with each other. Primary focus should be on interchanges, where they all connect. Next, focus on the specific lines.
-
-*Additional Context:* Public transit only works when every mode connects well to the others. This requires agencies with incentives to integrate.
-
-Focus first on interchanges, where lines meet. Then on the lines themselves.
 
 ![Pattern 16 Diagram](https://pbs.twimg.com/media/EraGEBdXYAMIyjb.jpg)
 
@@ -186,10 +126,6 @@ Focus first on interchanges, where lines meet. Then on the lines themselves.
 
 Place high speed roads in a way that they do not damage communities or countryside. Each area should have at least one side not bounded by a high speed road. Neighborhoods must be protected from the noise of high speed roads.
 
-*Additional Context:* High-speed roads damage communities and countryside. Place them carefully.
-
-Every neighborhood should have at least one side free from a highway. Protect residents from the noise.
-
 ![Pattern 17 Diagram](https://pbs.twimg.com/media/EraHScCXEAEg478.jpg)
 
 ---
@@ -198,19 +134,11 @@ Every neighborhood should have at least one side free from a highway. Protect re
 
 Creative individuals grow up in societies which emphasize learning over teaching. Education happens from decentralized urban design. Living and learning spaces are scattered about. People of all backgrounds offer a class in what they know and love.
 
-*Additional Context:* Creative people grow in societies that emphasize learning over teaching.
-
-Scatter living and learning spaces throughout the city. Let people of all backgrounds offer classes in what they know and love. Education emerges from the design itself.
-
 ---
 
 ### [19. Web of Shopping](https://x.com/apatterntolearn/status/2019128497495769535)
 
 Shops of a specific service should be placed in the biggest gap of existing shops where: 1. There are potential customers 2. Away from similar shops 3. Near other shops that customers already will be seeking.
-
-*Additional Context:* Place new shops in the largest gaps where customers already are, away from similar shops, but near complementary ones.
-
-The web fills itself in naturally.
 
 ---
 
@@ -218,19 +146,11 @@ The web fills itself in naturally.
 
 Public transportation should be able to take someone from any point to any other point in a metro area. Mini-buses (up to 6 people) can assist with the final stretch of this service.
 
-*Additional Context:* Public transit should connect any point to any other point in a metro area.
-
-Mini-buses, six passengers or fewer, handle the final stretch.
-
 ---
 
 ### [21. Four-story Limit](https://x.com/apatterntolearn/status/2019430563644600744)
 
 High buildings make people crazy and offer no real advantages. They are not cheaper, do not create open space, destroy the townscape, destroy social life, promote crime,are expensive to maintain, and damage the light, air, and view in a city.
-
-*Additional Context:* High buildings make people crazy and offer no real advantages.
-
-They aren't cheaper, don't create open space, destroy social life, promote crime, cost more to maintain, and rob the city of light, air, and views.
 
 ![Pattern 21 Diagram](https://pbs.twimg.com/media/HAVi3-TWcAEI2ro.jpg)
 
@@ -240,10 +160,6 @@ They aren't cheaper, don't create open space, destroy social life, promote crime
 
 When more than 9% of the land is devoted to parking, the environment is destroyed. The more parking cities provide, the more difficult it is to maintain many of these patterns; especially those dealing with the local transport areas.
 
-*Additional Context:* When more than nine percent of land goes to parking, the environment is destroyed.
-
-The more parking a city provides, the harder it becomes to sustain everything else.
-
 ![Pattern 22 Diagram](https://pbs.twimg.com/media/HAVi93xWYAAkApJ.jpg)
 
 ---
@@ -252,19 +168,11 @@ The more parking a city provides, the harder it becomes to sustain everything el
 
 A system of parallel and alternating one-way roads will carry traffic to the Ring Roads for fast and long-distance traveling. This improves congestion in city centers and decreases the number of cars where children play and people walk.
 
-*Additional Context:* A system of parallel, alternating one-way roads can carry traffic out to ring roads for long-distance travel.
-
-This eases congestion in city centers and keeps cars away from where children play and people walk.
-
 ---
 
 ### [24. Sacred Sites](https://x.com/apatterntolearn/status/2019853601469001947)
 
 The special places that come to symbolize an area (natural or historic landmarks) are essential and should be protected. These sites help maintain individuals' spiritual roots and connect them to their past.
-
-*Additional Context:* Certain places, natural landmarks, historic sites, come to symbolize an area. They connect people to their past and maintain spiritual roots.
-
-Protect them.
 
 ---
 
@@ -272,18 +180,11 @@ Protect them.
 
 People have a desire to be near bodies of water, but the very act of large groups moving toward them can destroy the water. Treat the natural bodies of water with great respect. Dense communities should be directly next to the water at infrequent spots.
 
-*Additional Context:* People are drawn to water, but crowds destroy it.
-
-Treat natural bodies of water with respect. Allow dense settlement directly on the water only at infrequent points.
-
 ---
 
 ### [26. Life Cycle](https://x.com/apatterntolearn/status/2020141372280566267)
 
 The full cycle of life should be represented in each community. Include a balance of people at every stage of life from infants to the elderly.
-
-*Additional Context:* Every community should represent the full cycle of life.
-Include people at every stage, infants to the elderly, in balance.
 
 ---
 
@@ -291,17 +192,11 @@ Include people at every stage, infants to the elderly, in balance.
 
 Each environment must have a balance of male and female to reflect both the masculine and feminine sides of life. Keep this balance in any project at every scale.
 
-*Additional Context:* Every environment needs a balance of male and female, reflecting both the masculine and feminine sides of life.
-
-Maintain this balance at every scale.
-
 ---
 
 ### [28. Eccentric Nucleus](https://x.com/apatterntolearn/status/2020277393613590802)
 
 To create a coherent pattern of densities, place the high density centers of towns/communities at the boundaries between subcultures.
-
-*Additional Context:* To create coherent density patterns, place the high-density centers of towns and communities at the boundaries between subcultures, not at their centers.
 
 ---
 
@@ -309,19 +204,11 @@ To create a coherent pattern of densities, place the high density centers of tow
 
 Once the nucleus of a community is clearly placed - define rings of decreasing local housing density around this nucleus. People want to be close to services for convenience yet far away for quiet. This is the balance to try and find.
 
-*Additional Context:* Once a community's nucleus is placed, define rings of decreasing density around it.
-
-People want to be close to services for convenience, yet far enough away for quiet. Find the balance.
-
 ---
 
 ### [30. Activity Nodes](https://x.com/apatterntolearn/status/2022040763119398919)
 
 Community facilities should be concentrated together. Identify where the action seems to concentrate. Layout paths to bring as many of them through these spots as possible. Pedestrian movement in the community should pass through these nodes too.
-
-*Additional Context:* Concentrate community facilities together. Identify where activity naturally gathers, then route paths to bring people through these spots.
-
-Pedestrian movement should pass through these nodes.
 
 ![Pattern 30 Diagram](https://pbs.twimg.com/media/HA-EfahboAAcC5g.jpg)
 
@@ -331,19 +218,11 @@ Pedestrian movement should pass through these nodes.
 
 Each subculture needs a center for its public life, where you go to see people and to be seen. The beauty of the promenade = people with a shared way of life gathering together; confirming their community.
 
-*Additional Context:* Every subculture needs a center for public life, a place to see people and be seen.
-
-The beauty of the promenade is people with a shared way of life gathering together, confirming their community.
-
 ---
 
 ### [32. Shopping Street](https://x.com/apatterntolearn/status/2022313057561518565)
 
 Shopping centers depend on access: they need to be near traffic arteries yet also need quiet, comfort, and convenience to be utilized and attractive.
-
-*Additional Context:* Shopping depends on access. Stores need proximity to traffic, but also quiet, comfort, and convenience to be attractive.
-
-Both are required.
 
 ![Pattern 32 Diagram](https://pbs.twimg.com/media/EsoAW8lXEAM8XYw.jpg)
 
@@ -365,10 +244,6 @@ Interchanges allow a public transportation system to sustain itself. They need t
 
 People should be able to find and see face to face people in every stage of life; it allows us to feel our way through life. Encourage a mix of household types in every neighborhood so that one-person homes, couples & families with children are side by side.
 
-*Additional Context:* People should be able to find and see face to face people in every stage of life; it allows us to feel our way through life.
-
-Encourage a mix of household types in every neighborhood so that one-person homes, couples &amp; families with children are side by side.
-
 ---
 
 ### [36. Degree of Publicness](https://twitter.com/apatterntolearn/status/1355926567558340609?s=20&t=AgQPsz0JPwyn7C592IMJjg)
@@ -386,12 +261,6 @@ Arrange houses in rough, but identifiable clusters around shared land and paths.
 ### [38. Row Houses](https://x.com/apatterntolearn/status/1673748109086556161)
 
 Typical row houses are dark inside and lack variety from one to the next. By making them long and thin along paths, it leaves room for variations to let light in. Place houses along pedestrian paths and give each house a long frontage and a shallow depth.
-
-*Additional Context:* 120. Paths and Goals
-122. Building Fronts
-239. Small Panes
-245. Raised Flowers
-247. Paving with cracks between the stones
 
 ![Pattern 38 Diagram](https://pbs.twimg.com/media/FwQRKgYaIAIYhrr.jpg)
 
@@ -544,10 +413,6 @@ People need green open spaces. Scatter them so they are close to every house wor
 ### [61. Small Public Squares](https://twitter.com/apatterntolearn/status/1364986264244551685?s=20&t=gOdlo-25wzgTyfbYBiFi-A)
 
 Every town needs a square, yet too large and they feel deserted. Build them smaller than you think. The short side (width) should be < 70 ft. across, ideally 45-60 ft. ~70 ft is the max distance people can see facial expressions and easily communicate.
-
-*Additional Context:* Every town needs a square, yet too large and they feel deserted. 
-
-Build them smaller than you think. The short side (width) should be &lt; 70 ft. across, ideally 45-60 ft. ~70 ft is the max distance people can see facial expressions and easily communicate.
 
 ---
 
@@ -712,13 +577,6 @@ Small, individually-owned shops keep the wealth generated by a community in the 
 ### [88. Street Cafe](https://x.com/apatterntolearn/status/1673867243363487744)
 
 These cafes and their terraces provide a place to sit, relax, watch a large volume of people pass by and be very public in each neighborhood. The special quality being that a person can sit for hours! There is not a pace to keep up with or pressure to leave.
-
-*Additional Context:* 124.Activity Pockets 
-126.Something roughly in the middle
-164.Street Windows 
-171.Tree Places 
-231.Dormer Windows
-245.Raised Flowers
 
 ![Pattern 88 Diagram](https://pbs.twimg.com/media/FvDVWQ_acAAD8V_.jpg)
 
@@ -888,11 +746,6 @@ Placement of the main entrance is critical to controls the layout and evolution 
 
 Gardens too close to the street feel too exposed and won't be used. If a garden is fully in the back of a house it's too far away will feel too isolated. A garden needs some privacy while keeping some connection to access the street and the entrance.
 
-*Additional Context:* 168. Connection to the Earth
-172. Garden Growing Wild
-231. Dormer Windows
-245. Raised Flowers
-
 ![Pattern 111 Diagram](https://pbs.twimg.com/media/EzHx3ouXAAIKUfB.png)
 
 ![Pattern 111 Diagram](https://pbs.twimg.com/media/GlxMnwbbAAEc-4C.jpg)
@@ -1007,8 +860,6 @@ A public space should contain something to stand in its middle, otherwise it wil
 
 Lay out the space in a building to create a sequence that corresponds to the degrees of privateness. Begin with the entrance and the most public parts, eventually leading to the most private domains.
 
-*Additional Context:* 190. Variety of Ceiling Heights
-
 ![Pattern 127 Diagram](https://pbs.twimg.com/media/E0dxE8VXMAE46sw.jpg)
 
 ![Pattern 127 Diagram](https://pbs.twimg.com/media/Gnt5UWuXEAE8yCP.jpg)
@@ -1020,13 +871,6 @@ Lay out the space in a building to create a sequence that corresponds to the deg
 ### [128. Indoor Sunlight](https://x.com/apatterntolearn/status/1795989850149007532)
 
 The most important rooms in a building should be placed along the south edge. A house is bright and cheerful when the right rooms are facing south. Sun shining into a room has one of the greatest effects on its feeling. *written for the Northern Hemisphere
-
-*Additional Context:* 181. The Fire
-185. Sitting Circle
-230. Radiant Heat
-239. Small Panes
-250. Warm Colors
-251. Different Chairs
 
 ![Pattern 128 Diagram](https://pbs.twimg.com/media/E0jFDbjX0AA2jEL.jpg)
 
@@ -1088,10 +932,6 @@ Part of a house should be distinct from children’s areas and allow parents to 
 
 Children need a space to release their large amounts of energy. The space should be a continuum of areas inside and outside of the house to allow their variety of play. Keep the couple’s realm and private spaces entirely separate from these play areas.
 
-*Additional Context:* 143. Bed Cluster
-179. Alcoves
-197. Thick Walls
-
 ---
 
 ### [138. Sleeping to the East](https://twitter.com/apatterntolearn/status/1393599806031863810?s=20&t=GsMpKg5svBqBLdhh3O0uMQ)
@@ -1103,12 +943,6 @@ Position the rooms where people sleep so they wake up with the sun and light. Be
 ### [139. Farmhouse Kitchen](https://x.com/apatterntolearn/status/1748465566023594180)
 
 Integrate kitchen work and family activity in one big room. Make the area bright, comfortable, and large enough to hold a big table, long counters, and stove/sink around the edge. Cooking and eating are enjoyable and ways we "take care of ourselves."
-
-*Additional Context:* 199. Sunny counter
-200. Open shelves
-235. Soft inside walls
-251. Different chairs
-252. Pools of light
 
 ![Pattern 139 Diagram](https://pbs.twimg.com/media/FlfzdU3XkAAWkqL.jpg)
 
@@ -1143,12 +977,6 @@ Everyone needs opportunities to be alone if they will be close to others. Give e
 ### [142. Sequence of Sitting Spaces](https://x.com/apatterntolearn/status/1706702921801560357)
 
 Corners and alcoves in buildings are all potential sitting spaces. Build them with various degrees of intimacy. The most formal ones to be enclosed entirely and the least formal to be in the corners without any screen or barrier blocking them.
-
-*Additional Context:* 143. Bed Cluster
-188. Bed Alcoves
-190. Ceiling Height Variety
-197. Thick Walls
-202. Built-in Seats
 
 ![Pattern 142 Diagram](https://pbs.twimg.com/media/F4UeaFMXIAAst5u.jpg)
 
@@ -1261,9 +1089,6 @@ Apartments on the upper floors of a building need direct stair access to the str
 ### [159. Light on Two Sides of Every Room](https://x.com/apatterntolearn/status/1673516928160202760)
 
 People will gravitate to rooms with natural light on two sides. Light from two sides limits the glare on others’ faces, allowing people to understand each other better through clear facial expressions and hand motions.
-
-*Additional Context:* 238. Filtered Light 
-239. Small Panes
 
 ![Pattern 159 Diagram](https://pbs.twimg.com/media/ElwQFzdXEAADoi9.jpg)
 
@@ -1405,13 +1230,6 @@ Our current processes for getting rid of waste rob the land around our buildings
 
 For a group to gather together well, there must also be the chance for individuals to be alone. Create small places at the edges of common rooms; large enough for a desk or for 2 people to sit, chat, and play.
 
-*Additional Context:* 180. Window Place
-181. The Fire
-185. Sitting Circle
-188. Bed Alcove
-191. The Shape of Indoor Space
-205. Structure Follows Social Spaces
-
 ![Pattern 179 Diagram](https://pbs.twimg.com/media/F9lrAm0XIAANQDy.jpg)
 
 ![Pattern 179 Diagram](https://pbs.twimg.com/media/F9lrAmyWcAAwRqe.jpg)
@@ -1505,8 +1323,6 @@ Dressing, undressing, and storing clothes are self-contained and need a space wh
 ### [190. Ceiling Height Variety](https://x.com/apatterntolearn/status/2015872344837767472)
 
 Various heights throughout buildings allow intimacy to be felt relatively b/w spaces. Make ceilings high in rooms for larger gatherings (10-12 ft), lower in rooms for small gatherings (7-9 ft), and very low in alcoves for 1 or 2 people 6-7 ft).
-
-*Additional Context:* 205. Structure Follows Social Spaces
 
 ![Pattern 190 Diagram](https://pbs.twimg.com/media/G_nBRuTXEAAaASa.jpg)
 
@@ -1900,22 +1716,12 @@ Place lights low, and apart to form designated areas which encompass chairs and 
 
 Decor is most beautiful when it comes from your life. Things you care for will tell your story. When we decorate spaces with only interior design trends in mind, we forget our instinct for the things we actually want to have around us.
 
-*Additional Context:* via 
-@sndy_snchz
- 
-
-
-https://
-sandysanchez.substack.com/p/the-human-ur
-ge-to-collect-little
-…
-
 ---
 
 
 ## Data Extraction Helper
 
-The following Browser DevTools Console snippet was used to collect tweet URLs, text breakdowns, and image media links directly from the `@apatterntolearn` Twitter feed while preserving tweets across virtual DOM scrolling:
+The following Browser DevTools Console snippet was used to collect tweet URLs and image media links directly from the `@apatterntolearn` Twitter feed while preserving tweets across virtual DOM scrolling:
 
 ```javascript
 // Auto-accumulating Twitter/X Data Extractor Script
