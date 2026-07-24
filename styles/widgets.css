@@ -409,25 +409,7 @@ input:focus-visible,
   transform: scale(1.08) !important;
 }
 
-.pattern-toast-notification {
-  position: fixed !important;
-  bottom: 25px !important;
-  right: 25px !important;
-  background: #020408 !important;
-  border: 1px solid var(--neon-volt) !important;
-  color: var(--neon-volt) !important;
-  padding: 10px 16px !important;
-  border-radius: 6px !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 10px var(--neon-volt-glow) !important;
-  z-index: 9999 !important;
-  animation: patternToastFade 2.5s forwards ease-in-out !important;
-}
 
-@keyframes patternToastFade {
-  0% { opacity: 0; transform: translateY(10px); }
   15% { opacity: 1; transform: translateY(0); }
   85% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(10px); }
