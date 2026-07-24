@@ -346,3 +346,66 @@ input:focus-visible,
   color: var(--vintage-amber) !important;
   border-color: var(--vintage-amber) !important;
 }
+
+/* --- 🔗 Pattern Title Links & Clipboard Toast Notification --- */
+.pattern-title-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: color 0.2s ease !important;
+}
+
+.pattern-title-link:hover {
+  color: var(--cobalt-blue) !important;
+  text-decoration: underline !important;
+}
+
+.pattern-tweet-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: 8px !important;
+  padding: 1px 6px !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  background: #f1f5f9 !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  vertical-align: middle !important;
+  transition: all 0.2s ease !important;
+}
+
+.pattern-tweet-btn:hover {
+  color: #ffffff !important;
+  background: #000000 !important;
+  border-color: #000000 !important;
+  transform: scale(1.08) !important;
+  text-decoration: none !important;
+}
+
+.pattern-toast-notification {
+  position: fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  background: #020408 !important;
+  border: 1px solid var(--neon-volt) !important;
+  color: var(--neon-volt) !important;
+  padding: 10px 16px !important;
+  border-radius: 6px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 10px var(--neon-volt-glow) !important;
+  z-index: 9999 !important;
+  animation: patternToastFade 2.5s forwards ease-in-out !important;
+}
+
+@keyframes patternToastFade {
+  0% { opacity: 0; transform: translateY(10px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}

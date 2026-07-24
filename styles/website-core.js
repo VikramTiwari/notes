@@ -93,6 +93,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Run once on DOM load
+  
+    // 5. Pattern Title Link Click & Copy to Clipboard
+    document.addEventListener("click", function (e) {
+      var titleLink = e.target.closest(".pattern-title-link");
+      if (titleLink) {
+        var hash = titleLink.getAttribute("href");
+        if (hash && hash.startsWith("#")) {
+          var fullUrl = window.location.origin + window.location.pathname + hash;
+          navigator.clipboard.writeText(fullUrl).then(function () {
+            var existingToast = document.querySelector(".pattern-toast-notification");
+            if (existingToast) existingToast.remove();
+
+            var toast = document.createElement("div");
+            toast.className = "pattern-toast-notification";
+            toast.innerHTML = "✓ Pattern link copied to clipboard!";
+            document.body.appendChild(toast);
+
+            setTimeout(function () {
+              if (toast && toast.parentNode) toast.remove();
+            }, 2500);
+          });
+        }
+      }
+    });
+
   initializePage();
 
   // Register callback in GitBook pushState event bus to re-run on PJAX navigation
