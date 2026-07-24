@@ -357,7 +357,7 @@ input:focus-visible,
 
 .pattern-title-link:hover {
   color: var(--cobalt-blue) !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .pattern-tweet-btn {
