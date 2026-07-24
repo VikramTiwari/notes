@@ -348,24 +348,42 @@ input:focus-visible,
 }
 
 /* --- 🔗 Pattern Title Links & Clipboard Toast Notification --- */
-.pattern-title-link {
+.markdown-section h1 a.pattern-title-link,
+.markdown-section h2 a.pattern-title-link,
+.markdown-section h3 a.pattern-title-link,
+.markdown-section h4 a.pattern-title-link,
+.markdown-section a.pattern-title-link,
+.markdown-section h1 a.pattern-title-link:hover,
+.markdown-section h2 a.pattern-title-link:hover,
+.markdown-section h3 a.pattern-title-link:hover,
+.markdown-section h4 a.pattern-title-link:hover,
+.markdown-section a.pattern-title-link:hover,
+.markdown-section a.pattern-title-link:focus,
+.markdown-section a.pattern-title-link:active {
   color: inherit !important;
   text-decoration: none !important;
-  cursor: pointer !important;
-  transition: color 0.2s ease !important;
+  border-bottom: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-.pattern-title-link:hover {
+.markdown-section a.pattern-title-link:hover {
   color: var(--cobalt-blue) !important;
   text-decoration: none !important;
+  border-bottom: none !important;
 }
 
-.pattern-tweet-btn {
+.markdown-section a.pattern-tweet-btn,
+.markdown-section a.pattern-tweet-btn:link,
+.markdown-section a.pattern-tweet-btn:visited,
+.markdown-section h3 a.pattern-tweet-btn,
+.markdown-section h3 a.pattern-tweet-btn:link,
+.markdown-section h3 a.pattern-tweet-btn:visited {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   margin-left: 8px !important;
-  padding: 1px 6px !important;
+  padding: 1px 7px !important;
   font-family: system-ui, -apple-system, sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
@@ -374,16 +392,21 @@ input:focus-visible,
   border: 1px solid var(--border-light) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
+  border-bottom: none !important;
   vertical-align: middle !important;
   transition: all 0.2s ease !important;
 }
 
-.pattern-tweet-btn:hover {
+.markdown-section a.pattern-tweet-btn:hover,
+.markdown-section a.pattern-tweet-btn:focus,
+.markdown-section h3 a.pattern-tweet-btn:hover,
+.markdown-section h3 a.pattern-tweet-btn:focus {
   color: #ffffff !important;
   background: #000000 !important;
   border-color: #000000 !important;
-  transform: scale(1.08) !important;
   text-decoration: none !important;
+  border-bottom: none !important;
+  transform: scale(1.08) !important;
 }
 
 .pattern-toast-notification {
