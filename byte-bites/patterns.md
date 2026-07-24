@@ -6,9 +6,20 @@ date: 2026-07-23
 ---
 # Architectural Patterns (A Pattern Language)
 
-A comprehensive collection of 253 patterns from Christopher Alexander's landmark work *A Pattern Language* (Towns, Buildings, Construction), compiled from [Clayton Dorge](https://claytondorge.com/patterns-list) and [@apatterntolearn](https://twitter.com/apatterntolearn). Each pattern features its primary architectural rule and original visual diagrams where available.
+A comprehensive collection of 253 patterns from Christopher Alexander's landmark work *A Pattern Language*, compiled from [Clayton Dorge](https://claytondorge.com/patterns-list) and [@apatterntolearn](https://twitter.com/apatterntolearn). Each pattern features its primary architectural rule and original visual diagrams where available.
 
-## Towns (Patterns 1 - 94)
+### Pattern Groups Overview
+
+1. 🏘️ **[Towns (Patterns 1 – 94)](#group-1-towns-patterns-1---94)**  
+   *What must be built gradually piece by piece with small individual acts in order to fit within larger global patterns.*
+
+2. 🏢 **[Buildings (Patterns 95 – 204)](#group-2-buildings-patterns-95---204)**  
+   *What is under the control of individuals or small groups, capable of building entire patterns at once. These patterns give actual 3D shape to buildings.*
+
+3. 🛠️ **[Construction (Patterns 205 – 253)](#group-3-construction-patterns-205---253)**  
+   *How to make a building, room, or space in detail so that larger patterns are encompassed from conception.*
+
+## Group 1: Towns (Patterns 1 - 94)
 
 *What must be built gradually piece by piece with small individual acts in order to fit within larger global patterns.*
 
@@ -624,7 +635,7 @@ Communities feel safe when you can lay down to rest in public places that are co
 
 ---
 
-## Buildings (Patterns 95 - 204)
+## Group 2: Buildings (Patterns 95 - 204)
 
 *Patterns governing the design and architecture of individual buildings and building complexes.*
 
@@ -1418,7 +1429,7 @@ People want to live with a secret place in their homes; a place used in special 
 
 ---
 
-## Construction (Patterns 205 - 253)
+## Group 3: Construction (Patterns 205 - 253)
 
 *Patterns governing physical construction, materials, social structures, and interior spaces.*
 
