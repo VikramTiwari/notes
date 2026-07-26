@@ -1741,21 +1741,6 @@ you can't have pools of light w/out the darker places in between
 ### <a id="p253" href="#p253" class="pattern-title-link">253. Things From Your Life</a> <a href="https://x.com/apatterntolearn/status/1917996166987309270" target="_blank" rel="noopener noreferrer" class="pattern-tweet-btn" title="View thread on X (Twitter)">𝕏</a>
 
 Decor is most beautiful when it comes from your life. Things you care for will tell your story. When we decorate spaces with only interior design trends in mind, we forget our instinct for the things we actually want to have around us.
-Headquarters.
-Columbia, Missouri
-clayton.dorge@gmail.com
-Hours
-Mon All Day
-Tue All Day
-Wed All Day
-Thu All Day
-Fri All Day
-Sat All Day
-Sun All Day
-Writing.
-Reading.
-Message me.
-Twitter.
 
 ---
 
