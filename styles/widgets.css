@@ -382,18 +382,25 @@ input:focus-visible,
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin-left: 8px !important;
-  padding: 1px 7px !important;
+  position: relative !important;
+  top: -1px !important;
+  min-width: 18px !important;
+  height: 18px !important;
+  padding: 0 4px !important;
+  margin-left: 6px !important;
   font-family: system-ui, -apple-system, sans-serif !important;
-  font-size: 13px !important;
+  font-size: 11px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  line-height: 1 !important;
+  color: var(--text-dim) !important;
   background: #f1f5f9 !important;
   border: 1px solid var(--border-light) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
   border-bottom: none !important;
   vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  user-select: none !important;
   transition: all 0.2s ease !important;
 }
 
@@ -402,15 +409,10 @@ input:focus-visible,
 .markdown-section h3 a.pattern-tweet-btn:hover,
 .markdown-section h3 a.pattern-tweet-btn:focus {
   color: #ffffff !important;
-  background: #000000 !important;
-  border-color: #000000 !important;
+  background: #0f172a !important;
+  border-color: #0f172a !important;
   text-decoration: none !important;
   border-bottom: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   transform: scale(1.08) !important;
-}
-
-
-  15% { opacity: 1; transform: translateY(0); }
-  85% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(10px); }
 }
