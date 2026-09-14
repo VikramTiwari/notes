@@ -18,6 +18,7 @@
   * [Giving feedback](byte-bites/giving-feedback.md)
   * [Technical Documentation Authoring](byte-bites/technical-documentation-authoring.md)
   * [Architectural Patterns](byte-bites/patterns.md)
+  * [Bodily Oddities](byte-bites/bodily-oddities.md)
   * [Startup Failures](byte-bites/startup-failures/README.md)
     * [Big Tech Squeeze](byte-bites/startup-failures/big-tech-squeeze.md)
     * [Infrastructure Costs](byte-bites/startup-failures/infrastructure-costs.md)

@@ -5,3 +5,4 @@ _book
 .firebaserc
 fix_gitbook_syntax.py
 .firebase/
+.vscode/
