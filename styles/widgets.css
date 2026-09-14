@@ -384,6 +384,7 @@ input:focus-visible,
   justify-content: center !important;
   position: relative !important;
   top: -1px !important;
+  box-sizing: border-box !important;
   min-width: 18px !important;
   height: 18px !important;
   padding: 0 4px !important;
@@ -395,12 +396,13 @@ input:focus-visible,
   color: var(--text-dim) !important;
   background: #f1f5f9 !important;
   border: 1px solid var(--border-light) !important;
+  border-bottom: 1px solid var(--border-light) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
-  border-bottom: none !important;
   vertical-align: middle !important;
   flex-shrink: 0 !important;
   user-select: none !important;
+  overflow: visible !important;
   transition: all 0.2s ease !important;
 }
 
@@ -410,9 +412,9 @@ input:focus-visible,
 .markdown-section h3 a.pattern-tweet-btn:focus {
   color: #ffffff !important;
   background: #0f172a !important;
-  border-color: #0f172a !important;
+  border: 1px solid #0f172a !important;
+  border-bottom: 1px solid #0f172a !important;
   text-decoration: none !important;
-  border-bottom: none !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   transform: scale(1.08) !important;
 }
