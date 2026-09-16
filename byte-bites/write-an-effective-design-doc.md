@@ -1,10 +1,10 @@
 ---
-title: "How to Write an Effective Software Design Document"
+title: "Effective Design Doc"
 description: >- 
   A practical framework and component checklist for writing high-impact software design documents that save engineering time and align teams. From Michael Lynch.
 date: 2026-09-16
 ---
-# How to Write an Effective Software Design Document
+# Effective Design Doc
 
 *Source: [How to Write an Effective Software Design Document](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/) by Michael Lynch (from [Refactoring English](https://refactoringenglish.com/))*  
 *Companion Example: [Little Moments Design Doc](https://refactoringenglish.com/excerpts/little-moments-design-doc/)*
