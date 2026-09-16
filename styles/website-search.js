@@ -154,7 +154,6 @@
     var dialog = document.getElementById("notes-search-dialog");
     var input = document.getElementById("modal-search-input");
     var resultsContainer = document.getElementById("modal-search-results");
-    var triggerBtn = document.getElementById("header-search-trigger");
     var closeBtn = document.querySelector(".modal-search-close-btn");
 
     if (!dialog || !input || !resultsContainer) return;
@@ -210,13 +209,42 @@
       });
     }
 
-    // Trigger button
-    if (triggerBtn && !triggerBtn.hasAttribute("data-search-bound")) {
-      triggerBtn.setAttribute("data-search-bound", "true");
-      triggerBtn.addEventListener("click", function(e) {
+    // Sidebar search input trigger
+    var sidebarSearchContainer = document.getElementById("book-search-input");
+    var sidebarInput = sidebarSearchContainer ? sidebarSearchContainer.querySelector("input") : null;
+
+    if (sidebarInput && !sidebarInput.hasAttribute("data-search-bound")) {
+      sidebarInput.setAttribute("data-search-bound", "true");
+      sidebarInput.setAttribute("placeholder", "Search notes... (/)");
+      sidebarInput.setAttribute("autocomplete", "off");
+      sidebarInput.setAttribute("readonly", "readonly");
+
+      sidebarInput.addEventListener("click", function(e) {
         e.preventDefault();
+        e.stopPropagation();
         openSearch();
       });
+
+      sidebarInput.addEventListener("focus", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        sidebarInput.blur();
+        openSearch();
+      });
+
+      sidebarInput.addEventListener("keydown", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openSearch();
+      });
+
+      if (sidebarSearchContainer) {
+        sidebarSearchContainer.addEventListener("click", function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          openSearch();
+        });
+      }
     }
 
     // Close button
