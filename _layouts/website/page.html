@@ -71,12 +71,42 @@
     <a href="{{ " /"|resolveFile }}">{{ page.title }}</a>
   </h1>
 
-  <!-- Premium Header Search HUD -->
-  <div class="header-search-bar" style="display: none;">
-    <i class="fa fa-search header-search-icon"></i>
-    <input type="text" id="header-search-input" placeholder="Type to search notes..." autocomplete="off" />
-    <button class="header-search-close" title="Close search">&times;</button>
-  </div>
+  <!-- Sleek Header Search Trigger -->
+  <button class="header-search-trigger" id="header-search-trigger" title="Search notes (/ or ⌘K)" type="button">
+    <i class="fa fa-search header-search-trigger-icon"></i>
+    <span class="header-search-trigger-text">Search notes...</span>
+    <kbd class="header-search-trigger-kbd">/</kbd>
+  </button>
+
+  <!-- Full-Page Command Palette Search Modal -->
+  <dialog id="notes-search-dialog" closedby="any" aria-label="Search notes">
+    <div class="modal-search-container">
+      <div class="modal-search-header">
+        <i class="fa fa-search modal-search-icon"></i>
+        <input type="text" id="modal-search-input" placeholder="Search sidebar or this page..." autocomplete="off" spellcheck="false" />
+        <span class="modal-search-badge"><kbd>ESC</kbd></span>
+        <button type="button" class="modal-search-close-btn" aria-label="Close search">&times;</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results">
+        <div class="modal-search-initial-state">
+          <p>Type to search across <strong>this page</strong> and the <strong>sidebar</strong></p>
+          <div class="modal-search-tips">
+            <span><kbd>/</kbd> anywhere to open</span>
+            <span><kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+            <span><kbd>ESC</kbd> to dismiss</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-search-footer">
+        <div class="modal-search-footer-legend">
+          <span><kbd class="legend-key">↑</kbd><kbd class="legend-key">↓</kbd> Navigate</span>
+          <span><kbd class="legend-key">↵</kbd> Open</span>
+          <span><kbd class="legend-key">ESC</kbd> Close</span>
+        </div>
+        <div class="modal-search-footer-brand">Vik's Notes</div>
+      </div>
+    </div>
+  </dialog>
 
   <div class="header-meta-bar">
     {% if page.date %}

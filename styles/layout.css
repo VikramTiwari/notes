@@ -49,12 +49,9 @@
   color: var(--cobalt-blue) !important;
 }
 
-/* Search Box: Terminal input style */
+/* Search Box: Moved to full-page command palette dialog */
 #book-search-input {
-  background: transparent !important;
-  border-bottom: 1px dashed var(--border-light) !important;
-  padding: 15px !important;
-  flex-shrink: 0 !important;
+  display: none !important;
 }
 
 /* Enable scrolling underneath the pinned search box */
@@ -337,60 +334,390 @@
   font-weight: 600 !important;
 }
 
-/* --- 🔍 Header Search Bar (Revealed on title click) --- */
-.header-search-bar {
-  display: none; /* Hidden by default, shown dynamically via JS */
+/* --- 🔍 Header Search Trigger Button --- */
+.header-search-trigger {
+  display: inline-flex !important;
   align-items: center !important;
+  gap: 8px !important;
+  background: var(--card-bg, #ffffff) !important;
+  border: 1px solid var(--border-light, #e2e8f0) !important;
+  border-radius: 6px !important;
+  padding: 4px 12px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  color: var(--text-secondary, #64748b) !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   position: absolute !important;
-  top: 0 !important;
+  top: 10px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: 380px !important; /* Sleek centered Spotlight-style search panel */
-  max-width: 70% !important; /* Dynamic mobile fallback wrapper */
-  height: 49px !important;
-  background: var(--bg-archival) !important;
-  padding: 0 15px !important;
-  z-index: 20 !important;
-  border-bottom: 2px dashed var(--cobalt-blue) !important; /* Premium console dashed line */
+  z-index: 10 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
 }
 
-.header-search-icon {
-  color: var(--cobalt-blue) !important;
-  font-size: 14px !important;
-  margin-right: 12px !important;
+.header-search-trigger:hover {
+  border-color: var(--cobalt-blue, #0284c7) !important;
+  color: var(--cobalt-blue, #0284c7) !important;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12) !important;
 }
 
-#header-search-input {
+.header-search-trigger-icon {
+  font-size: 12px !important;
+  color: var(--text-dim, #94a3b8) !important;
+}
+
+.header-search-trigger:hover .header-search-trigger-icon {
+  color: var(--cobalt-blue, #0284c7) !important;
+}
+
+.header-search-trigger-text {
+  font-weight: 500 !important;
+}
+
+.header-search-trigger-kbd {
+  display: inline-block !important;
+  background: var(--bg-archival, #f8fafc) !important;
+  border: 1px solid var(--border-light, #e2e8f0) !important;
+  border-radius: 4px !important;
+  padding: 1px 6px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+  color: var(--text-secondary, #64748b) !important;
+  line-height: 1.2 !important;
+}
+
+/* --- 🔍 Full-Page Command Palette Search Modal --- */
+#notes-search-dialog {
+  border: none !important;
+  padding: 0 !important;
+  margin: auto !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  width: 620px !important;
+  max-width: 92vw !important;
+  max-height: 85vh !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(15, 23, 42, 0.08) !important;
+  overflow: hidden !important;
+}
+
+#notes-search-dialog::backdrop {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+.modal-search-container {
+  display: flex !important;
+  flex-direction: column !important;
+  background: #ffffff !important;
+  max-height: 80vh !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.modal-search-header {
+  display: flex !important;
+  align-items: center !important;
+  padding: 14px 18px !important;
+  border-bottom: 1px solid var(--border-light, #e2e8f0) !important;
+  background: #ffffff !important;
+  gap: 12px !important;
+}
+
+.modal-search-icon {
+  color: var(--cobalt-blue, #0284c7) !important;
+  font-size: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+#modal-search-input {
   flex-grow: 1 !important;
   background: transparent !important;
   border: none !important;
-  color: var(--text-primary) !important;
   font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-weight: 500 !important;
+  color: var(--text-primary, #0f172a) !important;
   outline: none !important;
-  height: 100% !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
-#header-search-input::placeholder {
-  color: var(--text-dim) !important;
-  opacity: 0.5 !important;
+#modal-search-input::placeholder {
+  color: var(--text-dim, #94a3b8) !important;
+  font-weight: 400 !important;
 }
 
-.header-search-close {
+.modal-search-badge kbd {
+  background: var(--bg-archival, #f8fafc) !important;
+  border: 1px solid var(--border-light, #e2e8f0) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+  color: var(--text-secondary, #64748b) !important;
+}
+
+.modal-search-close-btn {
   background: transparent !important;
   border: none !important;
-  color: var(--text-secondary) !important;
-  font-size: 22px !important;
-  font-weight: 300 !important;
-  cursor: pointer !important;
-  padding: 0 10px !important;
+  font-size: 20px !important;
   line-height: 1 !important;
-  transition: color 0.2s ease !important;
+  color: var(--text-dim, #94a3b8) !important;
+  cursor: pointer !important;
+  padding: 0 4px !important;
+  transition: color 0.15s ease !important;
 }
 
-.header-search-close:hover {
-  color: var(--vintage-amber) !important;
+.modal-search-close-btn:hover {
+  color: var(--text-primary, #0f172a) !important;
+}
+
+.modal-search-results {
+  flex-grow: 1 !important;
+  overflow-y: auto !important;
+  padding: 8px 10px !important;
+  max-height: 55vh !important;
+}
+
+.modal-search-initial-state {
+  padding: 36px 20px !important;
+  text-align: center !important;
+  color: var(--text-secondary, #64748b) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 14px !important;
+}
+
+.modal-search-initial-state strong {
+  color: var(--text-primary, #0f172a) !important;
+}
+
+.modal-search-tips {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  margin-top: 14px !important;
+  font-size: 12px !important;
+  color: var(--text-dim, #94a3b8) !important;
+}
+
+.modal-search-tips kbd {
+  background: var(--bg-archival, #f8fafc) !important;
+  border: 1px solid var(--border-light, #e2e8f0) !important;
+  border-radius: 3px !important;
+  padding: 1px 5px !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.modal-search-empty {
+  padding: 36px 20px !important;
+  text-align: center !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: var(--text-secondary, #64748b) !important;
+}
+
+.modal-search-empty-icon {
+  font-size: 24px !important;
+  color: var(--text-dim, #94a3b8) !important;
+  margin-bottom: 12px !important;
+  display: block !important;
+}
+
+.modal-search-empty p {
+  margin: 0 0 6px 0 !important;
+  font-size: 14px !important;
+}
+
+.modal-search-empty-sub {
+  font-size: 12px !important;
+  color: var(--text-dim, #94a3b8) !important;
+}
+
+.modal-search-group-title {
+  padding: 10px 12px 6px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  color: var(--cobalt-blue, #0284c7) !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.modal-search-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 12px !important;
+  margin: 2px 0 !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
+  border: 1px solid transparent !important;
+}
+
+.modal-search-item:hover,
+.modal-search-item.selected {
+  background: rgba(2, 132, 199, 0.06) !important;
+  border-color: rgba(2, 132, 199, 0.2) !important;
+}
+
+.modal-search-item-left {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  flex-grow: 1 !important;
+  min-width: 0 !important;
+}
+
+.modal-search-badge-type {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  flex-shrink: 0 !important;
+  margin-top: 2px !important;
+}
+
+.badge-heading {
+  background: rgba(2, 132, 199, 0.12) !important;
+  color: var(--cobalt-blue, #0284c7) !important;
+}
+
+.badge-snippet {
+  background: rgba(100, 116, 139, 0.1) !important;
+  color: var(--text-secondary, #64748b) !important;
+}
+
+.badge-page {
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #059669 !important;
+}
+
+.modal-search-item-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+  min-width: 0 !important;
+  flex-grow: 1 !important;
+}
+
+.modal-search-item-context {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: var(--text-dim, #94a3b8) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.03em !important;
+}
+
+.modal-search-item-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--text-primary, #0f172a) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.modal-search-item-snippet {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  color: var(--text-secondary, #64748b) !important;
+  line-height: 1.4 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+.modal-search-item-arrow {
+  color: var(--text-dim, #94a3b8) !important;
+  font-size: 12px !important;
+  margin-left: 8px !important;
+  flex-shrink: 0 !important;
+  opacity: 0 !important;
+  transition: opacity 0.15s ease, transform 0.15s ease !important;
+}
+
+.modal-search-item:hover .modal-search-item-arrow,
+.modal-search-item.selected .modal-search-item-arrow {
+  opacity: 1 !important;
+  color: var(--cobalt-blue, #0284c7) !important;
+  transform: translateX(2px) !important;
+}
+
+mark.search-hl {
+  background: rgba(234, 179, 8, 0.28) !important;
+  color: inherit !important;
+  font-weight: 700 !important;
+  padding: 0 2px !important;
+  border-radius: 2px !important;
+}
+
+.modal-search-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 18px !important;
+  border-top: 1px solid var(--border-light, #e2e8f0) !important;
+  background: var(--bg-archival, #f8fafc) !important;
+  font-size: 12px !important;
+  color: var(--text-dim, #94a3b8) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.modal-search-footer-legend {
+  display: flex !important;
+  gap: 14px !important;
+}
+
+.legend-key {
+  background: #ffffff !important;
+  border: 1px solid var(--border-light, #e2e8f0) !important;
+  border-radius: 3px !important;
+  padding: 1px 5px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+  margin-right: 4px !important;
+}
+
+.modal-search-footer-brand {
+  font-family: 'Fira Code', monospace !important;
+  font-weight: 500 !important;
+  color: var(--text-dim, #94a3b8) !important;
+}
+
+/* Smooth Flash Highlight for jumped-to elements on current page */
+.search-target-highlight {
+  animation: searchFlashPulse 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards !important;
+}
+
+@keyframes searchFlashPulse {
+  0% {
+    background-color: rgba(2, 132, 199, 0.35);
+    outline: 2px solid var(--cobalt-blue, #0284c7);
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+  70% {
+    background-color: rgba(2, 132, 199, 0.15);
+    outline: 2px solid rgba(2, 132, 199, 0.4);
+  }
+  100% {
+    background-color: transparent;
+    outline: 2px solid transparent;
+  }
 }
 
 .btn {
